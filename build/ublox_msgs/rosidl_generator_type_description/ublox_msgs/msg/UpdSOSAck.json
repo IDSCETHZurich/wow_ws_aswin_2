@@ -1,0 +1,56 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ublox_msgs/msg/UpdSOSAck",
+      "fields": [
+        {
+          "name": "cmd",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "reserved0",
+          "type": {
+            "type_id": 51,
+            "capacity": 3,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "response",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "reserved1",
+          "type": {
+            "type_id": 51,
+            "capacity": 3,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ublox_msgs/msg/UpdSOSAck",
+      "hash_string": "RIHS01_a4c56dd5e0b828074ff1bf6d6bee51ca1b7698ee4c878edc79013c652790c928"
+    }
+  ]
+}

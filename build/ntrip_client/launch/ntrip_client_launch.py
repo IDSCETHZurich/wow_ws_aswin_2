@@ -1,0 +1,1 @@
+/home/pi/test_ws/src/ntrip_client/launch/ntrip_client_launch.py

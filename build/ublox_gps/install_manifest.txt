@@ -1,0 +1,3 @@
+/home/pi/test_ws/install/ublox_gps/lib/libublox_gps.so
+/home/pi/test_ws/install/ublox_gps/share/ublox_gps/cmake/export_ublox_gpsExport.cmake
+/home/pi/test_ws/install/ublox_gps/share/ublox_gps/cmake/export_ublox_gpsExport-noconfig.cmake

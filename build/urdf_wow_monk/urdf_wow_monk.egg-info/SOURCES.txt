@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+launch/demo_launch.py
+resource/urdf_wow_monk
+urdf/r2d2.urdf.xml
+urdf/wow_monk.urdf.xml
+urdf_wow_monk/__init__.py
+urdf_wow_monk/state_publisher.py
+urdf_wow_monk.egg-info/PKG-INFO
+urdf_wow_monk.egg-info/SOURCES.txt
+urdf_wow_monk.egg-info/dependency_links.txt
+urdf_wow_monk.egg-info/entry_points.txt
+urdf_wow_monk.egg-info/requires.txt
+urdf_wow_monk.egg-info/top_level.txt
+urdf_wow_monk.egg-info/zip-safe

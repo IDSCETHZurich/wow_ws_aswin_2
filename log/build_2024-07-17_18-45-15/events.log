@@ -1,0 +1,1178 @@
+[0.000000] (-) TimerEvent: {}
+[0.000364] (-) JobUnselected: {'identifier': 'gps_publisher'}
+[0.000664] (-) JobUnselected: {'identifier': 'nmea_msgs'}
+[0.000690] (-) JobUnselected: {'identifier': 'nmea_navsat_driver'}
+[0.000712] (-) JobUnselected: {'identifier': 'ntrip_client'}
+[0.000730] (-) JobUnselected: {'identifier': 'tf_transformations'}
+[0.000748] (-) JobUnselected: {'identifier': 'ublox'}
+[0.000769] (-) JobUnselected: {'identifier': 'ublox_msgs'}
+[0.000812] (-) JobUnselected: {'identifier': 'ublox_serialization'}
+[0.000830] (-) JobUnselected: {'identifier': 'urdf_wow_monk'}
+[0.000847] (ublox_gps) JobQueued: {'identifier': 'ublox_gps', 'dependencies': OrderedDict([('nmea_msgs', '/home/pi/test_ws/install/nmea_msgs'), ('ublox_serialization', '/home/pi/test_ws/install/ublox_serialization'), ('ublox_msgs', '/home/pi/test_ws/install/ublox_msgs')])}
+[0.000875] (ublox_gps) JobStarted: {'identifier': 'ublox_gps'}
+[0.089729] (ublox_gps) JobProgress: {'identifier': 'ublox_gps', 'progress': 'cmake'}
+[0.094387] (ublox_gps) JobProgress: {'identifier': 'ublox_gps', 'progress': 'build'}
+[0.095119] (ublox_gps) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/test_ws/build/ublox_gps', '--', '-j4', '-l4'], 'cwd': '/home/pi/test_ws/build/ublox_gps', 'env': OrderedDict([('LANGUAGE', 'en_US.UTF-8'), ('USER', 'pi'), ('SSH_CLIENT', '100.83.102.58 50162 22'), ('TEXTDOMAIN', 'Linux-PAM'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/test_ws/install/ublox_msgs/lib:/home/pi/test_ws/install/nmea_msgs/lib:/home/pi/wow_ws/install/spacenav/lib:/home/pi/wow_ws/install/joy/lib:/home/pi/wow_ws/install/sdl2_vendor/lib:/home/pi/wow_ws/install/rviz_imu_plugin/lib:/home/pi/wow_ws/install/ntrip_client_node/lib:/home/pi/wow_ws/install/rtcm_msgs/lib:/home/pi/wow_ws/install/robot_localization/lib:/home/pi/wow_ws/install/nmea_msgs/lib:/home/pi/wow_ws/install/imu_filter_madgwick/lib:/home/pi/wow_ws/install/imu_complementary_filter/lib:/home/pi/wow_ws/install/gpsd_client/lib:/home/pi/wow_ws/install/gps_tools/lib:/home/pi/wow_ws/install/gps_msgs/lib:/home/pi/wow_ws/install/geodesy/lib:/home/pi/wow_ws/install/geographic_msgs/lib:/home/pi/wow_ws/install/foxglove_bridge/lib:/home/pi/wow_ws/install/diagnostic_updater/lib:/home/pi/wow_ws/install/diagnostic_aggregator/lib:/home/pi/test_ws/install/ublox_gps/lib:/home/pi/ros2_iron/install/rosbag2_storage_mcap/lib:/home/pi/ros2_iron/install/rosbag2_compression_zstd/lib:/home/pi/ros2_iron/install/mcap_vendor/lib:/home/pi/ros2_iron/install/rviz_default_plugins/lib:/home/pi/ros2_iron/install/rviz_common/lib:/home/pi/ros2_iron/install/rosbag2_transport/lib:/home/pi/ros2_iron/install/rosbag2_storage_sqlite3/lib:/home/pi/ros2_iron/install/rosbag2_compression/lib:/home/pi/ros2_iron/install/rosbag2_cpp/lib:/home/pi/ros2_iron/install/rosbag2_storage/lib:/home/pi/ros2_iron/install/camera_info_manager/lib:/home/pi/ros2_iron/install/camera_calibration_parsers/lib:/home/pi/ros2_iron/install/interactive_markers/lib:/home/pi/ros2_iron/install/visualization_msgs/lib:/home/pi/ros2_iron/install/robot_state_publisher/lib:/home/pi/ros2_iron/install/kdl_parser/lib:/home/pi/ros2_iron/install/urdf/lib:/home/pi/ros2_iron/install/urdfdom/lib:/home/pi/ros2_iron/install/turtlesim/lib:/home/pi/ros2_iron/install/trajectory_msgs/lib:/home/pi/ros2_iron/install/tf2_ros/lib:/home/pi/ros2_iron/install/tf2_msgs/lib:/home/pi/ros2_iron/install/tf2_eigen_kdl/lib:/home/pi/ros2_iron/install/laser_geometry/lib:/home/pi/ros2_iron/install/tf2/lib:/home/pi/ros2_iron/install/test_msgs/lib:/home/pi/ros2_iron/install/stereo_msgs/lib:/home/pi/ros2_iron/install/std_srvs/lib:/home/pi/ros2_iron/install/shape_msgs/lib:/home/pi/ros2_iron/install/quality_of_service_demo_cpp/lib:/home/pi/ros2_iron/install/map_msgs/lib:/home/pi/ros2_iron/install/image_transport/lib:/home/pi/ros2_iron/install/image_tools/lib:/home/pi/ros2_iron/install/sensor_msgs/lib:/home/pi/ros2_iron/install/nav_msgs/lib:/home/pi/ros2_iron/install/logging_demo/lib:/home/pi/ros2_iron/install/diagnostic_msgs/lib:/home/pi/ros2_iron/install/geometry_msgs/lib:/home/pi/ros2_iron/install/examples_rclcpp_wait_set/lib:/home/pi/ros2_iron/install/examples_rclcpp_minimal_subscriber/lib:/home/pi/ros2_iron/install/examples_rclcpp_minimal_composition/lib:/home/pi/ros2_iron/install/demo_nodes_cpp_native/lib:/home/pi/ros2_iron/install/demo_nodes_cpp/lib:/home/pi/ros2_iron/install/composition/lib:/home/pi/ros2_iron/install/actionlib_msgs/lib:/home/pi/ros2_iron/install/std_msgs/lib:/home/pi/ros2_iron/install/rqt_gui_cpp/lib:/home/pi/ros2_iron/install/rclcpp_lifecycle/lib:/home/pi/ros2_iron/install/action_tutorials_cpp/lib:/home/pi/ros2_iron/install/rclcpp_components/lib:/home/pi/ros2_iron/install/rclcpp_action/lib:/home/pi/ros2_iron/install/message_filters/lib:/home/pi/ros2_iron/install/rclcpp/lib:/home/pi/ros2_iron/install/libstatistics_collector/lib:/home/pi/ros2_iron/install/statistics_msgs/lib:/home/pi/ros2_iron/install/rclpy/lib:/home/pi/ros2_iron/install/rosgraph_msgs/lib:/home/pi/ros2_iron/install/rosbag2_interfaces/lib:/home/pi/ros2_iron/install/ros2cli_test_interfaces/lib:/home/pi/ros2_iron/install/rcl_lifecycle/lib:/home/pi/ros2_iron/install/rcl_action/lib:/home/pi/ros2_iron/install/rcl/lib:/home/pi/ros2_iron/install/rmw_implementation/lib:/home/pi/ros2_iron/install/rmw_fastrtps_dynamic_cpp/lib:/home/pi/ros2_iron/install/rmw_fastrtps_cpp/lib:/home/pi/ros2_iron/install/rmw_fastrtps_shared_cpp/lib:/home/pi/ros2_iron/install/rmw_cyclonedds_cpp/lib:/home/pi/ros2_iron/install/rmw_dds_common/lib:/home/pi/ros2_iron/install/composition_interfaces/lib:/home/pi/ros2_iron/install/rcl_interfaces/lib:/home/pi/ros2_iron/install/pendulum_msgs/lib:/home/pi/ros2_iron/install/lifecycle_msgs/lib:/home/pi/ros2_iron/install/example_interfaces/lib:/home/pi/ros2_iron/install/action_tutorials_interfaces/lib:/home/pi/ros2_iron/install/action_msgs/lib:/home/pi/ros2_iron/install/unique_identifier_msgs/lib:/home/pi/ros2_iron/install/type_description_interfaces/lib:/home/pi/ros2_iron/install/tracetools/lib:/home/pi/ros2_iron/install/qt_gui_cpp/lib:/home/pi/ros2_iron/install/rcl_logging_spdlog/lib:/home/pi/ros2_iron/install/service_msgs/lib:/home/pi/ros2_iron/install/rviz_rendering/lib:/home/pi/ros2_iron/install/rviz_ogre_vendor/opt/rviz_ogre_vendor/lib:/home/pi/ros2_iron/install/rttest/lib:/home/pi/ros2_iron/install/builtin_interfaces/lib:/home/pi/ros2_iron/install/rosidl_typesupport_cpp/lib:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_cpp/lib:/home/pi/ros2_iron/install/rosidl_typesupport_c/lib:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_c/lib:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_c/lib:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_cpp/lib:/home/pi/ros2_iron/install/rosidl_dynamic_typesupport_fastrtps/lib:/home/pi/ros2_iron/install/rcl_yaml_param_parser/lib:/home/pi/ros2_iron/install/rmw/lib:/home/pi/ros2_iron/install/rosidl_dynamic_typesupport/lib:/home/pi/ros2_iron/install/rosidl_runtime_c/lib:/home/pi/ros2_iron/install/rosbag2_test_msgdefs/lib:/home/pi/ros2_iron/install/resource_retriever/lib:/home/pi/ros2_iron/install/class_loader/lib:/home/pi/ros2_iron/install/rcpputils/lib:/home/pi/ros2_iron/install/rcl_logging_noop/lib:/home/pi/ros2_iron/install/rcl_logging_interface/lib:/home/pi/ros2_iron/install/rcutils/lib:/home/pi/ros2_iron/install/performance_test_fixture/lib:/home/pi/ros2_iron/install/osrf_testing_tools_cpp/lib:/home/pi/ros2_iron/install/mimick_vendor/lib:/home/pi/ros2_iron/install/keyboard_handler/lib:/home/pi/ros2_iron/install/iceoryx_introspection/lib:/home/pi/ros2_iron/install/cyclonedds/lib:/home/pi/ros2_iron/install/iceoryx_posh/lib:/home/pi/ros2_iron/install/iceoryx_hoofs/lib:/home/pi/ros2_iron/install/iceoryx_binding_c/lib:/home/pi/ros2_iron/install/google_benchmark_vendor/lib:/home/pi/ros2_iron/install/fastrtps/lib:/home/pi/ros2_iron/install/fastcdr/lib:/home/pi/ros2_iron/install/ament_index_cpp/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/test_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/test_ws/install:/home/pi/wow_ws/install:/home/pi/ros2_iron/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/pi/ros2_iron/install/urdfdom/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/urdfdom/lib/pkgconfig:/home/pi/ros2_iron/install/urdfdom_headers/lib/pkgconfig:/home/pi/ros2_iron/install/test_osrf_testing_tools_cpp/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/test_osrf_testing_tools_cpp/lib/pkgconfig:/home/pi/ros2_iron/install/osrf_testing_tools_cpp/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/osrf_testing_tools_cpp/lib/pkgconfig:/home/pi/ros2_iron/install/ignition_math6_vendor/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/ignition_math6_vendor/lib/pkgconfig:/home/pi/ros2_iron/install/ignition_cmake2_vendor/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/ignition_cmake2_vendor/lib/pkgconfig:/home/pi/ros2_iron/install/iceoryx_introspection/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/iceoryx_introspection/lib/pkgconfig:/home/pi/ros2_iron/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/cyclonedds/lib/pkgconfig:/home/pi/ros2_iron/install/iceoryx_posh/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/iceoryx_posh/lib/pkgconfig:/home/pi/ros2_iron/install/iceoryx_hoofs/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/iceoryx_hoofs/lib/pkgconfig:/home/pi/ros2_iron/install/iceoryx_binding_c/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/iceoryx_binding_c/lib/pkgconfig:/home/pi/ros2_iron/install/gmock_vendor/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/gmock_vendor/lib/pkgconfig:/home/pi/ros2_iron/install/gtest_vendor/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/gtest_vendor/lib/pkgconfig:/home/pi/ros2_iron/install/google_benchmark_vendor/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/google_benchmark_vendor/lib/pkgconfig:/home/pi/ros2_iron/install/foonathan_memory_vendor/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/foonathan_memory_vendor/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('PATH', '/home/pi/.local/bin:/home/pi/wow_ws/install/sdl2_vendor/bin:/home/pi/wow_ws/install/gps_tools/bin:/home/pi/ros2_iron/install/rviz2/bin:/home/pi/ros2_iron/install/rqt_bag/bin:/home/pi/ros2_iron/install/urdfdom/bin:/home/pi/ros2_iron/install/pendulum_control/bin:/home/pi/ros2_iron/install/rqt_graph/bin:/home/pi/ros2_iron/install/rqt_gui/bin:/home/pi/ros2_iron/install/ros2cli/bin:/home/pi/ros2_iron/install/ament_uncrustify/bin:/home/pi/ros2_iron/install/rosidl_cli/bin:/home/pi/ros2_iron/install/launch_testing/bin:/home/pi/ros2_iron/install/iceoryx_introspection/bin:/home/pi/ros2_iron/install/cyclonedds/bin:/home/pi/ros2_iron/install/iceoryx_posh/bin:/home/pi/ros2_iron/install/fastrtps/bin:/home/pi/ros2_iron/install/foonathan_memory_vendor/bin:/home/pi/ros2_iron/install/ament_xmllint/bin:/home/pi/ros2_iron/install/ament_pyflakes/bin:/home/pi/ros2_iron/install/ament_pycodestyle/bin:/home/pi/ros2_iron/install/ament_pep257/bin:/home/pi/ros2_iron/install/ament_pclint/bin:/home/pi/ros2_iron/install/ament_mypy/bin:/home/pi/ros2_iron/install/ament_lint_cmake/bin:/home/pi/ros2_iron/install/ament_flake8/bin:/home/pi/ros2_iron/install/ament_copyright/bin:/home/pi/ros2_iron/install/ament_index_python/bin:/home/pi/ros2_iron/install/ament_cpplint/bin:/home/pi/ros2_iron/install/ament_cppcheck/bin:/home/pi/ros2_iron/install/ament_clang_tidy/bin:/home/pi/ros2_iron/install/ament_clang_format/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:'), ('AMENT_PREFIX_PATH', '/home/pi/wow_ws/install/wow_ros2:/home/pi/wow_ws/install/spacenav:/home/pi/wow_ws/install/diagnostics:/home/pi/wow_ws/install/self_test:/home/pi/wow_ws/install/joy:/home/pi/wow_ws/install/sdl2_vendor:/home/pi/wow_ws/install/imu_tools:/home/pi/wow_ws/install/rviz_imu_plugin:/home/pi/wow_ws/install/ntrip_client_node:/home/pi/wow_ws/install/ntrip_client:/home/pi/wow_ws/install/rtcm_msgs:/home/pi/wow_ws/install/robot_localization:/home/pi/wow_ws/install/nmea_msgs:/home/pi/wow_ws/install/joy_linux:/home/pi/wow_ws/install/imu_filter_madgwick:/home/pi/wow_ws/install/imu_complementary_filter:/home/pi/wow_ws/install/gps_umd:/home/pi/wow_ws/install/gpsd_client:/home/pi/wow_ws/install/gps_tools:/home/pi/wow_ws/install/gps_msgs:/home/pi/wow_ws/install/geographic_info:/home/pi/wow_ws/install/geodesy:/home/pi/wow_ws/install/geographic_msgs:/home/pi/wow_ws/install/foxglove_bridge:/home/pi/wow_ws/install/diagnostic_common_diagnostics:/home/pi/wow_ws/install/diagnostic_updater:/home/pi/wow_ws/install/diagnostic_aggregator:/home/pi/wow_ws/install/bno055:/home/pi/wow_ws/install/ICM20948:/home/pi/test_ws/install/urdf_wow_monk:/home/pi/test_ws/install/ublox:/home/pi/test_ws/install/ublox_gps:/home/pi/test_ws/install/ublox_msgs:/home/pi/test_ws/install/ublox_serialization:/home/pi/test_ws/install/nmea_navsat_driver:/home/pi/test_ws/install/tf_transformations:/home/pi/test_ws/install/ntrip_client:/home/pi/test_ws/install/nmea_msgs:/home/pi/test_ws/install/gps_publisher:/home/pi/ros2_iron/install/rqt_bag_plugins:/home/pi/ros2_iron/install/rosbag2:/home/pi/ros2_iron/install/rosbag2_storage_default_plugins:/home/pi/ros2_iron/install/rosbag2_storage_mcap:/home/pi/ros2_iron/install/rosbag2_compression_zstd:/home/pi/ros2_iron/install/mcap_vendor:/home/pi/ros2_iron/install/zstd_vendor:/home/pi/ros2_iron/install/rviz_visual_testing_framework:/home/pi/ros2_iron/install/rviz2:/home/pi/ros2_iron/install/rviz_default_plugins:/home/pi/ros2_iron/install/rviz_common:/home/pi/ros2_iron/install/rqt_bag:/home/pi/ros2_iron/install/rosbag2_examples_py:/home/pi/ros2_iron/install/launch_testing_examples:/home/pi/ros2_iron/install/ros2bag:/home/pi/ros2_iron/install/rosbag2_py:/home/pi/ros2_iron/install/rosbag2_transport:/home/pi/ros2_iron/install/rosbag2_storage_sqlite3:/home/pi/ros2_iron/install/rosbag2_examples_cpp:/home/pi/ros2_iron/install/rosbag2_compression:/home/pi/ros2_iron/install/rosbag2_cpp:/home/pi/ros2_iron/install/rosbag2_storage:/home/pi/ros2_iron/install/image_common:/home/pi/ros2_iron/install/camera_info_manager:/home/pi/ros2_iron/install/camera_calibration_parsers:/home/pi/ros2_iron/install/yaml_cpp_vendor:/home/pi/ros2_iron/install/interactive_markers:/home/pi/ros2_iron/install/common_interfaces:/home/pi/ros2_iron/install/visualization_msgs:/home/pi/ros2_iron/install/dummy_robot_bringup:/home/pi/ros2_iron/install/robot_state_publisher:/home/pi/ros2_iron/install/kdl_parser:/home/pi/ros2_iron/install/urdf:/home/pi/ros2_iron/install/urdf_parser_plugin:/home/pi/ros2_iron/install/turtlesim:/home/pi/ros2_iron/install/trajectory_msgs:/home/pi/ros2_iron/install/tracetools_test:/home/pi/ros2_iron/install/tracetools_launch:/home/pi/ros2_iron/install/topic_statistics_demo:/home/pi/ros2_iron/install/topic_monitor:/home/pi/ros2_iron/install/pendulum_control:/home/pi/ros2_iron/install/tlsf_cpp:/home/pi/ros2_iron/install/geometry2:/home/pi/ros2_iron/install/tf2_tools:/home/pi/ros2_iron/install/tf2_sensor_msgs:/home/pi/ros2_iron/install/test_tf2:/home/pi/ros2_iron/install/tf2_kdl:/home/pi/ros2_iron/install/tf2_geometry_msgs:/home/pi/ros2_iron/install/examples_tf2_py:/home/pi/ros2_iron/install/tf2_ros_py:/home/pi/ros2_iron/install/tf2_eigen:/home/pi/ros2_iron/install/tf2_bullet:/home/pi/ros2_iron/install/tf2_ros:/home/pi/ros2_iron/install/tf2_py:/home/pi/ros2_iron/install/tf2_msgs:/home/pi/ros2_iron/install/tf2_eigen_kdl:/home/pi/ros2_iron/install/laser_geometry:/home/pi/ros2_iron/install/tf2:/home/pi/ros2_iron/install/test_tracetools:/home/pi/ros2_iron/install/test_msgs:/home/pi/ros2_iron/install/test_communication:/home/pi/ros2_iron/install/stereo_msgs:/home/pi/ros2_iron/install/std_srvs:/home/pi/ros2_iron/install/shape_msgs:/home/pi/ros2_iron/install/examples_rclpy_pointcloud_publisher:/home/pi/ros2_iron/install/sensor_msgs_py:/home/pi/ros2_iron/install/quality_of_service_demo_py:/home/pi/ros2_iron/install/quality_of_service_demo_cpp:/home/pi/ros2_iron/install/map_msgs:/home/pi/ros2_iron/install/intra_process_demo:/home/pi/ros2_iron/install/image_transport:/home/pi/ros2_iron/install/image_tools:/home/pi/ros2_iron/install/dummy_sensors:/home/pi/ros2_iron/install/sensor_msgs:/home/pi/ros2_iron/install/rqt_plot:/home/pi/ros2_iron/install/ros2cli_common_extensions:/home/pi/ros2_iron/install/ros2doctor:/home/pi/ros2_iron/install/dummy_map_server:/home/pi/ros2_iron/install/nav_msgs:/home/pi/ros2_iron/install/logging_demo:/home/pi/ros2_iron/install/lifecycle_py:/home/pi/ros2_iron/install/lifecycle:/home/pi/ros2_iron/install/diagnostic_msgs:/home/pi/ros2_iron/install/geometry_msgs:/home/pi/ros2_iron/install/examples_rclpy_minimal_subscriber:/home/pi/ros2_iron/install/examples_rclpy_minimal_service:/home/pi/ros2_iron/install/examples_rclpy_minimal_publisher:/home/pi/ros2_iron/install/examples_rclpy_minimal_client:/home/pi/ros2_iron/install/examples_rclpy_executors:/home/pi/ros2_iron/install/examples_rclcpp_wait_set:/home/pi/ros2_iron/install/examples_rclcpp_multithreaded_executor:/home/pi/ros2_iron/install/examples_rclcpp_minimal_subscriber:/home/pi/ros2_iron/install/examples_rclcpp_minimal_publisher:/home/pi/ros2_iron/install/examples_rclcpp_minimal_composition:/home/pi/ros2_iron/install/examples_rclcpp_cbg_executor:/home/pi/ros2_iron/install/demo_nodes_py:/home/pi/ros2_iron/install/demo_nodes_cpp_native:/home/pi/ros2_iron/install/demo_nodes_cpp:/home/pi/ros2_iron/install/composition:/home/pi/ros2_iron/install/actionlib_msgs:/home/pi/ros2_iron/install/std_msgs:/home/pi/ros2_iron/install/rqt:/home/pi/ros2_iron/install/rqt_gui_cpp:/home/pi/ros2_iron/install/rosbag2_test_common:/home/pi/ros2_iron/install/ros2lifecycle_test_fixtures:/home/pi/ros2_iron/install/ros2component:/home/pi/ros2_iron/install/rclcpp_lifecycle:/home/pi/ros2_iron/install/action_tutorials_cpp:/home/pi/ros2_iron/install/rclcpp_components:/home/pi/ros2_iron/install/examples_rclcpp_minimal_action_server:/home/pi/ros2_iron/install/examples_rclcpp_minimal_action_client:/home/pi/ros2_iron/install/rclcpp_action:/home/pi/ros2_iron/install/message_filters:/home/pi/ros2_iron/install/examples_rclcpp_minimal_timer:/home/pi/ros2_iron/install/examples_rclcpp_minimal_service:/home/pi/ros2_iron/install/examples_rclcpp_minimal_client:/home/pi/ros2_iron/install/examples_rclcpp_async_client:/home/pi/ros2_iron/install/rclcpp:/home/pi/ros2_iron/install/libstatistics_collector:/home/pi/ros2_iron/install/statistics_msgs:/home/pi/ros2_iron/install/sros2_cmake:/home/pi/ros2_iron/install/sros2:/home/pi/ros2_iron/install/rqt_topic:/home/pi/ros2_iron/install/rqt_srv:/home/pi/ros2_iron/install/rqt_shell:/home/pi/ros2_iron/install/rqt_service_caller:/home/pi/ros2_iron/install/rqt_reconfigure:/home/pi/ros2_iron/install/rqt_py_console:/home/pi/ros2_iron/install/rqt_publisher:/home/pi/ros2_iron/install/rqt_action:/home/pi/ros2_iron/install/rqt_msg:/home/pi/ros2_iron/install/rqt_console:/home/pi/ros2_iron/install/rqt_py_common:/home/pi/ros2_iron/install/rqt_graph:/home/pi/ros2_iron/install/rqt_gui_py:/home/pi/ros2_iron/install/rqt_gui:/home/pi/ros2_iron/install/ros_testing:/home/pi/ros2_iron/install/ros2trace:/home/pi/ros2_iron/install/ros2topic:/home/pi/ros2_iron/install/ros2test:/home/pi/ros2_iron/install/ros2param:/home/pi/ros2_iron/install/ros2lifecycle:/home/pi/ros2_iron/install/ros2service:/home/pi/ros2_iron/install/ros2run:/home/pi/ros2_iron/install/ros2launch:/home/pi/ros2_iron/install/ros2pkg:/home/pi/ros2_iron/install/ros2node:/home/pi/ros2_iron/install/ros2multicast:/home/pi/ros2_iron/install/ros2interface:/home/pi/ros2_iron/install/ros2action:/home/pi/ros2_iron/install/ros2cli:/home/pi/ros2_iron/install/launch_testing_ros:/home/pi/ros2_iron/install/launch_ros:/home/pi/ros2_iron/install/examples_rclpy_minimal_action_server:/home/pi/ros2_iron/install/examples_rclpy_minimal_action_client:/home/pi/ros2_iron/install/examples_rclpy_guard_conditions:/home/pi/ros2_iron/install/action_tutorials_py:/home/pi/ros2_iron/install/rclpy:/home/pi/ros2_iron/install/rosgraph_msgs:/home/pi/ros2_iron/install/rosbag2_interfaces:/home/pi/ros2_iron/install/ros2cli_test_interfaces:/home/pi/ros2_iron/install/rcl_lifecycle:/home/pi/ros2_iron/install/rcl_action:/home/pi/ros2_iron/install/rcl:/home/pi/ros2_iron/install/rmw_implementation:/home/pi/ros2_iron/install/rmw_fastrtps_dynamic_cpp:/home/pi/ros2_iron/install/rmw_fastrtps_cpp:/home/pi/ros2_iron/install/rmw_fastrtps_shared_cpp:/home/pi/ros2_iron/install/rmw_cyclonedds_cpp:/home/pi/ros2_iron/install/rmw_connextddsmicro:/home/pi/ros2_iron/install/rmw_connextdds:/home/pi/ros2_iron/install/rmw_connextdds_common:/home/pi/ros2_iron/install/rmw_dds_common:/home/pi/ros2_iron/install/composition_interfaces:/home/pi/ros2_iron/install/rcl_interfaces:/home/pi/ros2_iron/install/pendulum_msgs:/home/pi/ros2_iron/install/lifecycle_msgs:/home/pi/ros2_iron/install/example_interfaces:/home/pi/ros2_iron/install/action_tutorials_interfaces:/home/pi/ros2_iron/install/rosidl_default_runtime:/home/pi/ros2_iron/install/rosidl_default_generators:/home/pi/ros2_iron/install/action_msgs:/home/pi/ros2_iron/install/unique_identifier_msgs:/home/pi/ros2_iron/install/ament_lint_common:/home/pi/ros2_iron/install/ament_cmake_uncrustify:/home/pi/ros2_iron/install/ament_uncrustify:/home/pi/ros2_iron/install/uncrustify_vendor:/home/pi/ros2_iron/install/type_description_interfaces:/home/pi/ros2_iron/install/tracetools_trace:/home/pi/ros2_iron/install/tracetools_read:/home/pi/ros2_iron/install/tracetools:/home/pi/ros2_iron/install/tlsf:/home/pi/ros2_iron/install/tinyxml_vendor:/home/pi/ros2_iron/install/qt_gui_core:/home/pi/ros2_iron/install/qt_gui_cpp:/home/pi/ros2_iron/install/pluginlib:/home/pi/ros2_iron/install/tinyxml2_vendor:/home/pi/ros2_iron/install/test_tracetools_launch:/home/pi/ros2_iron/install/test_security:/home/pi/ros2_iron/install/test_ros2trace:/home/pi/ros2_iron/install/test_rmw_implementation:/home/pi/ros2_iron/install/test_rclcpp:/home/pi/ros2_iron/install/test_quality_of_service:/home/pi/ros2_iron/install/test_launch_testing:/home/pi/ros2_iron/install/test_launch_ros:/home/pi/ros2_iron/install/test_interface_files:/home/pi/ros2_iron/install/test_cli_remapping:/home/pi/ros2_iron/install/test_cli:/home/pi/ros2_iron/install/qt_gui_app:/home/pi/ros2_iron/install/qt_gui:/home/pi/ros2_iron/install/tango_icons_vendor:/home/pi/ros2_iron/install/sqlite3_vendor:/home/pi/ros2_iron/install/rcl_logging_spdlog:/home/pi/ros2_iron/install/spdlog_vendor:/home/pi/ros2_iron/install/shared_queues_vendor:/home/pi/ros2_iron/install/service_msgs:/home/pi/ros2_iron/install/rviz_rendering_tests:/home/pi/ros2_iron/install/rviz_rendering:/home/pi/ros2_iron/install/rviz_ogre_vendor:/home/pi/ros2_iron/install/rviz_assimp_vendor:/home/pi/ros2_iron/install/rttest:/home/pi/ros2_iron/install/rti_connext_dds_cmake_module:/home/pi/ros2_iron/install/builtin_interfaces:/home/pi/ros2_iron/install/rosidl_core_runtime:/home/pi/ros2_iron/install/rosidl_core_generators:/home/pi/ros2_iron/install/rosidl_generator_py:/home/pi/ros2_iron/install/rpyutils:/home/pi/ros2_iron/install/rosidl_typesupport_tests:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_tests:/home/pi/ros2_iron/install/rosidl_typesupport_cpp:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_cpp:/home/pi/ros2_iron/install/rosidl_typesupport_c:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_c:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_c:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_cpp:/home/pi/ros2_iron/install/rosidl_generator_cpp:/home/pi/ros2_iron/install/rosidl_runtime_cpp:/home/pi/ros2_iron/install/rosidl_dynamic_typesupport_fastrtps:/home/pi/ros2_iron/install/rcl_yaml_param_parser:/home/pi/ros2_iron/install/rmw:/home/pi/ros2_iron/install/rosidl_dynamic_typesupport:/home/pi/ros2_iron/install/rosidl_runtime_c:/home/pi/ros2_iron/install/rosidl_generator_c:/home/pi/ros2_iron/install/rosidl_typesupport_interface:/home/pi/ros2_iron/install/rosidl_runtime_py:/home/pi/ros2_iron/install/rosidl_generator_dds_idl:/home/pi/ros2_iron/install/rosidl_cmake:/home/pi/ros2_iron/install/rosidl_pycommon:/home/pi/ros2_iron/install/rosidl_generator_type_description:/home/pi/ros2_iron/install/rosidl_parser:/home/pi/ros2_iron/install/rosidl_generator_tests:/home/pi/ros2_iron/install/rosidl_adapter:/home/pi/ros2_iron/install/rosidl_cli:/home/pi/ros2_iron/install/rosbag2_tests:/home/pi/ros2_iron/install/rosbag2_test_msgdefs:/home/pi/ros2_iron/install/ros_environment:/home/pi/ros2_iron/install/rmw_implementation_cmake:/home/pi/ros2_iron/install/resource_retriever:/home/pi/ros2_iron/install/class_loader:/home/pi/ros2_iron/install/rcpputils:/home/pi/ros2_iron/install/rcl_logging_noop:/home/pi/ros2_iron/install/rcl_logging_interface:/home/pi/ros2_iron/install/rcutils:/home/pi/ros2_iron/install/qt_gui_py_common:/home/pi/ros2_iron/install/qt_dotgraph:/home/pi/ros2_iron/install/python_qt_binding:/home/pi/ros2_iron/install/python_orocos_kdl_vendor:/home/pi/ros2_iron/install/launch_testing_ament_cmake:/home/pi/ros2_iron/install/python_cmake_module:/home/pi/ros2_iron/install/pybind11_vendor:/home/pi/ros2_iron/install/performance_test_fixture:/home/pi/ros2_iron/install/launch_pytest:/home/pi/ros2_iron/install/launch_testing:/home/pi/ros2_iron/install/launch_yaml:/home/pi/ros2_iron/install/launch_xml:/home/pi/ros2_iron/install/launch:/home/pi/ros2_iron/install/osrf_pycommon:/home/pi/ros2_iron/install/orocos_kdl_vendor:/home/pi/ros2_iron/install/mimick_vendor:/home/pi/ros2_iron/install/libyaml_vendor:/home/pi/ros2_iron/install/libcurl_vendor:/home/pi/ros2_iron/install/keyboard_handler:/home/pi/ros2_iron/install/ament_cmake_ros:/home/pi/ros2_iron/install/ament_cmake_gmock:/home/pi/ros2_iron/install/ament_cmake_auto:/home/pi/ros2_iron/install/ament_cmake_gtest:/home/pi/ros2_iron/install/ament_cmake_google_benchmark:/home/pi/ros2_iron/install/fastrtps_cmake_module:/home/pi/ros2_iron/install/eigen3_cmake_module:/home/pi/ros2_iron/install/domain_coordinator:/home/pi/ros2_iron/install/console_bridge_vendor:/home/pi/ros2_iron/install/ament_cmake_xmllint:/home/pi/ros2_iron/install/ament_xmllint:/home/pi/ros2_iron/install/ament_cmake_pyflakes:/home/pi/ros2_iron/install/ament_pyflakes:/home/pi/ros2_iron/install/ament_cmake_pycodestyle:/home/pi/ros2_iron/install/ament_pycodestyle:/home/pi/ros2_iron/install/ament_cmake_pep257:/home/pi/ros2_iron/install/ament_pep257:/home/pi/ros2_iron/install/ament_cmake_pclint:/home/pi/ros2_iron/install/ament_pclint:/home/pi/ros2_iron/install/ament_lint_auto:/home/pi/ros2_iron/install/ament_cmake:/home/pi/ros2_iron/install/ament_cmake_version:/home/pi/ros2_iron/install/ament_cmake_vendor_package:/home/pi/ros2_iron/install/ament_cmake_pytest:/home/pi/ros2_iron/install/ament_cmake_mypy:/home/pi/ros2_iron/install/ament_cmake_lint_cmake:/home/pi/ros2_iron/install/ament_cmake_flake8:/home/pi/ros2_iron/install/ament_cmake_cpplint:/home/pi/ros2_iron/install/ament_cmake_cppcheck:/home/pi/ros2_iron/install/ament_cmake_copyright:/home/pi/ros2_iron/install/ament_cmake_clang_tidy:/home/pi/ros2_iron/install/ament_cmake_clang_format:/home/pi/ros2_iron/install/ament_cmake_test:/home/pi/ros2_iron/install/ament_cmake_target_dependencies:/home/pi/ros2_iron/install/ament_cmake_python:/home/pi/ros2_iron/install/ament_cmake_export_dependencies:/home/pi/ros2_iron/install/ament_cmake_libraries:/home/pi/ros2_iron/install/ament_cmake_include_directories:/home/pi/ros2_iron/install/ament_cmake_gen_version_h:/home/pi/ros2_iron/install/ament_cmake_export_targets:/home/pi/ros2_iron/install/ament_cmake_export_link_flags:/home/pi/ros2_iron/install/ament_cmake_export_interfaces:/home/pi/ros2_iron/install/ament_cmake_export_libraries:/home/pi/ros2_iron/install/ament_cmake_export_include_directories:/home/pi/ros2_iron/install/ament_cmake_export_definitions:/home/pi/ros2_iron/install/ament_cmake_core:/home/pi/ros2_iron/install/ament_package:/home/pi/ros2_iron/install/ament_mypy:/home/pi/ros2_iron/install/ament_lint_cmake:/home/pi/ros2_iron/install/ament_flake8:/home/pi/ros2_iron/install/ament_copyright:/home/pi/ros2_iron/install/ament_lint:/home/pi/ros2_iron/install/ament_index_python:/home/pi/ros2_iron/install/ament_index_cpp:/home/pi/ros2_iron/install/ament_cpplint:/home/pi/ros2_iron/install/ament_cppcheck:/home/pi/ros2_iron/install/ament_clang_tidy:/home/pi/ros2_iron/install/ament_clang_format'), ('SHELL', '/bin/bash'), ('NO_AT_BRIDGE', '1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/test_ws/build/ublox_gps'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '100.83.102.58 50162 100.117.128.25 22'), ('PYTHONPATH', '/home/pi/test_ws/install/ublox_msgs/lib/python3.11/site-packages:/home/pi/test_ws/install/nmea_msgs/lib/python3.11/site-packages:/home/pi/wow_ws/build/wow_ros2:/home/pi/wow_ws/install/wow_ros2/lib/python3.11/site-packages:/home/pi/wow_ws/build/ntrip_client/src:/home/pi/wow_ws/install/ntrip_client/lib/python3.11/site-packages:/home/pi/wow_ws/install/rtcm_msgs/lib/python3.11/site-packages:/home/pi/wow_ws/install/robot_localization/lib/python3.11/site-packages:/home/pi/wow_ws/install/nmea_msgs/lib/python3.11/site-packages:/home/pi/wow_ws/install/gps_tools/lib/python3.11/site-packages:/home/pi/wow_ws/install/gps_msgs/lib/python3.11/site-packages:/home/pi/wow_ws/install/geodesy/lib/python3.11/site-packages:/home/pi/wow_ws/install/geographic_msgs/lib/python3.11/site-packages:/home/pi/wow_ws/install/diagnostic_common_diagnostics/lib/python3.11/site-packages:/home/pi/wow_ws/install/diagnostic_updater/lib/python3.11/site-packages:/home/pi/wow_ws/install/diagnostic_aggregator/lib/python3.11/site-packages:/home/pi/wow_ws/build/bno055:/home/pi/wow_ws/install/bno055/lib/python3.11/site-packages:/home/pi/wow_ws/build/ICM20948:/home/pi/wow_ws/install/ICM20948/lib/python3.11/site-packages:/home/pi/test_ws/build/urdf_wow_monk:/home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages:/home/pi/test_ws/build/nmea_navsat_driver/src:/home/pi/test_ws/install/nmea_navsat_driver/lib/python3.11/site-packages:/home/pi/test_ws/build/tf_transformations:/home/pi/test_ws/install/tf_transformations/lib/python3.11/site-packages:/home/pi/test_ws/build/ntrip_client/src:/home/pi/test_ws/install/ntrip_client/lib/python3.11/site-packages:/home/pi/test_ws/build/gps_publisher:/home/pi/test_ws/install/gps_publisher/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_bag_plugins/src:/home/pi/ros2_iron/install/rqt_bag_plugins/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosbag2_storage_mcap/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_bag/src:/home/pi/ros2_iron/install/rqt_bag/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rosbag2_examples_py:/home/pi/ros2_iron/install/rosbag2_examples_py/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_testing_examples:/home/pi/ros2_iron/install/launch_testing_examples/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2bag:/home/pi/ros2_iron/install/ros2bag/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosbag2_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosbag2_storage_sqlite3/lib/python3.11/site-packages:/home/pi/ros2_iron/install/interactive_markers/lib/python3.11/site-packages:/home/pi/ros2_iron/install/visualization_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/turtlesim/lib/python3.11/site-packages:/home/pi/ros2_iron/install/trajectory_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/tracetools_test:/home/pi/ros2_iron/install/tracetools_test/lib/python3.11/site-packages:/home/pi/ros2_iron/build/tracetools_launch:/home/pi/ros2_iron/install/tracetools_launch/lib/python3.11/site-packages:/home/pi/ros2_iron/build/topic_monitor:/home/pi/ros2_iron/install/topic_monitor/lib/python3.11/site-packages:/home/pi/ros2_iron/build/tf2_tools:/home/pi/ros2_iron/install/tf2_tools/lib/python3.11/site-packages:/home/pi/ros2_iron/install/tf2_sensor_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/tf2_kdl/lib/python3.11/site-packages:/home/pi/ros2_iron/install/tf2_geometry_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_tf2_py:/home/pi/ros2_iron/install/examples_tf2_py/lib/python3.11/site-packages:/home/pi/ros2_iron/build/tf2_ros_py:/home/pi/ros2_iron/install/tf2_ros_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/tf2_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/tf2_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/laser_geometry/lib/python3.11/site-packages:/home/pi/ros2_iron/install/test_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/stereo_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/std_srvs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/shape_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_pointcloud_publisher:/home/pi/ros2_iron/install/examples_rclpy_pointcloud_publisher/lib/python3.11/site-packages:/home/pi/ros2_iron/build/sensor_msgs_py:/home/pi/ros2_iron/install/sensor_msgs_py/lib/python3.11/site-packages:/home/pi/ros2_iron/build/quality_of_service_demo_py:/home/pi/ros2_iron/install/quality_of_service_demo_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/map_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/sensor_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_plot/src:/home/pi/ros2_iron/install/rqt_plot/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2doctor:/home/pi/ros2_iron/install/ros2doctor/lib/python3.11/site-packages:/home/pi/ros2_iron/install/nav_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/logging_demo/lib/python3.11/site-packages:/home/pi/ros2_iron/build/lifecycle_py:/home/pi/ros2_iron/install/lifecycle_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/diagnostic_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/geometry_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_minimal_subscriber:/home/pi/ros2_iron/install/examples_rclpy_minimal_subscriber/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_minimal_service:/home/pi/ros2_iron/install/examples_rclpy_minimal_service/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_minimal_publisher:/home/pi/ros2_iron/install/examples_rclpy_minimal_publisher/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_minimal_client:/home/pi/ros2_iron/install/examples_rclpy_minimal_client/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_executors:/home/pi/ros2_iron/install/examples_rclpy_executors/lib/python3.11/site-packages:/home/pi/ros2_iron/build/demo_nodes_py:/home/pi/ros2_iron/install/demo_nodes_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/actionlib_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/std_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt:/home/pi/ros2_iron/install/rqt/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosbag2_test_common/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2component:/home/pi/ros2_iron/install/ros2component/lib/python3.11/site-packages:/home/pi/ros2_iron/install/message_filters/lib/python3.11/site-packages:/home/pi/ros2_iron/install/statistics_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/sros2:/home/pi/ros2_iron/install/sros2/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_topic/src:/home/pi/ros2_iron/install/rqt_topic/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_srv/src:/home/pi/ros2_iron/install/rqt_srv/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_shell/src:/home/pi/ros2_iron/install/rqt_shell/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_service_caller/src:/home/pi/ros2_iron/install/rqt_service_caller/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_reconfigure/src:/home/pi/ros2_iron/install/rqt_reconfigure/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_py_console/src:/home/pi/ros2_iron/install/rqt_py_console/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_publisher/src:/home/pi/ros2_iron/install/rqt_publisher/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_action/src:/home/pi/ros2_iron/install/rqt_action/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_msg/src:/home/pi/ros2_iron/install/rqt_msg/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_console/src:/home/pi/ros2_iron/install/rqt_console/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rqt_py_common/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_graph/src:/home/pi/ros2_iron/install/rqt_graph/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_gui_py/src:/home/pi/ros2_iron/install/rqt_gui_py/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_gui/src:/home/pi/ros2_iron/install/rqt_gui/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2trace:/home/pi/ros2_iron/install/ros2trace/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2topic:/home/pi/ros2_iron/install/ros2topic/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2test:/home/pi/ros2_iron/install/ros2test/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2param:/home/pi/ros2_iron/install/ros2param/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2lifecycle:/home/pi/ros2_iron/install/ros2lifecycle/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2service:/home/pi/ros2_iron/install/ros2service/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2run:/home/pi/ros2_iron/install/ros2run/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2launch:/home/pi/ros2_iron/install/ros2launch/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2pkg:/home/pi/ros2_iron/install/ros2pkg/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2node:/home/pi/ros2_iron/install/ros2node/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2multicast:/home/pi/ros2_iron/install/ros2multicast/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2interface:/home/pi/ros2_iron/install/ros2interface/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2action:/home/pi/ros2_iron/install/ros2action/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2cli:/home/pi/ros2_iron/install/ros2cli/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_testing_ros:/home/pi/ros2_iron/install/launch_testing_ros/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_ros:/home/pi/ros2_iron/install/launch_ros/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_minimal_action_server:/home/pi/ros2_iron/install/examples_rclpy_minimal_action_server/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_minimal_action_client:/home/pi/ros2_iron/install/examples_rclpy_minimal_action_client/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_guard_conditions:/home/pi/ros2_iron/install/examples_rclpy_guard_conditions/lib/python3.11/site-packages:/home/pi/ros2_iron/build/action_tutorials_py:/home/pi/ros2_iron/install/action_tutorials_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rclpy/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosgraph_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosbag2_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/ros2cli_test_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rmw_dds_common/lib/python3.11/site-packages:/home/pi/ros2_iron/install/composition_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rcl_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/pendulum_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/lifecycle_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/example_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/action_tutorials_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/action_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/unique_identifier_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_uncrustify:/home/pi/ros2_iron/install/ament_uncrustify/lib/python3.11/site-packages:/home/pi/ros2_iron/install/type_description_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/build/tracetools_trace:/home/pi/ros2_iron/install/tracetools_trace/lib/python3.11/site-packages:/home/pi/ros2_iron/build/tracetools_read:/home/pi/ros2_iron/install/tracetools_read/lib/python3.11/site-packages:/home/pi/ros2_iron/install/qt_gui_cpp/lib/python3.11/site-packages:/home/pi/ros2_iron/build/test_tracetools_launch:/home/pi/ros2_iron/install/test_tracetools_launch/lib/python3.11/site-packages:/home/pi/ros2_iron/build/test_ros2trace:/home/pi/ros2_iron/install/test_ros2trace/lib/python3.11/site-packages:/home/pi/ros2_iron/build/test_launch_ros:/home/pi/ros2_iron/install/test_launch_ros/lib/python3.11/site-packages:/home/pi/ros2_iron/install/qt_gui/lib/python3.11/site-packages:/home/pi/ros2_iron/install/service_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/builtin_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_generator_py/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rpyutils:/home/pi/ros2_iron/install/rpyutils/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_typesupport_cpp/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_cpp/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_typesupport_c/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_c/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_c/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_cpp/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_generator_cpp/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_generator_c/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rosidl_runtime_py:/home/pi/ros2_iron/install/rosidl_runtime_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_generator_dds_idl/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_cmake/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rosidl_pycommon:/home/pi/ros2_iron/install/rosidl_pycommon/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_generator_type_description/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_parser/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rosidl_cli:/home/pi/ros2_iron/install/rosidl_cli/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosbag2_test_msgdefs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/resource_retriever/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rcutils/lib/python3.11/site-packages:/home/pi/ros2_iron/install/qt_gui_py_common/lib/python3.11/site-packages:/home/pi/ros2_iron/install/qt_dotgraph/lib/python3.11/site-packages:/home/pi/ros2_iron/install/python_qt_binding/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_pytest:/home/pi/ros2_iron/install/launch_pytest/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_testing:/home/pi/ros2_iron/install/launch_testing/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_yaml:/home/pi/ros2_iron/install/launch_yaml/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_xml:/home/pi/ros2_iron/install/launch_xml/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch:/home/pi/ros2_iron/install/launch/lib/python3.11/site-packages:/home/pi/ros2_iron/build/osrf_pycommon:/home/pi/ros2_iron/install/osrf_pycommon/lib/python3.11/site-packages:/home/pi/ros2_iron/install/ament_cmake_google_benchmark/lib/python3.11/site-packages:/home/pi/ros2_iron/build/domain_coordinator:/home/pi/ros2_iron/install/domain_coordinator/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_xmllint:/home/pi/ros2_iron/install/ament_xmllint/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_pyflakes:/home/pi/ros2_iron/install/ament_pyflakes/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_pycodestyle:/home/pi/ros2_iron/install/ament_pycodestyle/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_pep257:/home/pi/ros2_iron/install/ament_pep257/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_pclint:/home/pi/ros2_iron/install/ament_pclint/lib/python3.11/site-packages:/home/pi/ros2_iron/install/ament_cmake_test/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_package:/home/pi/ros2_iron/install/ament_package/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_mypy:/home/pi/ros2_iron/install/ament_mypy/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_lint_cmake:/home/pi/ros2_iron/install/ament_lint_cmake/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_flake8:/home/pi/ros2_iron/install/ament_flake8/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_copyright:/home/pi/ros2_iron/install/ament_copyright/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_lint:/home/pi/ros2_iron/install/ament_lint/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_index_python:/home/pi/ros2_iron/install/ament_index_python/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_cpplint:/home/pi/ros2_iron/install/ament_cpplint/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_cppcheck:/home/pi/ros2_iron/install/ament_cppcheck/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_clang_tidy:/home/pi/ros2_iron/install/ament_clang_tidy/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_clang_format:/home/pi/ros2_iron/install/ament_clang_format/lib/python3.11/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/test_ws/install/ublox_msgs:/home/pi/test_ws/install/ublox_serialization:/home/pi/test_ws/install/nmea_msgs:/home/pi/wow_ws/install/spacenav:/home/pi/wow_ws/install/diagnostics:/home/pi/wow_ws/install/self_test:/home/pi/wow_ws/install/joy:/home/pi/wow_ws/install/sdl2_vendor:/home/pi/wow_ws/install/imu_tools:/home/pi/wow_ws/install/rviz_imu_plugin:/home/pi/wow_ws/install/ntrip_client_node:/home/pi/wow_ws/install/rtcm_msgs:/home/pi/wow_ws/install/robot_localization:/home/pi/wow_ws/install/nmea_msgs:/home/pi/wow_ws/install/joy_linux:/home/pi/wow_ws/install/imu_filter_madgwick:/home/pi/wow_ws/install/imu_complementary_filter:/home/pi/wow_ws/install/gps_umd:/home/pi/wow_ws/install/gpsd_client:/home/pi/wow_ws/install/gps_tools:/home/pi/wow_ws/install/gps_msgs:/home/pi/wow_ws/install/geographic_info:/home/pi/wow_ws/install/geodesy:/home/pi/wow_ws/install/geographic_msgs:/home/pi/wow_ws/install/foxglove_bridge:/home/pi/wow_ws/install/diagnostic_common_diagnostics:/home/pi/wow_ws/install/diagnostic_updater:/home/pi/wow_ws/install/diagnostic_aggregator:/home/pi/test_ws/install/ublox:/home/pi/test_ws/install/ublox_gps:/home/pi/ros2_iron/install/rosbag2:/home/pi/ros2_iron/install/rosbag2_storage_default_plugins:/home/pi/ros2_iron/install/rosbag2_storage_mcap:/home/pi/ros2_iron/install/rosbag2_compression_zstd:/home/pi/ros2_iron/install/mcap_vendor:/home/pi/ros2_iron/install/zstd_vendor:/home/pi/ros2_iron/install/rviz_visual_testing_framework:/home/pi/ros2_iron/install/rviz2:/home/pi/ros2_iron/install/rviz_default_plugins:/home/pi/ros2_iron/install/rviz_common:/home/pi/ros2_iron/install/rosbag2_py:/home/pi/ros2_iron/install/rosbag2_transport:/home/pi/ros2_iron/install/rosbag2_storage_sqlite3:/home/pi/ros2_iron/install/rosbag2_examples_cpp:/home/pi/ros2_iron/install/rosbag2_compression:/home/pi/ros2_iron/install/rosbag2_cpp:/home/pi/ros2_iron/install/rosbag2_storage:/home/pi/ros2_iron/install/image_common:/home/pi/ros2_iron/install/camera_info_manager:/home/pi/ros2_iron/install/camera_calibration_parsers:/home/pi/ros2_iron/install/yaml_cpp_vendor:/home/pi/ros2_iron/install/interactive_markers:/home/pi/ros2_iron/install/common_interfaces:/home/pi/ros2_iron/install/visualization_msgs:/home/pi/ros2_iron/install/dummy_robot_bringup:/home/pi/ros2_iron/install/robot_state_publisher:/home/pi/ros2_iron/install/kdl_parser:/home/pi/ros2_iron/install/urdf:/home/pi/ros2_iron/install/urdfdom:/home/pi/ros2_iron/install/urdf_parser_plugin:/home/pi/ros2_iron/install/urdfdom_headers:/home/pi/ros2_iron/install/turtlesim:/home/pi/ros2_iron/install/trajectory_msgs:/home/pi/ros2_iron/install/topic_statistics_demo:/home/pi/ros2_iron/install/pendulum_control:/home/pi/ros2_iron/install/tlsf_cpp:/home/pi/ros2_iron/install/geometry2:/home/pi/ros2_iron/install/tf2_sensor_msgs:/home/pi/ros2_iron/install/test_tf2:/home/pi/ros2_iron/install/tf2_kdl:/home/pi/ros2_iron/install/tf2_geometry_msgs:/home/pi/ros2_iron/install/tf2_eigen:/home/pi/ros2_iron/install/tf2_bullet:/home/pi/ros2_iron/install/tf2_ros:/home/pi/ros2_iron/install/tf2_py:/home/pi/ros2_iron/install/tf2_msgs:/home/pi/ros2_iron/install/tf2_eigen_kdl:/home/pi/ros2_iron/install/laser_geometry:/home/pi/ros2_iron/install/tf2:/home/pi/ros2_iron/install/test_tracetools:/home/pi/ros2_iron/install/test_msgs:/home/pi/ros2_iron/install/test_communication:/home/pi/ros2_iron/install/stereo_msgs:/home/pi/ros2_iron/install/std_srvs:/home/pi/ros2_iron/install/shape_msgs:/home/pi/ros2_iron/install/quality_of_service_demo_cpp:/home/pi/ros2_iron/install/map_msgs:/home/pi/ros2_iron/install/intra_process_demo:/home/pi/ros2_iron/install/image_transport:/home/pi/ros2_iron/install/image_tools:/home/pi/ros2_iron/install/dummy_sensors:/home/pi/ros2_iron/install/sensor_msgs:/home/pi/ros2_iron/install/ros2cli_common_extensions:/home/pi/ros2_iron/install/dummy_map_server:/home/pi/ros2_iron/install/nav_msgs:/home/pi/ros2_iron/install/logging_demo:/home/pi/ros2_iron/install/lifecycle:/home/pi/ros2_iron/install/diagnostic_msgs:/home/pi/ros2_iron/install/geometry_msgs:/home/pi/ros2_iron/install/examples_rclcpp_wait_set:/home/pi/ros2_iron/install/examples_rclcpp_multithreaded_executor:/home/pi/ros2_iron/install/examples_rclcpp_minimal_subscriber:/home/pi/ros2_iron/install/examples_rclcpp_minimal_publisher:/home/pi/ros2_iron/install/examples_rclcpp_minimal_composition:/home/pi/ros2_iron/install/examples_rclcpp_cbg_executor:/home/pi/ros2_iron/install/demo_nodes_cpp_native:/home/pi/ros2_iron/install/demo_nodes_cpp:/home/pi/ros2_iron/install/composition:/home/pi/ros2_iron/install/actionlib_msgs:/home/pi/ros2_iron/install/std_msgs:/home/pi/ros2_iron/install/rqt_gui_cpp:/home/pi/ros2_iron/install/rosbag2_test_common:/home/pi/ros2_iron/install/ros2lifecycle_test_fixtures:/home/pi/ros2_iron/install/rclcpp_lifecycle:/home/pi/ros2_iron/install/action_tutorials_cpp:/home/pi/ros2_iron/install/rclcpp_components:/home/pi/ros2_iron/install/examples_rclcpp_minimal_action_server:/home/pi/ros2_iron/install/examples_rclcpp_minimal_action_client:/home/pi/ros2_iron/install/rclcpp_action:/home/pi/ros2_iron/install/message_filters:/home/pi/ros2_iron/install/examples_rclcpp_minimal_timer:/home/pi/ros2_iron/install/examples_rclcpp_minimal_service:/home/pi/ros2_iron/install/examples_rclcpp_minimal_client:/home/pi/ros2_iron/install/examples_rclcpp_async_client:/home/pi/ros2_iron/install/rclcpp:/home/pi/ros2_iron/install/libstatistics_collector:/home/pi/ros2_iron/install/statistics_msgs:/home/pi/ros2_iron/install/sros2_cmake:/home/pi/ros2_iron/install/rqt_py_common:/home/pi/ros2_iron/install/ros_testing:/home/pi/ros2_iron/install/rclpy:/home/pi/ros2_iron/install/rosgraph_msgs:/home/pi/ros2_iron/install/rosbag2_interfaces:/home/pi/ros2_iron/install/ros2cli_test_interfaces:/home/pi/ros2_iron/install/rcl_lifecycle:/home/pi/ros2_iron/install/rcl_action:/home/pi/ros2_iron/install/rcl:/home/pi/ros2_iron/install/rmw_implementation:/home/pi/ros2_iron/install/rmw_fastrtps_dynamic_cpp:/home/pi/ros2_iron/install/rmw_fastrtps_cpp:/home/pi/ros2_iron/install/rmw_fastrtps_shared_cpp:/home/pi/ros2_iron/install/rmw_cyclonedds_cpp:/home/pi/ros2_iron/install/rmw_connextddsmicro:/home/pi/ros2_iron/install/rmw_connextdds:/home/pi/ros2_iron/install/rmw_connextdds_common:/home/pi/ros2_iron/install/rmw_dds_common:/home/pi/ros2_iron/install/composition_interfaces:/home/pi/ros2_iron/install/rcl_interfaces:/home/pi/ros2_iron/install/pendulum_msgs:/home/pi/ros2_iron/install/lifecycle_msgs:/home/pi/ros2_iron/install/example_interfaces:/home/pi/ros2_iron/install/action_tutorials_interfaces:/home/pi/ros2_iron/install/rosidl_default_runtime:/home/pi/ros2_iron/install/rosidl_default_generators:/home/pi/ros2_iron/install/action_msgs:/home/pi/ros2_iron/install/unique_identifier_msgs:/home/pi/ros2_iron/install/ament_lint_common:/home/pi/ros2_iron/install/ament_cmake_uncrustify:/home/pi/ros2_iron/install/uncrustify_vendor:/home/pi/ros2_iron/install/type_description_interfaces:/home/pi/ros2_iron/install/tracetools:/home/pi/ros2_iron/install/tlsf:/home/pi/ros2_iron/install/tinyxml_vendor:/home/pi/ros2_iron/install/qt_gui_core:/home/pi/ros2_iron/install/qt_gui_cpp:/home/pi/ros2_iron/install/pluginlib:/home/pi/ros2_iron/install/tinyxml2_vendor:/home/pi/ros2_iron/install/test_security:/home/pi/ros2_iron/install/test_rmw_implementation:/home/pi/ros2_iron/install/test_rclcpp:/home/pi/ros2_iron/install/test_quality_of_service:/home/pi/ros2_iron/install/test_launch_testing:/home/pi/ros2_iron/install/test_interface_files:/home/pi/ros2_iron/install/test_cli_remapping:/home/pi/ros2_iron/install/test_cli:/home/pi/ros2_iron/install/qt_gui_app:/home/pi/ros2_iron/install/qt_gui:/home/pi/ros2_iron/install/tango_icons_vendor:/home/pi/ros2_iron/install/sqlite3_vendor:/home/pi/ros2_iron/install/rcl_logging_spdlog:/home/pi/ros2_iron/install/spdlog_vendor:/home/pi/ros2_iron/install/shared_queues_vendor:/home/pi/ros2_iron/install/service_msgs:/home/pi/ros2_iron/install/rviz_rendering_tests:/home/pi/ros2_iron/install/rviz_rendering:/home/pi/ros2_iron/install/rviz_ogre_vendor:/home/pi/ros2_iron/install/rviz_assimp_vendor:/home/pi/ros2_iron/install/rttest:/home/pi/ros2_iron/install/rti_connext_dds_cmake_module:/home/pi/ros2_iron/install/builtin_interfaces:/home/pi/ros2_iron/install/rosidl_core_runtime:/home/pi/ros2_iron/install/rosidl_core_generators:/home/pi/ros2_iron/install/rosidl_generator_py:/home/pi/ros2_iron/install/rosidl_typesupport_tests:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_tests:/home/pi/ros2_iron/install/rosidl_typesupport_cpp:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_cpp:/home/pi/ros2_iron/install/rosidl_typesupport_c:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_c:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_c:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_cpp:/home/pi/ros2_iron/install/rosidl_generator_cpp:/home/pi/ros2_iron/install/rosidl_runtime_cpp:/home/pi/ros2_iron/install/rosidl_dynamic_typesupport_fastrtps:/home/pi/ros2_iron/install/rcl_yaml_param_parser:/home/pi/ros2_iron/install/rmw:/home/pi/ros2_iron/install/rosidl_dynamic_typesupport:/home/pi/ros2_iron/install/rosidl_runtime_c:/home/pi/ros2_iron/install/rosidl_generator_c:/home/pi/ros2_iron/install/rosidl_typesupport_interface:/home/pi/ros2_iron/install/rosidl_generator_dds_idl:/home/pi/ros2_iron/install/rosidl_cmake:/home/pi/ros2_iron/install/rosidl_generator_type_description:/home/pi/ros2_iron/install/rosidl_parser:/home/pi/ros2_iron/install/rosidl_generator_tests:/home/pi/ros2_iron/install/rosidl_adapter:/home/pi/ros2_iron/install/rosbag2_tests:/home/pi/ros2_iron/install/rosbag2_test_msgdefs:/home/pi/ros2_iron/install/ros_environment:/home/pi/ros2_iron/install/rmw_implementation_cmake:/home/pi/ros2_iron/install/resource_retriever:/home/pi/ros2_iron/install/class_loader:/home/pi/ros2_iron/install/rcpputils:/home/pi/ros2_iron/install/rcl_logging_noop:/home/pi/ros2_iron/install/rcl_logging_interface:/home/pi/ros2_iron/install/rcutils:/home/pi/ros2_iron/install/qt_gui_py_common:/home/pi/ros2_iron/install/qt_dotgraph:/home/pi/ros2_iron/install/python_qt_binding:/home/pi/ros2_iron/install/python_orocos_kdl_vendor:/home/pi/ros2_iron/install/launch_testing_ament_cmake:/home/pi/ros2_iron/install/python_cmake_module:/home/pi/ros2_iron/install/pybind11_vendor:/home/pi/ros2_iron/install/performance_test_fixture:/home/pi/ros2_iron/install/osrf_testing_tools_cpp:/home/pi/ros2_iron/install/orocos_kdl_vendor:/home/pi/ros2_iron/install/mimick_vendor:/home/pi/ros2_iron/install/libyaml_vendor:/home/pi/ros2_iron/install/libcurl_vendor:/home/pi/ros2_iron/install/keyboard_handler:/home/pi/ros2_iron/install/iceoryx_introspection:/home/pi/ros2_iron/install/cyclonedds:/home/pi/ros2_iron/install/iceoryx_posh:/home/pi/ros2_iron/install/iceoryx_hoofs:/home/pi/ros2_iron/install/iceoryx_binding_c:/home/pi/ros2_iron/install/ament_cmake_ros:/home/pi/ros2_iron/install/ament_cmake_gmock:/home/pi/ros2_iron/install/gmock_vendor:/home/pi/ros2_iron/install/ament_cmake_auto:/home/pi/ros2_iron/install/ament_cmake_gtest:/home/pi/ros2_iron/install/gtest_vendor:/home/pi/ros2_iron/install/ament_cmake_google_benchmark:/home/pi/ros2_iron/install/google_benchmark_vendor:/home/pi/ros2_iron/install/fastrtps:/home/pi/ros2_iron/install/foonathan_memory_vendor:/home/pi/ros2_iron/install/fastrtps_cmake_module:/home/pi/ros2_iron/install/fastcdr:/home/pi/ros2_iron/install/eigen3_cmake_module:/home/pi/ros2_iron/install/console_bridge_vendor:/home/pi/ros2_iron/install/ament_cmake_xmllint:/home/pi/ros2_iron/install/ament_cmake_pyflakes:/home/pi/ros2_iron/install/ament_cmake_pycodestyle:/home/pi/ros2_iron/install/ament_cmake_pep257:/home/pi/ros2_iron/install/ament_cmake_pclint:/home/pi/ros2_iron/install/ament_lint_auto:/home/pi/ros2_iron/install/ament_cmake:/home/pi/ros2_iron/install/ament_cmake_version:/home/pi/ros2_iron/install/ament_cmake_vendor_package:/home/pi/ros2_iron/install/ament_cmake_pytest:/home/pi/ros2_iron/install/ament_cmake_mypy:/home/pi/ros2_iron/install/ament_cmake_lint_cmake:/home/pi/ros2_iron/install/ament_cmake_flake8:/home/pi/ros2_iron/install/ament_cmake_cpplint:/home/pi/ros2_iron/install/ament_cmake_cppcheck:/home/pi/ros2_iron/install/ament_cmake_copyright:/home/pi/ros2_iron/install/ament_cmake_clang_tidy:/home/pi/ros2_iron/install/ament_cmake_clang_format:/home/pi/ros2_iron/install/ament_cmake_test:/home/pi/ros2_iron/install/ament_cmake_target_dependencies:/home/pi/ros2_iron/install/ament_cmake_python:/home/pi/ros2_iron/install/ament_cmake_export_dependencies:/home/pi/ros2_iron/install/ament_cmake_libraries:/home/pi/ros2_iron/install/ament_cmake_include_directories:/home/pi/ros2_iron/install/ament_cmake_gen_version_h:/home/pi/ros2_iron/install/ament_cmake_export_targets:/home/pi/ros2_iron/install/ament_cmake_export_link_flags:/home/pi/ros2_iron/install/ament_cmake_export_interfaces:/home/pi/ros2_iron/install/ament_cmake_export_libraries:/home/pi/ros2_iron/install/ament_cmake_export_include_directories:/home/pi/ros2_iron/install/ament_cmake_export_definitions:/home/pi/ros2_iron/install/ament_cmake_core:/home/pi/ros2_iron/install/ament_index_cpp:/home/pi/wow_ws/install/wow_ros2:/home/pi/wow_ws/install/ntrip_client:/home/pi/wow_ws/install/bno055:/home/pi/wow_ws/install/ICM20948:/home/pi/test_ws/install/urdf_wow_monk:/home/pi/test_ws/install/nmea_navsat_driver:/home/pi/test_ws/install/tf_transformations:/home/pi/test_ws/install/ntrip_client:/home/pi/test_ws/install/gps_publisher:/home/pi/ros2_iron/install/rqt_bag_plugins:/home/pi/ros2_iron/install/rqt_bag:/home/pi/ros2_iron/install/rosbag2_examples_py:/home/pi/ros2_iron/install/launch_testing_examples:/home/pi/ros2_iron/install/ros2bag:/home/pi/ros2_iron/install/tracetools_test:/home/pi/ros2_iron/install/tracetools_launch:/home/pi/ros2_iron/install/topic_monitor:/home/pi/ros2_iron/install/tf2_tools:/home/pi/ros2_iron/install/examples_tf2_py:/home/pi/ros2_iron/install/tf2_ros_py:/home/pi/ros2_iron/install/examples_rclpy_pointcloud_publisher:/home/pi/ros2_iron/install/sensor_msgs_py:/home/pi/ros2_iron/install/quality_of_service_demo_py:/home/pi/ros2_iron/install/rqt_plot:/home/pi/ros2_iron/install/ros2doctor:/home/pi/ros2_iron/install/lifecycle_py:/home/pi/ros2_iron/install/examples_rclpy_minimal_subscriber:/home/pi/ros2_iron/install/examples_rclpy_minimal_service:/home/pi/ros2_iron/install/examples_rclpy_minimal_publisher:/home/pi/ros2_iron/install/examples_rclpy_minimal_client:/home/pi/ros2_iron/install/examples_rclpy_executors:/home/pi/ros2_iron/install/demo_nodes_py:/home/pi/ros2_iron/install/rqt:/home/pi/ros2_iron/install/ros2component:/home/pi/ros2_iron/install/sros2:/home/pi/ros2_iron/install/rqt_topic:/home/pi/ros2_iron/install/rqt_srv:/home/pi/ros2_iron/install/rqt_shell:/home/pi/ros2_iron/install/rqt_service_caller:/home/pi/ros2_iron/install/rqt_reconfigure:/home/pi/ros2_iron/install/rqt_py_console:/home/pi/ros2_iron/install/rqt_publisher:/home/pi/ros2_iron/install/rqt_action:/home/pi/ros2_iron/install/rqt_msg:/home/pi/ros2_iron/install/rqt_console:/home/pi/ros2_iron/install/rqt_graph:/home/pi/ros2_iron/install/rqt_gui_py:/home/pi/ros2_iron/install/rqt_gui:/home/pi/ros2_iron/install/ros2trace:/home/pi/ros2_iron/install/ros2topic:/home/pi/ros2_iron/install/ros2test:/home/pi/ros2_iron/install/ros2param:/home/pi/ros2_iron/install/ros2lifecycle:/home/pi/ros2_iron/install/ros2service:/home/pi/ros2_iron/install/ros2run:/home/pi/ros2_iron/install/ros2launch:/home/pi/ros2_iron/install/ros2pkg:/home/pi/ros2_iron/install/ros2node:/home/pi/ros2_iron/install/ros2multicast:/home/pi/ros2_iron/install/ros2interface:/home/pi/ros2_iron/install/ros2action:/home/pi/ros2_iron/install/ros2cli:/home/pi/ros2_iron/install/launch_testing_ros:/home/pi/ros2_iron/install/launch_ros:/home/pi/ros2_iron/install/examples_rclpy_minimal_action_server:/home/pi/ros2_iron/install/examples_rclpy_minimal_action_client:/home/pi/ros2_iron/install/examples_rclpy_guard_conditions:/home/pi/ros2_iron/install/action_tutorials_py:/home/pi/ros2_iron/install/ament_uncrustify:/home/pi/ros2_iron/install/tracetools_trace:/home/pi/ros2_iron/install/tracetools_read:/home/pi/ros2_iron/install/test_tracetools_launch:/home/pi/ros2_iron/install/test_ros2trace:/home/pi/ros2_iron/install/test_launch_ros:/home/pi/ros2_iron/install/rpyutils:/home/pi/ros2_iron/install/rosidl_runtime_py:/home/pi/ros2_iron/install/rosidl_pycommon:/home/pi/ros2_iron/install/rosidl_cli:/home/pi/ros2_iron/install/launch_pytest:/home/pi/ros2_iron/install/launch_testing:/home/pi/ros2_iron/install/launch_yaml:/home/pi/ros2_iron/install/launch_xml:/home/pi/ros2_iron/install/launch:/home/pi/ros2_iron/install/osrf_pycommon:/home/pi/ros2_iron/install/domain_coordinator:/home/pi/ros2_iron/install/ament_xmllint:/home/pi/ros2_iron/install/ament_pyflakes:/home/pi/ros2_iron/install/ament_pycodestyle:/home/pi/ros2_iron/install/ament_pep257:/home/pi/ros2_iron/install/ament_pclint:/home/pi/ros2_iron/install/ament_package:/home/pi/ros2_iron/install/ament_mypy:/home/pi/ros2_iron/install/ament_lint_cmake:/home/pi/ros2_iron/install/ament_flake8:/home/pi/ros2_iron/install/ament_copyright:/home/pi/ros2_iron/install/ament_lint:/home/pi/ros2_iron/install/ament_index_python:/home/pi/ros2_iron/install/ament_cpplint:/home/pi/ros2_iron/install/ament_cppcheck:/home/pi/ros2_iron/install/ament_clang_tidy:/home/pi/ros2_iron/install/ament_clang_format')]), 'shell': False}
+[0.099688] (-) TimerEvent: {}
+[0.199990] (-) TimerEvent: {}
+[0.300377] (-) TimerEvent: {}
+[0.362342] (ublox_gps) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.11.2 (/home/pi/ros2_iron/install/ament_cmake_ros/share/ament_cmake_ros/cmake)\n'}
+[0.400483] (-) TimerEvent: {}
+[0.500816] (-) TimerEvent: {}
+[0.601123] (-) TimerEvent: {}
+[0.701864] (-) TimerEvent: {}
+[0.704214] (ublox_gps) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.718453] (ublox_gps) StdoutLine: {'line': b'-- Found diagnostic_msgs: 5.0.0 (/home/pi/ros2_iron/install/diagnostic_msgs/share/diagnostic_msgs/cmake)\n'}
+[0.788267] (ublox_gps) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.0.1 (/home/pi/ros2_iron/install/rosidl_generator_c/share/rosidl_generator_c/cmake)\n'}
+[0.801954] (-) TimerEvent: {}
+[0.806083] (ublox_gps) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.0.1 (/home/pi/ros2_iron/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake)\n'}
+[0.881517] (ublox_gps) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c\n'}
+[0.902040] (-) TimerEvent: {}
+[0.962237] (ublox_gps) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp\n'}
+[1.002128] (-) TimerEvent: {}
+[1.102486] (-) TimerEvent: {}
+[1.202790] (-) TimerEvent: {}
+[1.280000] (ublox_gps) StdoutLine: {'line': b'-- Found diagnostic_updater: 3.2.0 (/home/pi/wow_ws/install/diagnostic_updater/share/diagnostic_updater/cmake)\n'}
+[1.302858] (-) TimerEvent: {}
+[1.403122] (-) TimerEvent: {}
+[1.503418] (-) TimerEvent: {}
+[1.603691] (-) TimerEvent: {}
+[1.703968] (-) TimerEvent: {}
+[1.804232] (-) TimerEvent: {}
+[1.869913] (ublox_gps) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.1.0 (/home/pi/ros2_iron/install/rmw_implementation_cmake/share/rmw_implementation_cmake/cmake)\n'}
+[1.904303] (-) TimerEvent: {}
+[1.924020] (ublox_gps) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 7.1.3 (/home/pi/ros2_iron/install/rmw_fastrtps_cpp/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.004413] (-) TimerEvent: {}
+[2.104726] (-) TimerEvent: {}
+[2.159376] (ublox_gps) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.204830] (-) TimerEvent: {}
+[2.305117] (-) TimerEvent: {}
+[2.405400] (-) TimerEvent: {}
+[2.479142] (ublox_gps) StdoutLine: {'line': b'-- Found geometry_msgs: 5.0.0 (/home/pi/ros2_iron/install/geometry_msgs/share/geometry_msgs/cmake)\n'}
+[2.505474] (-) TimerEvent: {}
+[2.547556] (ublox_gps) StdoutLine: {'line': b'-- Found nmea_msgs: 2.1.0 (/home/pi/wow_ws/install/nmea_msgs/share/nmea_msgs/cmake)\n'}
+[2.605599] (-) TimerEvent: {}
+[2.616455] (ublox_gps) StdoutLine: {'line': b'-- Found rclcpp_components: 21.0.6 (/home/pi/ros2_iron/install/rclcpp_components/share/rclcpp_components/cmake)\n'}
+[2.705866] (-) TimerEvent: {}
+[2.771870] (ublox_gps) StdoutLine: {'line': b'-- Found rtcm_msgs: 1.1.6 (/home/pi/wow_ws/install/rtcm_msgs/share/rtcm_msgs/cmake)\n'}
+[2.805947] (-) TimerEvent: {}
+[2.859793] (ublox_gps) StdoutLine: {'line': b'-- Found sensor_msgs: 5.0.0 (/home/pi/ros2_iron/install/sensor_msgs/share/sensor_msgs/cmake)\n'}
+[2.906025] (-) TimerEvent: {}
+[3.006253] (-) TimerEvent: {}
+[3.029785] (ublox_gps) StdoutLine: {'line': b'-- Found tf2: 0.31.6 (/home/pi/ros2_iron/install/tf2/share/tf2/cmake)\n'}
+[3.042940] (ublox_gps) StdoutLine: {'line': b'-- Found ublox_msgs: 2.3.0 (/home/pi/test_ws/install/ublox_msgs/share/ublox_msgs/cmake)\n'}
+[3.106342] (-) TimerEvent: {}
+[3.206616] (-) TimerEvent: {}
+[3.306898] (-) TimerEvent: {}
+[3.407164] (-) TimerEvent: {}
+[3.507489] (-) TimerEvent: {}
+[3.515770] (ublox_gps) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.607584] (-) TimerEvent: {}
+[3.681831] (ublox_gps) StdoutLine: {'line': b'-- Generating done\n'}
+[3.695620] (ublox_gps) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/test_ws/build/ublox_gps\n'}
+[3.707695] (-) TimerEvent: {}
+[3.808466] (-) TimerEvent: {}
+[3.908844] (-) TimerEvent: {}
+[4.009187] (-) TimerEvent: {}
+[4.111680] (-) TimerEvent: {}
+[4.113028] (ublox_gps) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/adr_udr_product.cpp.o\x1b[0m\n'}
+[4.113406] (ublox_gps) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/gnss.cpp.o\x1b[0m\n'}
+[4.120398] (ublox_gps) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/gps.cpp.o\x1b[0m\n'}
+[4.127860] (ublox_gps) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/hp_pos_rec_product.cpp.o\x1b[0m\n'}
+[4.209680] (-) TimerEvent: {}
+[4.310124] (-) TimerEvent: {}
+[4.410442] (-) TimerEvent: {}
+[4.513728] (-) TimerEvent: {}
+[4.617752] (-) TimerEvent: {}
+[4.718218] (-) TimerEvent: {}
+[4.819436] (-) TimerEvent: {}
+[4.919812] (-) TimerEvent: {}
+[5.020476] (-) TimerEvent: {}
+[5.083468] (ublox_gps) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/hpg_ref_product.cpp.o\x1b[0m\n'}
+[5.120599] (-) TimerEvent: {}
+[5.221019] (-) TimerEvent: {}
+[5.325780] (-) TimerEvent: {}
+[5.426243] (-) TimerEvent: {}
+[5.526644] (-) TimerEvent: {}
+[5.627483] (-) TimerEvent: {}
+[5.733815] (-) TimerEvent: {}
+[5.834460] (-) TimerEvent: {}
+[5.935178] (-) TimerEvent: {}
+[6.036330] (-) TimerEvent: {}
+[6.141863] (-) TimerEvent: {}
+[6.242510] (-) TimerEvent: {}
+[6.343179] (-) TimerEvent: {}
+[6.443944] (-) TimerEvent: {}
+[6.544659] (-) TimerEvent: {}
+[6.645334] (-) TimerEvent: {}
+[6.746000] (-) TimerEvent: {}
+[6.846694] (-) TimerEvent: {}
+[6.947365] (-) TimerEvent: {}
+[7.049880] (-) TimerEvent: {}
+[7.150493] (-) TimerEvent: {}
+[7.251145] (-) TimerEvent: {}
+[7.353870] (-) TimerEvent: {}
+[7.454503] (-) TimerEvent: {}
+[7.555164] (-) TimerEvent: {}
+[7.657892] (-) TimerEvent: {}
+[7.758611] (-) TimerEvent: {}
+[7.859282] (-) TimerEvent: {}
+[7.961828] (-) TimerEvent: {}
+[8.062456] (-) TimerEvent: {}
+[8.163075] (-) TimerEvent: {}
+[8.263743] (-) TimerEvent: {}
+[8.365866] (-) TimerEvent: {}
+[8.466605] (-) TimerEvent: {}
+[8.569894] (-) TimerEvent: {}
+[8.670337] (-) TimerEvent: {}
+[8.771218] (-) TimerEvent: {}
+[8.871893] (-) TimerEvent: {}
+[8.977843] (-) TimerEvent: {}
+[9.078459] (-) TimerEvent: {}
+[9.179308] (-) TimerEvent: {}
+[9.280259] (-) TimerEvent: {}
+[9.380989] (-) TimerEvent: {}
+[9.481824] (-) TimerEvent: {}
+[9.582511] (-) TimerEvent: {}
+[9.683225] (-) TimerEvent: {}
+[9.783870] (-) TimerEvent: {}
+[9.884633] (-) TimerEvent: {}
+[9.989863] (-) TimerEvent: {}
+[10.090291] (-) TimerEvent: {}
+[10.190738] (-) TimerEvent: {}
+[10.291399] (-) TimerEvent: {}
+[10.392074] (-) TimerEvent: {}
+[10.492751] (-) TimerEvent: {}
+[10.593433] (-) TimerEvent: {}
+[10.697865] (-) TimerEvent: {}
+[10.798515] (-) TimerEvent: {}
+[10.899179] (-) TimerEvent: {}
+[10.999830] (-) TimerEvent: {}
+[11.100590] (-) TimerEvent: {}
+[11.201182] (-) TimerEvent: {}
+[11.305869] (-) TimerEvent: {}
+[11.406416] (-) TimerEvent: {}
+[11.506998] (-) TimerEvent: {}
+[11.607614] (-) TimerEvent: {}
+[11.708196] (-) TimerEvent: {}
+[11.808823] (-) TimerEvent: {}
+[11.909585] (-) TimerEvent: {}
+[12.013955] (-) TimerEvent: {}
+[12.114620] (-) TimerEvent: {}
+[12.215314] (-) TimerEvent: {}
+[12.316126] (-) TimerEvent: {}
+[12.416731] (-) TimerEvent: {}
+[12.517341] (-) TimerEvent: {}
+[12.621857] (-) TimerEvent: {}
+[12.722527] (-) TimerEvent: {}
+[12.823282] (-) TimerEvent: {}
+[12.923918] (-) TimerEvent: {}
+[13.024688] (-) TimerEvent: {}
+[13.125550] (-) TimerEvent: {}
+[13.229669] (-) TimerEvent: {}
+[13.330081] (-) TimerEvent: {}
+[13.430769] (-) TimerEvent: {}
+[13.531652] (-) TimerEvent: {}
+[13.632544] (-) TimerEvent: {}
+[13.733378] (-) TimerEvent: {}
+[13.837927] (-) TimerEvent: {}
+[13.938894] (-) TimerEvent: {}
+[14.039770] (-) TimerEvent: {}
+[14.140732] (-) TimerEvent: {}
+[14.241639] (-) TimerEvent: {}
+[14.342401] (-) TimerEvent: {}
+[14.445845] (-) TimerEvent: {}
+[14.546279] (-) TimerEvent: {}
+[14.647199] (-) TimerEvent: {}
+[14.748028] (-) TimerEvent: {}
+[14.848831] (-) TimerEvent: {}
+[14.953869] (-) TimerEvent: {}
+[15.054688] (-) TimerEvent: {}
+[15.155635] (-) TimerEvent: {}
+[15.256294] (-) TimerEvent: {}
+[15.356968] (-) TimerEvent: {}
+[15.457661] (-) TimerEvent: {}
+[15.558305] (-) TimerEvent: {}
+[15.658961] (-) TimerEvent: {}
+[15.760527] (-) TimerEvent: {}
+[15.865862] (-) TimerEvent: {}
+[15.966288] (-) TimerEvent: {}
+[16.066935] (-) TimerEvent: {}
+[16.167579] (-) TimerEvent: {}
+[16.268224] (-) TimerEvent: {}
+[16.368911] (-) TimerEvent: {}
+[16.469660] (-) TimerEvent: {}
+[16.573675] (-) TimerEvent: {}
+[16.674473] (-) TimerEvent: {}
+[16.775001] (-) TimerEvent: {}
+[16.875956] (-) TimerEvent: {}
+[16.976715] (-) TimerEvent: {}
+[17.077653] (-) TimerEvent: {}
+[17.178008] (-) TimerEvent: {}
+[17.281683] (-) TimerEvent: {}
+[17.382184] (-) TimerEvent: {}
+[17.482653] (-) TimerEvent: {}
+[17.583196] (-) TimerEvent: {}
+[17.683745] (-) TimerEvent: {}
+[17.784159] (-) TimerEvent: {}
+[17.884592] (-) TimerEvent: {}
+[17.985034] (-) TimerEvent: {}
+[18.085549] (-) TimerEvent: {}
+[18.189864] (-) TimerEvent: {}
+[18.290300] (-) TimerEvent: {}
+[18.390750] (-) TimerEvent: {}
+[18.491187] (-) TimerEvent: {}
+[18.591661] (-) TimerEvent: {}
+[18.692165] (-) TimerEvent: {}
+[18.792759] (-) TimerEvent: {}
+[18.893272] (-) TimerEvent: {}
+[18.993747] (-) TimerEvent: {}
+[19.094212] (-) TimerEvent: {}
+[19.194701] (-) TimerEvent: {}
+[19.262923] (ublox_gps) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/hpg_rov_product.cpp.o\x1b[0m\n'}
+[19.298300] (-) TimerEvent: {}
+[19.398777] (-) TimerEvent: {}
+[19.499171] (-) TimerEvent: {}
+[19.599630] (-) TimerEvent: {}
+[19.700165] (-) TimerEvent: {}
+[19.800617] (-) TimerEvent: {}
+[19.901862] (-) TimerEvent: {}
+[19.969685] (ublox_gps) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding C object CMakeFiles/ublox_gps.dir/src/mkgmtime.c.o\x1b[0m\n'}
+[20.001995] (-) TimerEvent: {}
+[20.102390] (-) TimerEvent: {}
+[20.202780] (-) TimerEvent: {}
+[20.303191] (-) TimerEvent: {}
+[20.371731] (ublox_gps) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/node.cpp.o\x1b[0m\n'}
+[20.403369] (-) TimerEvent: {}
+[20.495246] (ublox_gps) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/raw_data_pa.cpp.o\x1b[0m\n'}
+[20.503503] (-) TimerEvent: {}
+[20.603904] (-) TimerEvent: {}
+[20.704517] (-) TimerEvent: {}
+[20.809881] (-) TimerEvent: {}
+[20.910301] (-) TimerEvent: {}
+[21.010737] (-) TimerEvent: {}
+[21.111170] (-) TimerEvent: {}
+[21.211673] (-) TimerEvent: {}
+[21.312185] (-) TimerEvent: {}
+[21.412661] (-) TimerEvent: {}
+[21.513160] (-) TimerEvent: {}
+[21.613677] (-) TimerEvent: {}
+[21.714113] (-) TimerEvent: {}
+[21.814553] (-) TimerEvent: {}
+[21.917957] (-) TimerEvent: {}
+[22.018431] (-) TimerEvent: {}
+[22.118910] (-) TimerEvent: {}
+[22.219342] (-) TimerEvent: {}
+[22.319771] (-) TimerEvent: {}
+[22.478697] (-) TimerEvent: {}
+[22.579167] (-) TimerEvent: {}
+[22.681865] (-) TimerEvent: {}
+[22.782312] (-) TimerEvent: {}
+[22.882766] (-) TimerEvent: {}
+[22.983180] (-) TimerEvent: {}
+[23.083631] (-) TimerEvent: {}
+[23.184094] (-) TimerEvent: {}
+[23.289879] (-) TimerEvent: {}
+[23.390639] (-) TimerEvent: {}
+[23.491106] (-) TimerEvent: {}
+[23.591558] (-) TimerEvent: {}
+[23.692009] (-) TimerEvent: {}
+[23.792448] (-) TimerEvent: {}
+[23.892974] (-) TimerEvent: {}
+[23.993457] (-) TimerEvent: {}
+[24.093956] (-) TimerEvent: {}
+[24.194424] (-) TimerEvent: {}
+[24.294914] (-) TimerEvent: {}
+[24.395428] (-) TimerEvent: {}
+[24.497828] (-) TimerEvent: {}
+[24.524142] (ublox_gps) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/raw_data_product.cpp.o\x1b[0m\n'}
+[24.597967] (-) TimerEvent: {}
+[24.698608] (-) TimerEvent: {}
+[24.799263] (-) TimerEvent: {}
+[24.899887] (-) TimerEvent: {}
+[25.001864] (-) TimerEvent: {}
+[25.102518] (-) TimerEvent: {}
+[25.205895] (-) TimerEvent: {}
+[25.306407] (-) TimerEvent: {}
+[25.407035] (-) TimerEvent: {}
+[25.507654] (-) TimerEvent: {}
+[25.609853] (-) TimerEvent: {}
+[25.710506] (-) TimerEvent: {}
+[25.813886] (-) TimerEvent: {}
+[25.914538] (-) TimerEvent: {}
+[26.015221] (-) TimerEvent: {}
+[26.115862] (-) TimerEvent: {}
+[26.216554] (-) TimerEvent: {}
+[26.321886] (-) TimerEvent: {}
+[26.422322] (-) TimerEvent: {}
+[26.522964] (-) TimerEvent: {}
+[26.623657] (-) TimerEvent: {}
+[26.724491] (-) TimerEvent: {}
+[26.825307] (-) TimerEvent: {}
+[26.929865] (-) TimerEvent: {}
+[27.030499] (-) TimerEvent: {}
+[27.131142] (-) TimerEvent: {}
+[27.231770] (-) TimerEvent: {}
+[27.332460] (-) TimerEvent: {}
+[27.433156] (-) TimerEvent: {}
+[27.537670] (-) TimerEvent: {}
+[27.638094] (-) TimerEvent: {}
+[27.738769] (-) TimerEvent: {}
+[27.839426] (-) TimerEvent: {}
+[27.940045] (-) TimerEvent: {}
+[28.040692] (-) TimerEvent: {}
+[28.141355] (-) TimerEvent: {}
+[28.245855] (-) TimerEvent: {}
+[28.346447] (-) TimerEvent: {}
+[28.447051] (-) TimerEvent: {}
+[28.547653] (-) TimerEvent: {}
+[28.648317] (-) TimerEvent: {}
+[28.748955] (-) TimerEvent: {}
+[28.849670] (-) TimerEvent: {}
+[28.953859] (-) TimerEvent: {}
+[29.054535] (-) TimerEvent: {}
+[29.155196] (-) TimerEvent: {}
+[29.255872] (-) TimerEvent: {}
+[29.356526] (-) TimerEvent: {}
+[29.457156] (-) TimerEvent: {}
+[29.561855] (-) TimerEvent: {}
+[29.662550] (-) TimerEvent: {}
+[29.763132] (-) TimerEvent: {}
+[29.863819] (-) TimerEvent: {}
+[29.964764] (-) TimerEvent: {}
+[30.065417] (-) TimerEvent: {}
+[30.166010] (-) TimerEvent: {}
+[30.269879] (-) TimerEvent: {}
+[30.370300] (-) TimerEvent: {}
+[30.470964] (-) TimerEvent: {}
+[30.571629] (-) TimerEvent: {}
+[30.672254] (-) TimerEvent: {}
+[30.772923] (-) TimerEvent: {}
+[30.877867] (-) TimerEvent: {}
+[30.978512] (-) TimerEvent: {}
+[31.079177] (-) TimerEvent: {}
+[31.179877] (-) TimerEvent: {}
+[31.280606] (-) TimerEvent: {}
+[31.381287] (-) TimerEvent: {}
+[31.481984] (-) TimerEvent: {}
+[31.582665] (-) TimerEvent: {}
+[31.685842] (-) TimerEvent: {}
+[31.786274] (-) TimerEvent: {}
+[31.886918] (-) TimerEvent: {}
+[31.987576] (-) TimerEvent: {}
+[32.088241] (-) TimerEvent: {}
+[32.193864] (-) TimerEvent: {}
+[32.294323] (-) TimerEvent: {}
+[32.395001] (-) TimerEvent: {}
+[32.495666] (-) TimerEvent: {}
+[32.596396] (-) TimerEvent: {}
+[32.697097] (-) TimerEvent: {}
+[32.797776] (-) TimerEvent: {}
+[32.902020] (-) TimerEvent: {}
+[33.002672] (-) TimerEvent: {}
+[33.103452] (-) TimerEvent: {}
+[33.204265] (-) TimerEvent: {}
+[33.305067] (-) TimerEvent: {}
+[33.405847] (-) TimerEvent: {}
+[33.506663] (-) TimerEvent: {}
+[33.607615] (-) TimerEvent: {}
+[33.710057] (-) TimerEvent: {}
+[33.810964] (-) TimerEvent: {}
+[33.911931] (-) TimerEvent: {}
+[34.014815] (-) TimerEvent: {}
+[34.125647] (-) TimerEvent: {}
+[34.226282] (-) TimerEvent: {}
+[34.326752] (-) TimerEvent: {}
+[34.427189] (-) TimerEvent: {}
+[34.528277] (-) TimerEvent: {}
+[34.583076] (ublox_gps) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/tim_product.cpp.o\x1b[0m\n'}
+[34.628441] (-) TimerEvent: {}
+[34.729709] (-) TimerEvent: {}
+[34.834005] (-) TimerEvent: {}
+[34.934461] (-) TimerEvent: {}
+[35.035374] (-) TimerEvent: {}
+[35.136285] (-) TimerEvent: {}
+[35.237157] (-) TimerEvent: {}
+[35.341924] (-) TimerEvent: {}
+[35.443030] (-) TimerEvent: {}
+[35.543883] (-) TimerEvent: {}
+[35.644739] (-) TimerEvent: {}
+[35.745623] (-) TimerEvent: {}
+[35.846584] (-) TimerEvent: {}
+[35.947656] (-) TimerEvent: {}
+[36.049896] (-) TimerEvent: {}
+[36.150695] (-) TimerEvent: {}
+[36.253949] (-) TimerEvent: {}
+[36.354510] (-) TimerEvent: {}
+[36.454895] (-) TimerEvent: {}
+[36.557837] (-) TimerEvent: {}
+[36.658627] (-) TimerEvent: {}
+[36.759376] (-) TimerEvent: {}
+[36.860196] (-) TimerEvent: {}
+[36.961818] (-) TimerEvent: {}
+[37.065699] (-) TimerEvent: {}
+[37.166129] (-) TimerEvent: {}
+[37.266698] (-) TimerEvent: {}
+[37.367518] (-) TimerEvent: {}
+[37.468483] (-) TimerEvent: {}
+[37.571923] (-) TimerEvent: {}
+[37.672825] (-) TimerEvent: {}
+[37.773696] (-) TimerEvent: {}
+[37.874518] (-) TimerEvent: {}
+[37.900667] (ublox_gps) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware.cpp.o\x1b[0m\n'}
+[37.974663] (-) TimerEvent: {}
+[38.075698] (-) TimerEvent: {}
+[38.181690] (-) TimerEvent: {}
+[38.282113] (-) TimerEvent: {}
+[38.383045] (-) TimerEvent: {}
+[38.483916] (-) TimerEvent: {}
+[38.584798] (-) TimerEvent: {}
+[38.685709] (-) TimerEvent: {}
+[38.786625] (-) TimerEvent: {}
+[38.887633] (-) TimerEvent: {}
+[38.988704] (-) TimerEvent: {}
+[39.089632] (-) TimerEvent: {}
+[39.193698] (-) TimerEvent: {}
+[39.294153] (-) TimerEvent: {}
+[39.395008] (-) TimerEvent: {}
+[39.495901] (-) TimerEvent: {}
+[39.596847] (-) TimerEvent: {}
+[39.701703] (-) TimerEvent: {}
+[39.802162] (-) TimerEvent: {}
+[39.902608] (-) TimerEvent: {}
+[40.003069] (-) TimerEvent: {}
+[40.103548] (-) TimerEvent: {}
+[40.204006] (-) TimerEvent: {}
+[40.304464] (-) TimerEvent: {}
+[40.404928] (-) TimerEvent: {}
+[40.505412] (-) TimerEvent: {}
+[40.605921] (-) TimerEvent: {}
+[40.709687] (-) TimerEvent: {}
+[40.810130] (-) TimerEvent: {}
+[40.910634] (-) TimerEvent: {}
+[41.011185] (-) TimerEvent: {}
+[41.111655] (-) TimerEvent: {}
+[41.212108] (-) TimerEvent: {}
+[41.312564] (-) TimerEvent: {}
+[41.412972] (-) TimerEvent: {}
+[41.517872] (-) TimerEvent: {}
+[41.618413] (-) TimerEvent: {}
+[41.718944] (-) TimerEvent: {}
+[41.819457] (-) TimerEvent: {}
+[41.919961] (-) TimerEvent: {}
+[42.020522] (-) TimerEvent: {}
+[42.081716] (ublox_gps) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware6.cpp.o\x1b[0m\n'}
+[42.120674] (-) TimerEvent: {}
+[42.221098] (-) TimerEvent: {}
+[42.321696] (-) TimerEvent: {}
+[42.422398] (-) TimerEvent: {}
+[42.525886] (-) TimerEvent: {}
+[42.626559] (-) TimerEvent: {}
+[42.727313] (-) TimerEvent: {}
+[42.827978] (-) TimerEvent: {}
+[42.928624] (-) TimerEvent: {}
+[43.033878] (-) TimerEvent: {}
+[43.134317] (-) TimerEvent: {}
+[43.235271] (-) TimerEvent: {}
+[43.336236] (-) TimerEvent: {}
+[43.437034] (-) TimerEvent: {}
+[43.538381] (-) TimerEvent: {}
+[43.642239] (-) TimerEvent: {}
+[43.743117] (-) TimerEvent: {}
+[43.844087] (-) TimerEvent: {}
+[43.944969] (-) TimerEvent: {}
+[44.045804] (-) TimerEvent: {}
+[44.146584] (-) TimerEvent: {}
+[44.249867] (-) TimerEvent: {}
+[44.350669] (-) TimerEvent: {}
+[44.451103] (-) TimerEvent: {}
+[44.553777] (-) TimerEvent: {}
+[44.654371] (-) TimerEvent: {}
+[44.755027] (-) TimerEvent: {}
+[44.857901] (-) TimerEvent: {}
+[44.958547] (-) TimerEvent: {}
+[45.059184] (-) TimerEvent: {}
+[45.159857] (-) TimerEvent: {}
+[45.261858] (-) TimerEvent: {}
+[45.365894] (-) TimerEvent: {}
+[45.466555] (-) TimerEvent: {}
+[45.567255] (-) TimerEvent: {}
+[45.667970] (-) TimerEvent: {}
+[45.770029] (-) TimerEvent: {}
+[45.870713] (-) TimerEvent: {}
+[45.973843] (-) TimerEvent: {}
+[46.074284] (-) TimerEvent: {}
+[46.174957] (-) TimerEvent: {}
+[46.275611] (-) TimerEvent: {}
+[46.376324] (-) TimerEvent: {}
+[46.481922] (-) TimerEvent: {}
+[46.582448] (-) TimerEvent: {}
+[46.683110] (-) TimerEvent: {}
+[46.783753] (-) TimerEvent: {}
+[46.884394] (-) TimerEvent: {}
+[46.985055] (-) TimerEvent: {}
+[47.085659] (-) TimerEvent: {}
+[47.189851] (-) TimerEvent: {}
+[47.290498] (-) TimerEvent: {}
+[47.391222] (-) TimerEvent: {}
+[47.491859] (-) TimerEvent: {}
+[47.592542] (-) TimerEvent: {}
+[47.693257] (-) TimerEvent: {}
+[47.797986] (-) TimerEvent: {}
+[47.898658] (-) TimerEvent: {}
+[47.999311] (-) TimerEvent: {}
+[48.099976] (-) TimerEvent: {}
+[48.200653] (-) TimerEvent: {}
+[48.301337] (-) TimerEvent: {}
+[48.405871] (-) TimerEvent: {}
+[48.506715] (-) TimerEvent: {}
+[48.607622] (-) TimerEvent: {}
+[48.708507] (-) TimerEvent: {}
+[48.809384] (-) TimerEvent: {}
+[48.910168] (-) TimerEvent: {}
+[49.010832] (-) TimerEvent: {}
+[49.113860] (-) TimerEvent: {}
+[49.214700] (-) TimerEvent: {}
+[49.315388] (-) TimerEvent: {}
+[49.416257] (-) TimerEvent: {}
+[49.521859] (-) TimerEvent: {}
+[49.622460] (-) TimerEvent: {}
+[49.723380] (-) TimerEvent: {}
+[49.824266] (-) TimerEvent: {}
+[49.925062] (-) TimerEvent: {}
+[50.025742] (-) TimerEvent: {}
+[50.126565] (-) TimerEvent: {}
+[50.230142] (-) TimerEvent: {}
+[50.330983] (-) TimerEvent: {}
+[50.431776] (-) TimerEvent: {}
+[50.532830] (-) TimerEvent: {}
+[50.633532] (-) TimerEvent: {}
+[50.734465] (-) TimerEvent: {}
+[50.837869] (-) TimerEvent: {}
+[50.938646] (-) TimerEvent: {}
+[51.039318] (-) TimerEvent: {}
+[51.140116] (-) TimerEvent: {}
+[51.240921] (-) TimerEvent: {}
+[51.337153] (ublox_gps) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware7.cpp.o\x1b[0m\n'}
+[51.341086] (-) TimerEvent: {}
+[51.441610] (-) TimerEvent: {}
+[51.545962] (-) TimerEvent: {}
+[51.630709] (ublox_gps) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware8.cpp.o\x1b[0m\n'}
+[51.646092] (-) TimerEvent: {}
+[51.747052] (-) TimerEvent: {}
+[51.847961] (-) TimerEvent: {}
+[51.948740] (-) TimerEvent: {}
+[52.049684] (-) TimerEvent: {}
+[52.153877] (-) TimerEvent: {}
+[52.254806] (-) TimerEvent: {}
+[52.355218] (-) TimerEvent: {}
+[52.455968] (-) TimerEvent: {}
+[52.556986] (-) TimerEvent: {}
+[52.657882] (-) TimerEvent: {}
+[52.762648] (-) TimerEvent: {}
+[52.863266] (-) TimerEvent: {}
+[52.963964] (-) TimerEvent: {}
+[53.064603] (-) TimerEvent: {}
+[53.169894] (-) TimerEvent: {}
+[53.270825] (-) TimerEvent: {}
+[53.371507] (-) TimerEvent: {}
+[53.472181] (-) TimerEvent: {}
+[53.572881] (-) TimerEvent: {}
+[53.673592] (-) TimerEvent: {}
+[53.774255] (-) TimerEvent: {}
+[53.874924] (-) TimerEvent: {}
+[53.977881] (-) TimerEvent: {}
+[54.078587] (-) TimerEvent: {}
+[54.179253] (-) TimerEvent: {}
+[54.281856] (-) TimerEvent: {}
+[54.382437] (-) TimerEvent: {}
+[54.483103] (-) TimerEvent: {}
+[54.585893] (-) TimerEvent: {}
+[54.686574] (-) TimerEvent: {}
+[54.787204] (-) TimerEvent: {}
+[54.891490] (-) TimerEvent: {}
+[54.991935] (-) TimerEvent: {}
+[55.092568] (-) TimerEvent: {}
+[55.193194] (-) TimerEvent: {}
+[55.296622] (-) TimerEvent: {}
+[55.396998] (-) TimerEvent: {}
+[55.497817] (-) TimerEvent: {}
+[55.598464] (-) TimerEvent: {}
+[55.699101] (-) TimerEvent: {}
+[55.801868] (-) TimerEvent: {}
+[55.902508] (-) TimerEvent: {}
+[56.003145] (-) TimerEvent: {}
+[56.105689] (-) TimerEvent: {}
+[56.206141] (-) TimerEvent: {}
+[56.306832] (-) TimerEvent: {}
+[56.409879] (-) TimerEvent: {}
+[56.510533] (-) TimerEvent: {}
+[56.611460] (-) TimerEvent: {}
+[56.712398] (-) TimerEvent: {}
+[56.817951] (-) TimerEvent: {}
+[56.918807] (-) TimerEvent: {}
+[57.019655] (-) TimerEvent: {}
+[57.120421] (-) TimerEvent: {}
+[57.221178] (-) TimerEvent: {}
+[57.321939] (-) TimerEvent: {}
+[57.422753] (-) TimerEvent: {}
+[57.523665] (-) TimerEvent: {}
+[57.624551] (-) TimerEvent: {}
+[57.729874] (-) TimerEvent: {}
+[57.830325] (-) TimerEvent: {}
+[57.931233] (-) TimerEvent: {}
+[58.032036] (-) TimerEvent: {}
+[58.132687] (-) TimerEvent: {}
+[58.233275] (-) TimerEvent: {}
+[58.334175] (-) TimerEvent: {}
+[58.437847] (-) TimerEvent: {}
+[58.538517] (-) TimerEvent: {}
+[58.639163] (-) TimerEvent: {}
+[58.739850] (-) TimerEvent: {}
+[58.840512] (-) TimerEvent: {}
+[58.945857] (-) TimerEvent: {}
+[59.046497] (-) TimerEvent: {}
+[59.147131] (-) TimerEvent: {}
+[59.247754] (-) TimerEvent: {}
+[59.348351] (-) TimerEvent: {}
+[59.448957] (-) TimerEvent: {}
+[59.549576] (-) TimerEvent: {}
+[59.650151] (-) TimerEvent: {}
+[59.750739] (-) TimerEvent: {}
+[59.853861] (-) TimerEvent: {}
+[59.954476] (-) TimerEvent: {}
+[60.055117] (-) TimerEvent: {}
+[60.155786] (-) TimerEvent: {}
+[60.257938] (-) TimerEvent: {}
+[60.358572] (-) TimerEvent: {}
+[60.459128] (-) TimerEvent: {}
+[60.559711] (-) TimerEvent: {}
+[60.661820] (-) TimerEvent: {}
+[60.762421] (-) TimerEvent: {}
+[60.863062] (-) TimerEvent: {}
+[60.965866] (-) TimerEvent: {}
+[61.066418] (-) TimerEvent: {}
+[61.167980] (-) TimerEvent: {}
+[61.273870] (-) TimerEvent: {}
+[61.374297] (-) TimerEvent: {}
+[61.474888] (-) TimerEvent: {}
+[61.575533] (-) TimerEvent: {}
+[61.676098] (-) TimerEvent: {}
+[61.776673] (-) TimerEvent: {}
+[61.877278] (-) TimerEvent: {}
+[61.977898] (-) TimerEvent: {}
+[62.082014] (-) TimerEvent: {}
+[62.182761] (-) TimerEvent: {}
+[62.283899] (-) TimerEvent: {}
+[62.384671] (-) TimerEvent: {}
+[62.469094] (ublox_gps) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware9.cpp.o\x1b[0m\n'}
+[62.484839] (-) TimerEvent: {}
+[62.585739] (-) TimerEvent: {}
+[62.686815] (-) TimerEvent: {}
+[62.787528] (-) TimerEvent: {}
+[62.888386] (-) TimerEvent: {}
+[62.993874] (-) TimerEvent: {}
+[63.094433] (-) TimerEvent: {}
+[63.194994] (-) TimerEvent: {}
+[63.295591] (-) TimerEvent: {}
+[63.396250] (-) TimerEvent: {}
+[63.496820] (-) TimerEvent: {}
+[63.597366] (-) TimerEvent: {}
+[63.697954] (-) TimerEvent: {}
+[63.798515] (-) TimerEvent: {}
+[63.899168] (-) TimerEvent: {}
+[64.001859] (-) TimerEvent: {}
+[64.102284] (-) TimerEvent: {}
+[64.202739] (-) TimerEvent: {}
+[64.303173] (-) TimerEvent: {}
+[64.403625] (-) TimerEvent: {}
+[64.504100] (-) TimerEvent: {}
+[64.604523] (-) TimerEvent: {}
+[64.704976] (-) TimerEvent: {}
+[64.805474] (-) TimerEvent: {}
+[64.909664] (-) TimerEvent: {}
+[65.010074] (-) TimerEvent: {}
+[65.110533] (-) TimerEvent: {}
+[65.210974] (-) TimerEvent: {}
+[65.311407] (-) TimerEvent: {}
+[65.411816] (-) TimerEvent: {}
+[65.512244] (-) TimerEvent: {}
+[65.612681] (-) TimerEvent: {}
+[65.713113] (-) TimerEvent: {}
+[65.813532] (-) TimerEvent: {}
+[65.913953] (-) TimerEvent: {}
+[66.017890] (-) TimerEvent: {}
+[66.118295] (-) TimerEvent: {}
+[66.218693] (-) TimerEvent: {}
+[66.319100] (-) TimerEvent: {}
+[66.419522] (-) TimerEvent: {}
+[66.519933] (-) TimerEvent: {}
+[66.620350] (-) TimerEvent: {}
+[66.720773] (-) TimerEvent: {}
+[66.821183] (-) TimerEvent: {}
+[66.925685] (-) TimerEvent: {}
+[67.026291] (-) TimerEvent: {}
+[67.126757] (-) TimerEvent: {}
+[67.227248] (-) TimerEvent: {}
+[67.327910] (-) TimerEvent: {}
+[67.428270] (-) TimerEvent: {}
+[67.528926] (-) TimerEvent: {}
+[67.629289] (-) TimerEvent: {}
+[67.730055] (-) TimerEvent: {}
+[67.830393] (-) TimerEvent: {}
+[67.931060] (-) TimerEvent: {}
+[68.031421] (-) TimerEvent: {}
+[68.132006] (-) TimerEvent: {}
+[68.232325] (-) TimerEvent: {}
+[68.332778] (-) TimerEvent: {}
+[68.433093] (-) TimerEvent: {}
+[68.533868] (-) TimerEvent: {}
+[68.635160] (-) TimerEvent: {}
+[68.735764] (-) TimerEvent: {}
+[68.836079] (-) TimerEvent: {}
+[68.936488] (-) TimerEvent: {}
+[69.036798] (-) TimerEvent: {}
+[69.137228] (-) TimerEvent: {}
+[69.237566] (-) TimerEvent: {}
+[69.338007] (-) TimerEvent: {}
+[69.438317] (-) TimerEvent: {}
+[69.538749] (-) TimerEvent: {}
+[69.639086] (-) TimerEvent: {}
+[69.739536] (-) TimerEvent: {}
+[69.839882] (-) TimerEvent: {}
+[69.940438] (-) TimerEvent: {}
+[70.040758] (-) TimerEvent: {}
+[70.141326] (-) TimerEvent: {}
+[70.241645] (-) TimerEvent: {}
+[70.342232] (-) TimerEvent: {}
+[70.442558] (-) TimerEvent: {}
+[70.543027] (-) TimerEvent: {}
+[70.643352] (-) TimerEvent: {}
+[70.743793] (-) TimerEvent: {}
+[70.844113] (-) TimerEvent: {}
+[70.944559] (-) TimerEvent: {}
+[71.044889] (-) TimerEvent: {}
+[71.145325] (-) TimerEvent: {}
+[71.245626] (-) TimerEvent: {}
+[71.346059] (-) TimerEvent: {}
+[71.446378] (-) TimerEvent: {}
+[71.546826] (-) TimerEvent: {}
+[71.647158] (-) TimerEvent: {}
+[71.747572] (-) TimerEvent: {}
+[71.847939] (-) TimerEvent: {}
+[71.948469] (-) TimerEvent: {}
+[72.048805] (-) TimerEvent: {}
+[72.149234] (-) TimerEvent: {}
+[72.249550] (-) TimerEvent: {}
+[72.350128] (-) TimerEvent: {}
+[72.450449] (-) TimerEvent: {}
+[72.551009] (-) TimerEvent: {}
+[72.651327] (-) TimerEvent: {}
+[72.751898] (-) TimerEvent: {}
+[72.852225] (-) TimerEvent: {}
+[72.952544] (-) TimerEvent: {}
+[73.053003] (-) TimerEvent: {}
+[73.153324] (-) TimerEvent: {}
+[73.257682] (-) TimerEvent: {}
+[73.358102] (-) TimerEvent: {}
+[73.458445] (-) TimerEvent: {}
+[73.490782] (ublox_gps) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libublox_gps.so\x1b[0m\n'}
+[73.558608] (-) TimerEvent: {}
+[73.659284] (-) TimerEvent: {}
+[73.759957] (-) TimerEvent: {}
+[73.860616] (-) TimerEvent: {}
+[73.961145] (-) TimerEvent: {}
+[74.063043] (-) TimerEvent: {}
+[74.163789] (-) TimerEvent: {}
+[74.264545] (-) TimerEvent: {}
+[74.365233] (-) TimerEvent: {}
+[74.465776] (-) TimerEvent: {}
+[74.566176] (-) TimerEvent: {}
+[74.666530] (-) TimerEvent: {}
+[74.766990] (-) TimerEvent: {}
+[74.867656] (-) TimerEvent: {}
+[74.968072] (-) TimerEvent: {}
+[75.068604] (-) TimerEvent: {}
+[75.169219] (-) TimerEvent: {}
+[75.270054] (-) TimerEvent: {}
+[75.371629] (-) TimerEvent: {}
+[75.472269] (-) TimerEvent: {}
+[75.573398] (-) TimerEvent: {}
+[75.674198] (-) TimerEvent: {}
+[75.774781] (-) TimerEvent: {}
+[75.875610] (-) TimerEvent: {}
+[75.976398] (-) TimerEvent: {}
+[76.077135] (-) TimerEvent: {}
+[76.177678] (-) TimerEvent: {}
+[76.278712] (-) TimerEvent: {}
+[76.379368] (-) TimerEvent: {}
+[76.480614] (-) TimerEvent: {}
+[76.581169] (-) TimerEvent: {}
+[76.681854] (-) TimerEvent: {}
+[76.782661] (-) TimerEvent: {}
+[76.883484] (-) TimerEvent: {}
+[76.984120] (-) TimerEvent: {}
+[77.085287] (-) TimerEvent: {}
+[77.186170] (-) TimerEvent: {}
+[77.286976] (-) TimerEvent: {}
+[77.387479] (-) TimerEvent: {}
+[77.488585] (-) TimerEvent: {}
+[77.589258] (-) TimerEvent: {}
+[77.690496] (-) TimerEvent: {}
+[77.791356] (-) TimerEvent: {}
+[77.892231] (-) TimerEvent: {}
+[77.993551] (-) TimerEvent: {}
+[78.094263] (-) TimerEvent: {}
+[78.195389] (-) TimerEvent: {}
+[78.296036] (-) TimerEvent: {}
+[78.397106] (-) TimerEvent: {}
+[78.497637] (-) TimerEvent: {}
+[78.598858] (-) TimerEvent: {}
+[78.699354] (-) TimerEvent: {}
+[78.800280] (-) TimerEvent: {}
+[78.900891] (-) TimerEvent: {}
+[79.002042] (-) TimerEvent: {}
+[79.102616] (-) TimerEvent: {}
+[79.203258] (-) TimerEvent: {}
+[79.304037] (-) TimerEvent: {}
+[79.404884] (-) TimerEvent: {}
+[79.505405] (-) TimerEvent: {}
+[79.606644] (-) TimerEvent: {}
+[79.707505] (-) TimerEvent: {}
+[79.808384] (-) TimerEvent: {}
+[79.909139] (-) TimerEvent: {}
+[80.009970] (-) TimerEvent: {}
+[80.110465] (-) TimerEvent: {}
+[80.211575] (-) TimerEvent: {}
+[80.312218] (-) TimerEvent: {}
+[80.413369] (-) TimerEvent: {}
+[80.514061] (-) TimerEvent: {}
+[80.615157] (-) TimerEvent: {}
+[80.716097] (-) TimerEvent: {}
+[80.816825] (-) TimerEvent: {}
+[80.917690] (-) TimerEvent: {}
+[81.018580] (-) TimerEvent: {}
+[81.119420] (-) TimerEvent: {}
+[81.220583] (-) TimerEvent: {}
+[81.321235] (-) TimerEvent: {}
+[81.422094] (-) TimerEvent: {}
+[81.523277] (-) TimerEvent: {}
+[81.623971] (-) TimerEvent: {}
+[81.725334] (-) TimerEvent: {}
+[81.825848] (-) TimerEvent: {}
+[81.927374] (-) TimerEvent: {}
+[82.028244] (-) TimerEvent: {}
+[82.129868] (-) TimerEvent: {}
+[82.230477] (-) TimerEvent: {}
+[82.331954] (-) TimerEvent: {}
+[82.432499] (-) TimerEvent: {}
+[82.533292] (-) TimerEvent: {}
+[82.634120] (-) TimerEvent: {}
+[82.735329] (-) TimerEvent: {}
+[82.836170] (-) TimerEvent: {}
+[82.937301] (-) TimerEvent: {}
+[83.037972] (-) TimerEvent: {}
+[83.139255] (-) TimerEvent: {}
+[83.240063] (-) TimerEvent: {}
+[83.341118] (-) TimerEvent: {}
+[83.441781] (-) TimerEvent: {}
+[83.542533] (-) TimerEvent: {}
+[83.643435] (-) TimerEvent: {}
+[83.744707] (-) TimerEvent: {}
+[83.845494] (-) TimerEvent: {}
+[83.946107] (-) TimerEvent: {}
+[84.046842] (-) TimerEvent: {}
+[84.147205] (-) TimerEvent: {}
+[84.247716] (-) TimerEvent: {}
+[84.348150] (-) TimerEvent: {}
+[84.449171] (-) TimerEvent: {}
+[84.549736] (-) TimerEvent: {}
+[84.650231] (-) TimerEvent: {}
+[84.750530] (-) TimerEvent: {}
+[84.850911] (-) TimerEvent: {}
+[84.951224] (-) TimerEvent: {}
+[85.051658] (-) TimerEvent: {}
+[85.086284] (ublox_gps) StdoutLine: {'line': b'[ 77%] Built target ublox_gps\n'}
+[85.151838] (-) TimerEvent: {}
+[85.174226] (ublox_gps) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/ublox_gps_node.dir/src/node_main.cpp.o\x1b[0m\n'}
+[85.175112] (ublox_gps) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o\x1b[0m\n'}
+[85.175856] (ublox_gps) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o\x1b[0m\n'}
+[85.251937] (-) TimerEvent: {}
+[85.352374] (-) TimerEvent: {}
+[85.457958] (-) TimerEvent: {}
+[85.558660] (-) TimerEvent: {}
+[85.659079] (-) TimerEvent: {}
+[85.759873] (-) TimerEvent: {}
+[85.860317] (-) TimerEvent: {}
+[85.961058] (-) TimerEvent: {}
+[86.061422] (-) TimerEvent: {}
+[86.162806] (-) TimerEvent: {}
+[86.263235] (-) TimerEvent: {}
+[86.363700] (-) TimerEvent: {}
+[86.464620] (-) TimerEvent: {}
+[86.565167] (-) TimerEvent: {}
+[86.665640] (-) TimerEvent: {}
+[86.766766] (-) TimerEvent: {}
+[86.867404] (-) TimerEvent: {}
+[86.967947] (-) TimerEvent: {}
+[87.068819] (-) TimerEvent: {}
+[87.171039] (-) TimerEvent: {}
+[87.271461] (-) TimerEvent: {}
+[87.372194] (-) TimerEvent: {}
+[87.472614] (-) TimerEvent: {}
+[87.573303] (-) TimerEvent: {}
+[87.673745] (-) TimerEvent: {}
+[87.774460] (-) TimerEvent: {}
+[87.874902] (-) TimerEvent: {}
+[87.975665] (-) TimerEvent: {}
+[88.076092] (-) TimerEvent: {}
+[88.176878] (-) TimerEvent: {}
+[88.277305] (-) TimerEvent: {}
+[88.378110] (-) TimerEvent: {}
+[88.478514] (-) TimerEvent: {}
+[88.579290] (-) TimerEvent: {}
+[88.679723] (-) TimerEvent: {}
+[88.780227] (-) TimerEvent: {}
+[88.880964] (-) TimerEvent: {}
+[88.981425] (-) TimerEvent: {}
+[89.082306] (-) TimerEvent: {}
+[89.182739] (-) TimerEvent: {}
+[89.283168] (-) TimerEvent: {}
+[89.383917] (-) TimerEvent: {}
+[89.484361] (-) TimerEvent: {}
+[89.585160] (-) TimerEvent: {}
+[89.685630] (-) TimerEvent: {}
+[89.786462] (-) TimerEvent: {}
+[89.886884] (-) TimerEvent: {}
+[89.987759] (-) TimerEvent: {}
+[90.088187] (-) TimerEvent: {}
+[90.188820] (-) TimerEvent: {}
+[90.289258] (-) TimerEvent: {}
+[90.390113] (-) TimerEvent: {}
+[90.490548] (-) TimerEvent: {}
+[90.591237] (-) TimerEvent: {}
+[90.691591] (-) TimerEvent: {}
+[90.792136] (-) TimerEvent: {}
+[90.892518] (-) TimerEvent: {}
+[90.993180] (-) TimerEvent: {}
+[91.093539] (-) TimerEvent: {}
+[91.194031] (-) TimerEvent: {}
+[91.294367] (-) TimerEvent: {}
+[91.394845] (-) TimerEvent: {}
+[91.495189] (-) TimerEvent: {}
+[91.595704] (-) TimerEvent: {}
+[91.696069] (-) TimerEvent: {}
+[91.796626] (-) TimerEvent: {}
+[91.897004] (-) TimerEvent: {}
+[91.997544] (-) TimerEvent: {}
+[92.097948] (-) TimerEvent: {}
+[92.198497] (-) TimerEvent: {}
+[92.298857] (-) TimerEvent: {}
+[92.399399] (-) TimerEvent: {}
+[92.499792] (-) TimerEvent: {}
+[92.600492] (-) TimerEvent: {}
+[92.700857] (-) TimerEvent: {}
+[92.801432] (-) TimerEvent: {}
+[92.901869] (-) TimerEvent: {}
+[93.002405] (-) TimerEvent: {}
+[93.102805] (-) TimerEvent: {}
+[93.203579] (-) TimerEvent: {}
+[93.303975] (-) TimerEvent: {}
+[93.404758] (-) TimerEvent: {}
+[93.505215] (-) TimerEvent: {}
+[93.605859] (-) TimerEvent: {}
+[93.706221] (-) TimerEvent: {}
+[93.806900] (-) TimerEvent: {}
+[93.907276] (-) TimerEvent: {}
+[94.008044] (-) TimerEvent: {}
+[94.108735] (-) TimerEvent: {}
+[94.209104] (-) TimerEvent: {}
+[94.309739] (-) TimerEvent: {}
+[94.410150] (-) TimerEvent: {}
+[94.510889] (-) TimerEvent: {}
+[94.549849] (ublox_gps) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable ublox_gps_node\x1b[0m\n'}
+[94.611059] (-) TimerEvent: {}
+[94.711900] (-) TimerEvent: {}
+[94.812905] (-) TimerEvent: {}
+[94.914339] (-) TimerEvent: {}
+[95.015357] (-) TimerEvent: {}
+[95.117131] (-) TimerEvent: {}
+[95.217742] (-) TimerEvent: {}
+[95.318709] (-) TimerEvent: {}
+[95.420557] (-) TimerEvent: {}
+[95.521740] (-) TimerEvent: {}
+[95.623215] (-) TimerEvent: {}
+[95.723926] (-) TimerEvent: {}
+[95.825277] (-) TimerEvent: {}
+[95.925874] (-) TimerEvent: {}
+[96.027043] (-) TimerEvent: {}
+[96.128109] (-) TimerEvent: {}
+[96.228926] (-) TimerEvent: {}
+[96.329673] (-) TimerEvent: {}
+[96.430505] (-) TimerEvent: {}
+[96.531448] (-) TimerEvent: {}
+[96.632905] (-) TimerEvent: {}
+[96.733656] (-) TimerEvent: {}
+[96.835467] (-) TimerEvent: {}
+[96.936362] (-) TimerEvent: {}
+[97.037425] (-) TimerEvent: {}
+[97.138428] (-) TimerEvent: {}
+[97.239266] (-) TimerEvent: {}
+[97.339935] (-) TimerEvent: {}
+[97.442126] (-) TimerEvent: {}
+[97.542839] (-) TimerEvent: {}
+[97.643728] (-) TimerEvent: {}
+[97.744631] (-) TimerEvent: {}
+[97.845184] (-) TimerEvent: {}
+[97.946912] (-) TimerEvent: {}
+[98.047450] (-) TimerEvent: {}
+[98.149042] (-) TimerEvent: {}
+[98.362802] (-) TimerEvent: {}
+[98.464341] (-) TimerEvent: {}
+[98.564919] (-) TimerEvent: {}
+[98.666084] (-) TimerEvent: {}
+[98.766715] (-) TimerEvent: {}
+[98.868035] (-) TimerEvent: {}
+[98.969288] (-) TimerEvent: {}
+[99.069973] (-) TimerEvent: {}
+[99.171801] (-) TimerEvent: {}
+[99.272726] (-) TimerEvent: {}
+[99.375105] (-) TimerEvent: {}
+[99.476092] (-) TimerEvent: {}
+[99.577600] (-) TimerEvent: {}
+[99.678376] (-) TimerEvent: {}
+[99.780227] (-) TimerEvent: {}
+[99.799471] (ublox_gps) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ublox_logger\x1b[0m\n'}
+[99.880505] (-) TimerEvent: {}
+[99.982178] (-) TimerEvent: {}
+[100.083282] (-) TimerEvent: {}
+[100.184444] (-) TimerEvent: {}
+[100.285478] (-) TimerEvent: {}
+[100.386649] (-) TimerEvent: {}
+[100.487592] (-) TimerEvent: {}
+[100.589757] (-) TimerEvent: {}
+[100.691031] (-) TimerEvent: {}
+[100.793307] (-) TimerEvent: {}
+[100.894158] (-) TimerEvent: {}
+[100.996240] (-) TimerEvent: {}
+[101.097888] (-) TimerEvent: {}
+[101.200037] (-) TimerEvent: {}
+[101.301268] (-) TimerEvent: {}
+[101.403309] (-) TimerEvent: {}
+[101.504516] (-) TimerEvent: {}
+[101.606951] (-) TimerEvent: {}
+[101.709064] (-) TimerEvent: {}
+[101.809944] (-) TimerEvent: {}
+[101.911907] (-) TimerEvent: {}
+[102.013052] (-) TimerEvent: {}
+[102.115039] (-) TimerEvent: {}
+[102.216333] (-) TimerEvent: {}
+[102.319310] (-) TimerEvent: {}
+[102.421476] (-) TimerEvent: {}
+[102.522580] (-) TimerEvent: {}
+[102.624411] (-) TimerEvent: {}
+[102.725286] (-) TimerEvent: {}
+[102.966988] (-) TimerEvent: {}
+[103.068482] (-) TimerEvent: {}
+[103.169821] (-) TimerEvent: {}
+[103.271441] (-) TimerEvent: {}
+[103.372449] (-) TimerEvent: {}
+[103.474328] (-) TimerEvent: {}
+[103.575459] (-) TimerEvent: {}
+[103.677694] (-) TimerEvent: {}
+[103.778471] (-) TimerEvent: {}
+[103.880243] (-) TimerEvent: {}
+[103.981036] (-) TimerEvent: {}
+[104.082856] (-) TimerEvent: {}
+[104.183587] (-) TimerEvent: {}
+[104.286393] (-) TimerEvent: {}
+[104.340200] (ublox_gps) StdoutLine: {'line': b'[100%] Built target ublox_gps_node\n'}
+[104.386484] (-) TimerEvent: {}
+[104.487031] (-) TimerEvent: {}
+[104.587716] (-) TimerEvent: {}
+[104.688279] (-) TimerEvent: {}
+[104.788724] (-) TimerEvent: {}
+[104.889425] (-) TimerEvent: {}
+[104.989842] (-) TimerEvent: {}
+[105.090230] (-) TimerEvent: {}
+[105.190814] (-) TimerEvent: {}
+[105.291346] (-) TimerEvent: {}
+[105.391756] (-) TimerEvent: {}
+[105.492273] (-) TimerEvent: {}
+[105.592772] (-) TimerEvent: {}
+[105.693176] (-) TimerEvent: {}
+[105.793725] (-) TimerEvent: {}
+[105.804581] (ublox_gps) StdoutLine: {'line': b'[100%] Built target ublox_logger\n'}
+[105.828295] (ublox_gps) CommandEnded: {'returncode': 0}
+[105.893877] (-) TimerEvent: {}
+[105.994246] (-) TimerEvent: {}
+[106.051011] (ublox_gps) JobProgress: {'identifier': 'ublox_gps', 'progress': 'install'}
+[106.074118] (ublox_gps) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/test_ws/build/ublox_gps'], 'cwd': '/home/pi/test_ws/build/ublox_gps', 'env': OrderedDict([('LANGUAGE', 'en_US.UTF-8'), ('USER', 'pi'), ('SSH_CLIENT', '100.83.102.58 50162 22'), ('TEXTDOMAIN', 'Linux-PAM'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/test_ws/install/ublox_msgs/lib:/home/pi/test_ws/install/nmea_msgs/lib:/home/pi/wow_ws/install/spacenav/lib:/home/pi/wow_ws/install/joy/lib:/home/pi/wow_ws/install/sdl2_vendor/lib:/home/pi/wow_ws/install/rviz_imu_plugin/lib:/home/pi/wow_ws/install/ntrip_client_node/lib:/home/pi/wow_ws/install/rtcm_msgs/lib:/home/pi/wow_ws/install/robot_localization/lib:/home/pi/wow_ws/install/nmea_msgs/lib:/home/pi/wow_ws/install/imu_filter_madgwick/lib:/home/pi/wow_ws/install/imu_complementary_filter/lib:/home/pi/wow_ws/install/gpsd_client/lib:/home/pi/wow_ws/install/gps_tools/lib:/home/pi/wow_ws/install/gps_msgs/lib:/home/pi/wow_ws/install/geodesy/lib:/home/pi/wow_ws/install/geographic_msgs/lib:/home/pi/wow_ws/install/foxglove_bridge/lib:/home/pi/wow_ws/install/diagnostic_updater/lib:/home/pi/wow_ws/install/diagnostic_aggregator/lib:/home/pi/test_ws/install/ublox_gps/lib:/home/pi/ros2_iron/install/rosbag2_storage_mcap/lib:/home/pi/ros2_iron/install/rosbag2_compression_zstd/lib:/home/pi/ros2_iron/install/mcap_vendor/lib:/home/pi/ros2_iron/install/rviz_default_plugins/lib:/home/pi/ros2_iron/install/rviz_common/lib:/home/pi/ros2_iron/install/rosbag2_transport/lib:/home/pi/ros2_iron/install/rosbag2_storage_sqlite3/lib:/home/pi/ros2_iron/install/rosbag2_compression/lib:/home/pi/ros2_iron/install/rosbag2_cpp/lib:/home/pi/ros2_iron/install/rosbag2_storage/lib:/home/pi/ros2_iron/install/camera_info_manager/lib:/home/pi/ros2_iron/install/camera_calibration_parsers/lib:/home/pi/ros2_iron/install/interactive_markers/lib:/home/pi/ros2_iron/install/visualization_msgs/lib:/home/pi/ros2_iron/install/robot_state_publisher/lib:/home/pi/ros2_iron/install/kdl_parser/lib:/home/pi/ros2_iron/install/urdf/lib:/home/pi/ros2_iron/install/urdfdom/lib:/home/pi/ros2_iron/install/turtlesim/lib:/home/pi/ros2_iron/install/trajectory_msgs/lib:/home/pi/ros2_iron/install/tf2_ros/lib:/home/pi/ros2_iron/install/tf2_msgs/lib:/home/pi/ros2_iron/install/tf2_eigen_kdl/lib:/home/pi/ros2_iron/install/laser_geometry/lib:/home/pi/ros2_iron/install/tf2/lib:/home/pi/ros2_iron/install/test_msgs/lib:/home/pi/ros2_iron/install/stereo_msgs/lib:/home/pi/ros2_iron/install/std_srvs/lib:/home/pi/ros2_iron/install/shape_msgs/lib:/home/pi/ros2_iron/install/quality_of_service_demo_cpp/lib:/home/pi/ros2_iron/install/map_msgs/lib:/home/pi/ros2_iron/install/image_transport/lib:/home/pi/ros2_iron/install/image_tools/lib:/home/pi/ros2_iron/install/sensor_msgs/lib:/home/pi/ros2_iron/install/nav_msgs/lib:/home/pi/ros2_iron/install/logging_demo/lib:/home/pi/ros2_iron/install/diagnostic_msgs/lib:/home/pi/ros2_iron/install/geometry_msgs/lib:/home/pi/ros2_iron/install/examples_rclcpp_wait_set/lib:/home/pi/ros2_iron/install/examples_rclcpp_minimal_subscriber/lib:/home/pi/ros2_iron/install/examples_rclcpp_minimal_composition/lib:/home/pi/ros2_iron/install/demo_nodes_cpp_native/lib:/home/pi/ros2_iron/install/demo_nodes_cpp/lib:/home/pi/ros2_iron/install/composition/lib:/home/pi/ros2_iron/install/actionlib_msgs/lib:/home/pi/ros2_iron/install/std_msgs/lib:/home/pi/ros2_iron/install/rqt_gui_cpp/lib:/home/pi/ros2_iron/install/rclcpp_lifecycle/lib:/home/pi/ros2_iron/install/action_tutorials_cpp/lib:/home/pi/ros2_iron/install/rclcpp_components/lib:/home/pi/ros2_iron/install/rclcpp_action/lib:/home/pi/ros2_iron/install/message_filters/lib:/home/pi/ros2_iron/install/rclcpp/lib:/home/pi/ros2_iron/install/libstatistics_collector/lib:/home/pi/ros2_iron/install/statistics_msgs/lib:/home/pi/ros2_iron/install/rclpy/lib:/home/pi/ros2_iron/install/rosgraph_msgs/lib:/home/pi/ros2_iron/install/rosbag2_interfaces/lib:/home/pi/ros2_iron/install/ros2cli_test_interfaces/lib:/home/pi/ros2_iron/install/rcl_lifecycle/lib:/home/pi/ros2_iron/install/rcl_action/lib:/home/pi/ros2_iron/install/rcl/lib:/home/pi/ros2_iron/install/rmw_implementation/lib:/home/pi/ros2_iron/install/rmw_fastrtps_dynamic_cpp/lib:/home/pi/ros2_iron/install/rmw_fastrtps_cpp/lib:/home/pi/ros2_iron/install/rmw_fastrtps_shared_cpp/lib:/home/pi/ros2_iron/install/rmw_cyclonedds_cpp/lib:/home/pi/ros2_iron/install/rmw_dds_common/lib:/home/pi/ros2_iron/install/composition_interfaces/lib:/home/pi/ros2_iron/install/rcl_interfaces/lib:/home/pi/ros2_iron/install/pendulum_msgs/lib:/home/pi/ros2_iron/install/lifecycle_msgs/lib:/home/pi/ros2_iron/install/example_interfaces/lib:/home/pi/ros2_iron/install/action_tutorials_interfaces/lib:/home/pi/ros2_iron/install/action_msgs/lib:/home/pi/ros2_iron/install/unique_identifier_msgs/lib:/home/pi/ros2_iron/install/type_description_interfaces/lib:/home/pi/ros2_iron/install/tracetools/lib:/home/pi/ros2_iron/install/qt_gui_cpp/lib:/home/pi/ros2_iron/install/rcl_logging_spdlog/lib:/home/pi/ros2_iron/install/service_msgs/lib:/home/pi/ros2_iron/install/rviz_rendering/lib:/home/pi/ros2_iron/install/rviz_ogre_vendor/opt/rviz_ogre_vendor/lib:/home/pi/ros2_iron/install/rttest/lib:/home/pi/ros2_iron/install/builtin_interfaces/lib:/home/pi/ros2_iron/install/rosidl_typesupport_cpp/lib:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_cpp/lib:/home/pi/ros2_iron/install/rosidl_typesupport_c/lib:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_c/lib:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_c/lib:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_cpp/lib:/home/pi/ros2_iron/install/rosidl_dynamic_typesupport_fastrtps/lib:/home/pi/ros2_iron/install/rcl_yaml_param_parser/lib:/home/pi/ros2_iron/install/rmw/lib:/home/pi/ros2_iron/install/rosidl_dynamic_typesupport/lib:/home/pi/ros2_iron/install/rosidl_runtime_c/lib:/home/pi/ros2_iron/install/rosbag2_test_msgdefs/lib:/home/pi/ros2_iron/install/resource_retriever/lib:/home/pi/ros2_iron/install/class_loader/lib:/home/pi/ros2_iron/install/rcpputils/lib:/home/pi/ros2_iron/install/rcl_logging_noop/lib:/home/pi/ros2_iron/install/rcl_logging_interface/lib:/home/pi/ros2_iron/install/rcutils/lib:/home/pi/ros2_iron/install/performance_test_fixture/lib:/home/pi/ros2_iron/install/osrf_testing_tools_cpp/lib:/home/pi/ros2_iron/install/mimick_vendor/lib:/home/pi/ros2_iron/install/keyboard_handler/lib:/home/pi/ros2_iron/install/iceoryx_introspection/lib:/home/pi/ros2_iron/install/cyclonedds/lib:/home/pi/ros2_iron/install/iceoryx_posh/lib:/home/pi/ros2_iron/install/iceoryx_hoofs/lib:/home/pi/ros2_iron/install/iceoryx_binding_c/lib:/home/pi/ros2_iron/install/google_benchmark_vendor/lib:/home/pi/ros2_iron/install/fastrtps/lib:/home/pi/ros2_iron/install/fastcdr/lib:/home/pi/ros2_iron/install/ament_index_cpp/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/test_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/test_ws/install:/home/pi/wow_ws/install:/home/pi/ros2_iron/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/pi/ros2_iron/install/urdfdom/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/urdfdom/lib/pkgconfig:/home/pi/ros2_iron/install/urdfdom_headers/lib/pkgconfig:/home/pi/ros2_iron/install/test_osrf_testing_tools_cpp/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/test_osrf_testing_tools_cpp/lib/pkgconfig:/home/pi/ros2_iron/install/osrf_testing_tools_cpp/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/osrf_testing_tools_cpp/lib/pkgconfig:/home/pi/ros2_iron/install/ignition_math6_vendor/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/ignition_math6_vendor/lib/pkgconfig:/home/pi/ros2_iron/install/ignition_cmake2_vendor/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/ignition_cmake2_vendor/lib/pkgconfig:/home/pi/ros2_iron/install/iceoryx_introspection/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/iceoryx_introspection/lib/pkgconfig:/home/pi/ros2_iron/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/cyclonedds/lib/pkgconfig:/home/pi/ros2_iron/install/iceoryx_posh/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/iceoryx_posh/lib/pkgconfig:/home/pi/ros2_iron/install/iceoryx_hoofs/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/iceoryx_hoofs/lib/pkgconfig:/home/pi/ros2_iron/install/iceoryx_binding_c/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/iceoryx_binding_c/lib/pkgconfig:/home/pi/ros2_iron/install/gmock_vendor/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/gmock_vendor/lib/pkgconfig:/home/pi/ros2_iron/install/gtest_vendor/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/gtest_vendor/lib/pkgconfig:/home/pi/ros2_iron/install/google_benchmark_vendor/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/google_benchmark_vendor/lib/pkgconfig:/home/pi/ros2_iron/install/foonathan_memory_vendor/lib/aarch64-linux-gnu/pkgconfig:/home/pi/ros2_iron/install/foonathan_memory_vendor/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('PATH', '/home/pi/.local/bin:/home/pi/wow_ws/install/sdl2_vendor/bin:/home/pi/wow_ws/install/gps_tools/bin:/home/pi/ros2_iron/install/rviz2/bin:/home/pi/ros2_iron/install/rqt_bag/bin:/home/pi/ros2_iron/install/urdfdom/bin:/home/pi/ros2_iron/install/pendulum_control/bin:/home/pi/ros2_iron/install/rqt_graph/bin:/home/pi/ros2_iron/install/rqt_gui/bin:/home/pi/ros2_iron/install/ros2cli/bin:/home/pi/ros2_iron/install/ament_uncrustify/bin:/home/pi/ros2_iron/install/rosidl_cli/bin:/home/pi/ros2_iron/install/launch_testing/bin:/home/pi/ros2_iron/install/iceoryx_introspection/bin:/home/pi/ros2_iron/install/cyclonedds/bin:/home/pi/ros2_iron/install/iceoryx_posh/bin:/home/pi/ros2_iron/install/fastrtps/bin:/home/pi/ros2_iron/install/foonathan_memory_vendor/bin:/home/pi/ros2_iron/install/ament_xmllint/bin:/home/pi/ros2_iron/install/ament_pyflakes/bin:/home/pi/ros2_iron/install/ament_pycodestyle/bin:/home/pi/ros2_iron/install/ament_pep257/bin:/home/pi/ros2_iron/install/ament_pclint/bin:/home/pi/ros2_iron/install/ament_mypy/bin:/home/pi/ros2_iron/install/ament_lint_cmake/bin:/home/pi/ros2_iron/install/ament_flake8/bin:/home/pi/ros2_iron/install/ament_copyright/bin:/home/pi/ros2_iron/install/ament_index_python/bin:/home/pi/ros2_iron/install/ament_cpplint/bin:/home/pi/ros2_iron/install/ament_cppcheck/bin:/home/pi/ros2_iron/install/ament_clang_tidy/bin:/home/pi/ros2_iron/install/ament_clang_format/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:'), ('AMENT_PREFIX_PATH', '/home/pi/wow_ws/install/wow_ros2:/home/pi/wow_ws/install/spacenav:/home/pi/wow_ws/install/diagnostics:/home/pi/wow_ws/install/self_test:/home/pi/wow_ws/install/joy:/home/pi/wow_ws/install/sdl2_vendor:/home/pi/wow_ws/install/imu_tools:/home/pi/wow_ws/install/rviz_imu_plugin:/home/pi/wow_ws/install/ntrip_client_node:/home/pi/wow_ws/install/ntrip_client:/home/pi/wow_ws/install/rtcm_msgs:/home/pi/wow_ws/install/robot_localization:/home/pi/wow_ws/install/nmea_msgs:/home/pi/wow_ws/install/joy_linux:/home/pi/wow_ws/install/imu_filter_madgwick:/home/pi/wow_ws/install/imu_complementary_filter:/home/pi/wow_ws/install/gps_umd:/home/pi/wow_ws/install/gpsd_client:/home/pi/wow_ws/install/gps_tools:/home/pi/wow_ws/install/gps_msgs:/home/pi/wow_ws/install/geographic_info:/home/pi/wow_ws/install/geodesy:/home/pi/wow_ws/install/geographic_msgs:/home/pi/wow_ws/install/foxglove_bridge:/home/pi/wow_ws/install/diagnostic_common_diagnostics:/home/pi/wow_ws/install/diagnostic_updater:/home/pi/wow_ws/install/diagnostic_aggregator:/home/pi/wow_ws/install/bno055:/home/pi/wow_ws/install/ICM20948:/home/pi/test_ws/install/urdf_wow_monk:/home/pi/test_ws/install/ublox:/home/pi/test_ws/install/ublox_gps:/home/pi/test_ws/install/ublox_msgs:/home/pi/test_ws/install/ublox_serialization:/home/pi/test_ws/install/nmea_navsat_driver:/home/pi/test_ws/install/tf_transformations:/home/pi/test_ws/install/ntrip_client:/home/pi/test_ws/install/nmea_msgs:/home/pi/test_ws/install/gps_publisher:/home/pi/ros2_iron/install/rqt_bag_plugins:/home/pi/ros2_iron/install/rosbag2:/home/pi/ros2_iron/install/rosbag2_storage_default_plugins:/home/pi/ros2_iron/install/rosbag2_storage_mcap:/home/pi/ros2_iron/install/rosbag2_compression_zstd:/home/pi/ros2_iron/install/mcap_vendor:/home/pi/ros2_iron/install/zstd_vendor:/home/pi/ros2_iron/install/rviz_visual_testing_framework:/home/pi/ros2_iron/install/rviz2:/home/pi/ros2_iron/install/rviz_default_plugins:/home/pi/ros2_iron/install/rviz_common:/home/pi/ros2_iron/install/rqt_bag:/home/pi/ros2_iron/install/rosbag2_examples_py:/home/pi/ros2_iron/install/launch_testing_examples:/home/pi/ros2_iron/install/ros2bag:/home/pi/ros2_iron/install/rosbag2_py:/home/pi/ros2_iron/install/rosbag2_transport:/home/pi/ros2_iron/install/rosbag2_storage_sqlite3:/home/pi/ros2_iron/install/rosbag2_examples_cpp:/home/pi/ros2_iron/install/rosbag2_compression:/home/pi/ros2_iron/install/rosbag2_cpp:/home/pi/ros2_iron/install/rosbag2_storage:/home/pi/ros2_iron/install/image_common:/home/pi/ros2_iron/install/camera_info_manager:/home/pi/ros2_iron/install/camera_calibration_parsers:/home/pi/ros2_iron/install/yaml_cpp_vendor:/home/pi/ros2_iron/install/interactive_markers:/home/pi/ros2_iron/install/common_interfaces:/home/pi/ros2_iron/install/visualization_msgs:/home/pi/ros2_iron/install/dummy_robot_bringup:/home/pi/ros2_iron/install/robot_state_publisher:/home/pi/ros2_iron/install/kdl_parser:/home/pi/ros2_iron/install/urdf:/home/pi/ros2_iron/install/urdf_parser_plugin:/home/pi/ros2_iron/install/turtlesim:/home/pi/ros2_iron/install/trajectory_msgs:/home/pi/ros2_iron/install/tracetools_test:/home/pi/ros2_iron/install/tracetools_launch:/home/pi/ros2_iron/install/topic_statistics_demo:/home/pi/ros2_iron/install/topic_monitor:/home/pi/ros2_iron/install/pendulum_control:/home/pi/ros2_iron/install/tlsf_cpp:/home/pi/ros2_iron/install/geometry2:/home/pi/ros2_iron/install/tf2_tools:/home/pi/ros2_iron/install/tf2_sensor_msgs:/home/pi/ros2_iron/install/test_tf2:/home/pi/ros2_iron/install/tf2_kdl:/home/pi/ros2_iron/install/tf2_geometry_msgs:/home/pi/ros2_iron/install/examples_tf2_py:/home/pi/ros2_iron/install/tf2_ros_py:/home/pi/ros2_iron/install/tf2_eigen:/home/pi/ros2_iron/install/tf2_bullet:/home/pi/ros2_iron/install/tf2_ros:/home/pi/ros2_iron/install/tf2_py:/home/pi/ros2_iron/install/tf2_msgs:/home/pi/ros2_iron/install/tf2_eigen_kdl:/home/pi/ros2_iron/install/laser_geometry:/home/pi/ros2_iron/install/tf2:/home/pi/ros2_iron/install/test_tracetools:/home/pi/ros2_iron/install/test_msgs:/home/pi/ros2_iron/install/test_communication:/home/pi/ros2_iron/install/stereo_msgs:/home/pi/ros2_iron/install/std_srvs:/home/pi/ros2_iron/install/shape_msgs:/home/pi/ros2_iron/install/examples_rclpy_pointcloud_publisher:/home/pi/ros2_iron/install/sensor_msgs_py:/home/pi/ros2_iron/install/quality_of_service_demo_py:/home/pi/ros2_iron/install/quality_of_service_demo_cpp:/home/pi/ros2_iron/install/map_msgs:/home/pi/ros2_iron/install/intra_process_demo:/home/pi/ros2_iron/install/image_transport:/home/pi/ros2_iron/install/image_tools:/home/pi/ros2_iron/install/dummy_sensors:/home/pi/ros2_iron/install/sensor_msgs:/home/pi/ros2_iron/install/rqt_plot:/home/pi/ros2_iron/install/ros2cli_common_extensions:/home/pi/ros2_iron/install/ros2doctor:/home/pi/ros2_iron/install/dummy_map_server:/home/pi/ros2_iron/install/nav_msgs:/home/pi/ros2_iron/install/logging_demo:/home/pi/ros2_iron/install/lifecycle_py:/home/pi/ros2_iron/install/lifecycle:/home/pi/ros2_iron/install/diagnostic_msgs:/home/pi/ros2_iron/install/geometry_msgs:/home/pi/ros2_iron/install/examples_rclpy_minimal_subscriber:/home/pi/ros2_iron/install/examples_rclpy_minimal_service:/home/pi/ros2_iron/install/examples_rclpy_minimal_publisher:/home/pi/ros2_iron/install/examples_rclpy_minimal_client:/home/pi/ros2_iron/install/examples_rclpy_executors:/home/pi/ros2_iron/install/examples_rclcpp_wait_set:/home/pi/ros2_iron/install/examples_rclcpp_multithreaded_executor:/home/pi/ros2_iron/install/examples_rclcpp_minimal_subscriber:/home/pi/ros2_iron/install/examples_rclcpp_minimal_publisher:/home/pi/ros2_iron/install/examples_rclcpp_minimal_composition:/home/pi/ros2_iron/install/examples_rclcpp_cbg_executor:/home/pi/ros2_iron/install/demo_nodes_py:/home/pi/ros2_iron/install/demo_nodes_cpp_native:/home/pi/ros2_iron/install/demo_nodes_cpp:/home/pi/ros2_iron/install/composition:/home/pi/ros2_iron/install/actionlib_msgs:/home/pi/ros2_iron/install/std_msgs:/home/pi/ros2_iron/install/rqt:/home/pi/ros2_iron/install/rqt_gui_cpp:/home/pi/ros2_iron/install/rosbag2_test_common:/home/pi/ros2_iron/install/ros2lifecycle_test_fixtures:/home/pi/ros2_iron/install/ros2component:/home/pi/ros2_iron/install/rclcpp_lifecycle:/home/pi/ros2_iron/install/action_tutorials_cpp:/home/pi/ros2_iron/install/rclcpp_components:/home/pi/ros2_iron/install/examples_rclcpp_minimal_action_server:/home/pi/ros2_iron/install/examples_rclcpp_minimal_action_client:/home/pi/ros2_iron/install/rclcpp_action:/home/pi/ros2_iron/install/message_filters:/home/pi/ros2_iron/install/examples_rclcpp_minimal_timer:/home/pi/ros2_iron/install/examples_rclcpp_minimal_service:/home/pi/ros2_iron/install/examples_rclcpp_minimal_client:/home/pi/ros2_iron/install/examples_rclcpp_async_client:/home/pi/ros2_iron/install/rclcpp:/home/pi/ros2_iron/install/libstatistics_collector:/home/pi/ros2_iron/install/statistics_msgs:/home/pi/ros2_iron/install/sros2_cmake:/home/pi/ros2_iron/install/sros2:/home/pi/ros2_iron/install/rqt_topic:/home/pi/ros2_iron/install/rqt_srv:/home/pi/ros2_iron/install/rqt_shell:/home/pi/ros2_iron/install/rqt_service_caller:/home/pi/ros2_iron/install/rqt_reconfigure:/home/pi/ros2_iron/install/rqt_py_console:/home/pi/ros2_iron/install/rqt_publisher:/home/pi/ros2_iron/install/rqt_action:/home/pi/ros2_iron/install/rqt_msg:/home/pi/ros2_iron/install/rqt_console:/home/pi/ros2_iron/install/rqt_py_common:/home/pi/ros2_iron/install/rqt_graph:/home/pi/ros2_iron/install/rqt_gui_py:/home/pi/ros2_iron/install/rqt_gui:/home/pi/ros2_iron/install/ros_testing:/home/pi/ros2_iron/install/ros2trace:/home/pi/ros2_iron/install/ros2topic:/home/pi/ros2_iron/install/ros2test:/home/pi/ros2_iron/install/ros2param:/home/pi/ros2_iron/install/ros2lifecycle:/home/pi/ros2_iron/install/ros2service:/home/pi/ros2_iron/install/ros2run:/home/pi/ros2_iron/install/ros2launch:/home/pi/ros2_iron/install/ros2pkg:/home/pi/ros2_iron/install/ros2node:/home/pi/ros2_iron/install/ros2multicast:/home/pi/ros2_iron/install/ros2interface:/home/pi/ros2_iron/install/ros2action:/home/pi/ros2_iron/install/ros2cli:/home/pi/ros2_iron/install/launch_testing_ros:/home/pi/ros2_iron/install/launch_ros:/home/pi/ros2_iron/install/examples_rclpy_minimal_action_server:/home/pi/ros2_iron/install/examples_rclpy_minimal_action_client:/home/pi/ros2_iron/install/examples_rclpy_guard_conditions:/home/pi/ros2_iron/install/action_tutorials_py:/home/pi/ros2_iron/install/rclpy:/home/pi/ros2_iron/install/rosgraph_msgs:/home/pi/ros2_iron/install/rosbag2_interfaces:/home/pi/ros2_iron/install/ros2cli_test_interfaces:/home/pi/ros2_iron/install/rcl_lifecycle:/home/pi/ros2_iron/install/rcl_action:/home/pi/ros2_iron/install/rcl:/home/pi/ros2_iron/install/rmw_implementation:/home/pi/ros2_iron/install/rmw_fastrtps_dynamic_cpp:/home/pi/ros2_iron/install/rmw_fastrtps_cpp:/home/pi/ros2_iron/install/rmw_fastrtps_shared_cpp:/home/pi/ros2_iron/install/rmw_cyclonedds_cpp:/home/pi/ros2_iron/install/rmw_connextddsmicro:/home/pi/ros2_iron/install/rmw_connextdds:/home/pi/ros2_iron/install/rmw_connextdds_common:/home/pi/ros2_iron/install/rmw_dds_common:/home/pi/ros2_iron/install/composition_interfaces:/home/pi/ros2_iron/install/rcl_interfaces:/home/pi/ros2_iron/install/pendulum_msgs:/home/pi/ros2_iron/install/lifecycle_msgs:/home/pi/ros2_iron/install/example_interfaces:/home/pi/ros2_iron/install/action_tutorials_interfaces:/home/pi/ros2_iron/install/rosidl_default_runtime:/home/pi/ros2_iron/install/rosidl_default_generators:/home/pi/ros2_iron/install/action_msgs:/home/pi/ros2_iron/install/unique_identifier_msgs:/home/pi/ros2_iron/install/ament_lint_common:/home/pi/ros2_iron/install/ament_cmake_uncrustify:/home/pi/ros2_iron/install/ament_uncrustify:/home/pi/ros2_iron/install/uncrustify_vendor:/home/pi/ros2_iron/install/type_description_interfaces:/home/pi/ros2_iron/install/tracetools_trace:/home/pi/ros2_iron/install/tracetools_read:/home/pi/ros2_iron/install/tracetools:/home/pi/ros2_iron/install/tlsf:/home/pi/ros2_iron/install/tinyxml_vendor:/home/pi/ros2_iron/install/qt_gui_core:/home/pi/ros2_iron/install/qt_gui_cpp:/home/pi/ros2_iron/install/pluginlib:/home/pi/ros2_iron/install/tinyxml2_vendor:/home/pi/ros2_iron/install/test_tracetools_launch:/home/pi/ros2_iron/install/test_security:/home/pi/ros2_iron/install/test_ros2trace:/home/pi/ros2_iron/install/test_rmw_implementation:/home/pi/ros2_iron/install/test_rclcpp:/home/pi/ros2_iron/install/test_quality_of_service:/home/pi/ros2_iron/install/test_launch_testing:/home/pi/ros2_iron/install/test_launch_ros:/home/pi/ros2_iron/install/test_interface_files:/home/pi/ros2_iron/install/test_cli_remapping:/home/pi/ros2_iron/install/test_cli:/home/pi/ros2_iron/install/qt_gui_app:/home/pi/ros2_iron/install/qt_gui:/home/pi/ros2_iron/install/tango_icons_vendor:/home/pi/ros2_iron/install/sqlite3_vendor:/home/pi/ros2_iron/install/rcl_logging_spdlog:/home/pi/ros2_iron/install/spdlog_vendor:/home/pi/ros2_iron/install/shared_queues_vendor:/home/pi/ros2_iron/install/service_msgs:/home/pi/ros2_iron/install/rviz_rendering_tests:/home/pi/ros2_iron/install/rviz_rendering:/home/pi/ros2_iron/install/rviz_ogre_vendor:/home/pi/ros2_iron/install/rviz_assimp_vendor:/home/pi/ros2_iron/install/rttest:/home/pi/ros2_iron/install/rti_connext_dds_cmake_module:/home/pi/ros2_iron/install/builtin_interfaces:/home/pi/ros2_iron/install/rosidl_core_runtime:/home/pi/ros2_iron/install/rosidl_core_generators:/home/pi/ros2_iron/install/rosidl_generator_py:/home/pi/ros2_iron/install/rpyutils:/home/pi/ros2_iron/install/rosidl_typesupport_tests:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_tests:/home/pi/ros2_iron/install/rosidl_typesupport_cpp:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_cpp:/home/pi/ros2_iron/install/rosidl_typesupport_c:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_c:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_c:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_cpp:/home/pi/ros2_iron/install/rosidl_generator_cpp:/home/pi/ros2_iron/install/rosidl_runtime_cpp:/home/pi/ros2_iron/install/rosidl_dynamic_typesupport_fastrtps:/home/pi/ros2_iron/install/rcl_yaml_param_parser:/home/pi/ros2_iron/install/rmw:/home/pi/ros2_iron/install/rosidl_dynamic_typesupport:/home/pi/ros2_iron/install/rosidl_runtime_c:/home/pi/ros2_iron/install/rosidl_generator_c:/home/pi/ros2_iron/install/rosidl_typesupport_interface:/home/pi/ros2_iron/install/rosidl_runtime_py:/home/pi/ros2_iron/install/rosidl_generator_dds_idl:/home/pi/ros2_iron/install/rosidl_cmake:/home/pi/ros2_iron/install/rosidl_pycommon:/home/pi/ros2_iron/install/rosidl_generator_type_description:/home/pi/ros2_iron/install/rosidl_parser:/home/pi/ros2_iron/install/rosidl_generator_tests:/home/pi/ros2_iron/install/rosidl_adapter:/home/pi/ros2_iron/install/rosidl_cli:/home/pi/ros2_iron/install/rosbag2_tests:/home/pi/ros2_iron/install/rosbag2_test_msgdefs:/home/pi/ros2_iron/install/ros_environment:/home/pi/ros2_iron/install/rmw_implementation_cmake:/home/pi/ros2_iron/install/resource_retriever:/home/pi/ros2_iron/install/class_loader:/home/pi/ros2_iron/install/rcpputils:/home/pi/ros2_iron/install/rcl_logging_noop:/home/pi/ros2_iron/install/rcl_logging_interface:/home/pi/ros2_iron/install/rcutils:/home/pi/ros2_iron/install/qt_gui_py_common:/home/pi/ros2_iron/install/qt_dotgraph:/home/pi/ros2_iron/install/python_qt_binding:/home/pi/ros2_iron/install/python_orocos_kdl_vendor:/home/pi/ros2_iron/install/launch_testing_ament_cmake:/home/pi/ros2_iron/install/python_cmake_module:/home/pi/ros2_iron/install/pybind11_vendor:/home/pi/ros2_iron/install/performance_test_fixture:/home/pi/ros2_iron/install/launch_pytest:/home/pi/ros2_iron/install/launch_testing:/home/pi/ros2_iron/install/launch_yaml:/home/pi/ros2_iron/install/launch_xml:/home/pi/ros2_iron/install/launch:/home/pi/ros2_iron/install/osrf_pycommon:/home/pi/ros2_iron/install/orocos_kdl_vendor:/home/pi/ros2_iron/install/mimick_vendor:/home/pi/ros2_iron/install/libyaml_vendor:/home/pi/ros2_iron/install/libcurl_vendor:/home/pi/ros2_iron/install/keyboard_handler:/home/pi/ros2_iron/install/ament_cmake_ros:/home/pi/ros2_iron/install/ament_cmake_gmock:/home/pi/ros2_iron/install/ament_cmake_auto:/home/pi/ros2_iron/install/ament_cmake_gtest:/home/pi/ros2_iron/install/ament_cmake_google_benchmark:/home/pi/ros2_iron/install/fastrtps_cmake_module:/home/pi/ros2_iron/install/eigen3_cmake_module:/home/pi/ros2_iron/install/domain_coordinator:/home/pi/ros2_iron/install/console_bridge_vendor:/home/pi/ros2_iron/install/ament_cmake_xmllint:/home/pi/ros2_iron/install/ament_xmllint:/home/pi/ros2_iron/install/ament_cmake_pyflakes:/home/pi/ros2_iron/install/ament_pyflakes:/home/pi/ros2_iron/install/ament_cmake_pycodestyle:/home/pi/ros2_iron/install/ament_pycodestyle:/home/pi/ros2_iron/install/ament_cmake_pep257:/home/pi/ros2_iron/install/ament_pep257:/home/pi/ros2_iron/install/ament_cmake_pclint:/home/pi/ros2_iron/install/ament_pclint:/home/pi/ros2_iron/install/ament_lint_auto:/home/pi/ros2_iron/install/ament_cmake:/home/pi/ros2_iron/install/ament_cmake_version:/home/pi/ros2_iron/install/ament_cmake_vendor_package:/home/pi/ros2_iron/install/ament_cmake_pytest:/home/pi/ros2_iron/install/ament_cmake_mypy:/home/pi/ros2_iron/install/ament_cmake_lint_cmake:/home/pi/ros2_iron/install/ament_cmake_flake8:/home/pi/ros2_iron/install/ament_cmake_cpplint:/home/pi/ros2_iron/install/ament_cmake_cppcheck:/home/pi/ros2_iron/install/ament_cmake_copyright:/home/pi/ros2_iron/install/ament_cmake_clang_tidy:/home/pi/ros2_iron/install/ament_cmake_clang_format:/home/pi/ros2_iron/install/ament_cmake_test:/home/pi/ros2_iron/install/ament_cmake_target_dependencies:/home/pi/ros2_iron/install/ament_cmake_python:/home/pi/ros2_iron/install/ament_cmake_export_dependencies:/home/pi/ros2_iron/install/ament_cmake_libraries:/home/pi/ros2_iron/install/ament_cmake_include_directories:/home/pi/ros2_iron/install/ament_cmake_gen_version_h:/home/pi/ros2_iron/install/ament_cmake_export_targets:/home/pi/ros2_iron/install/ament_cmake_export_link_flags:/home/pi/ros2_iron/install/ament_cmake_export_interfaces:/home/pi/ros2_iron/install/ament_cmake_export_libraries:/home/pi/ros2_iron/install/ament_cmake_export_include_directories:/home/pi/ros2_iron/install/ament_cmake_export_definitions:/home/pi/ros2_iron/install/ament_cmake_core:/home/pi/ros2_iron/install/ament_package:/home/pi/ros2_iron/install/ament_mypy:/home/pi/ros2_iron/install/ament_lint_cmake:/home/pi/ros2_iron/install/ament_flake8:/home/pi/ros2_iron/install/ament_copyright:/home/pi/ros2_iron/install/ament_lint:/home/pi/ros2_iron/install/ament_index_python:/home/pi/ros2_iron/install/ament_index_cpp:/home/pi/ros2_iron/install/ament_cpplint:/home/pi/ros2_iron/install/ament_cppcheck:/home/pi/ros2_iron/install/ament_clang_tidy:/home/pi/ros2_iron/install/ament_clang_format'), ('SHELL', '/bin/bash'), ('NO_AT_BRIDGE', '1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/test_ws/build/ublox_gps'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '100.83.102.58 50162 100.117.128.25 22'), ('PYTHONPATH', '/home/pi/test_ws/install/ublox_msgs/lib/python3.11/site-packages:/home/pi/test_ws/install/nmea_msgs/lib/python3.11/site-packages:/home/pi/wow_ws/build/wow_ros2:/home/pi/wow_ws/install/wow_ros2/lib/python3.11/site-packages:/home/pi/wow_ws/build/ntrip_client/src:/home/pi/wow_ws/install/ntrip_client/lib/python3.11/site-packages:/home/pi/wow_ws/install/rtcm_msgs/lib/python3.11/site-packages:/home/pi/wow_ws/install/robot_localization/lib/python3.11/site-packages:/home/pi/wow_ws/install/nmea_msgs/lib/python3.11/site-packages:/home/pi/wow_ws/install/gps_tools/lib/python3.11/site-packages:/home/pi/wow_ws/install/gps_msgs/lib/python3.11/site-packages:/home/pi/wow_ws/install/geodesy/lib/python3.11/site-packages:/home/pi/wow_ws/install/geographic_msgs/lib/python3.11/site-packages:/home/pi/wow_ws/install/diagnostic_common_diagnostics/lib/python3.11/site-packages:/home/pi/wow_ws/install/diagnostic_updater/lib/python3.11/site-packages:/home/pi/wow_ws/install/diagnostic_aggregator/lib/python3.11/site-packages:/home/pi/wow_ws/build/bno055:/home/pi/wow_ws/install/bno055/lib/python3.11/site-packages:/home/pi/wow_ws/build/ICM20948:/home/pi/wow_ws/install/ICM20948/lib/python3.11/site-packages:/home/pi/test_ws/build/urdf_wow_monk:/home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages:/home/pi/test_ws/build/nmea_navsat_driver/src:/home/pi/test_ws/install/nmea_navsat_driver/lib/python3.11/site-packages:/home/pi/test_ws/build/tf_transformations:/home/pi/test_ws/install/tf_transformations/lib/python3.11/site-packages:/home/pi/test_ws/build/ntrip_client/src:/home/pi/test_ws/install/ntrip_client/lib/python3.11/site-packages:/home/pi/test_ws/build/gps_publisher:/home/pi/test_ws/install/gps_publisher/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_bag_plugins/src:/home/pi/ros2_iron/install/rqt_bag_plugins/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosbag2_storage_mcap/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_bag/src:/home/pi/ros2_iron/install/rqt_bag/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rosbag2_examples_py:/home/pi/ros2_iron/install/rosbag2_examples_py/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_testing_examples:/home/pi/ros2_iron/install/launch_testing_examples/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2bag:/home/pi/ros2_iron/install/ros2bag/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosbag2_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosbag2_storage_sqlite3/lib/python3.11/site-packages:/home/pi/ros2_iron/install/interactive_markers/lib/python3.11/site-packages:/home/pi/ros2_iron/install/visualization_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/turtlesim/lib/python3.11/site-packages:/home/pi/ros2_iron/install/trajectory_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/tracetools_test:/home/pi/ros2_iron/install/tracetools_test/lib/python3.11/site-packages:/home/pi/ros2_iron/build/tracetools_launch:/home/pi/ros2_iron/install/tracetools_launch/lib/python3.11/site-packages:/home/pi/ros2_iron/build/topic_monitor:/home/pi/ros2_iron/install/topic_monitor/lib/python3.11/site-packages:/home/pi/ros2_iron/build/tf2_tools:/home/pi/ros2_iron/install/tf2_tools/lib/python3.11/site-packages:/home/pi/ros2_iron/install/tf2_sensor_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/tf2_kdl/lib/python3.11/site-packages:/home/pi/ros2_iron/install/tf2_geometry_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_tf2_py:/home/pi/ros2_iron/install/examples_tf2_py/lib/python3.11/site-packages:/home/pi/ros2_iron/build/tf2_ros_py:/home/pi/ros2_iron/install/tf2_ros_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/tf2_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/tf2_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/laser_geometry/lib/python3.11/site-packages:/home/pi/ros2_iron/install/test_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/stereo_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/std_srvs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/shape_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_pointcloud_publisher:/home/pi/ros2_iron/install/examples_rclpy_pointcloud_publisher/lib/python3.11/site-packages:/home/pi/ros2_iron/build/sensor_msgs_py:/home/pi/ros2_iron/install/sensor_msgs_py/lib/python3.11/site-packages:/home/pi/ros2_iron/build/quality_of_service_demo_py:/home/pi/ros2_iron/install/quality_of_service_demo_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/map_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/sensor_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_plot/src:/home/pi/ros2_iron/install/rqt_plot/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2doctor:/home/pi/ros2_iron/install/ros2doctor/lib/python3.11/site-packages:/home/pi/ros2_iron/install/nav_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/logging_demo/lib/python3.11/site-packages:/home/pi/ros2_iron/build/lifecycle_py:/home/pi/ros2_iron/install/lifecycle_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/diagnostic_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/geometry_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_minimal_subscriber:/home/pi/ros2_iron/install/examples_rclpy_minimal_subscriber/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_minimal_service:/home/pi/ros2_iron/install/examples_rclpy_minimal_service/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_minimal_publisher:/home/pi/ros2_iron/install/examples_rclpy_minimal_publisher/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_minimal_client:/home/pi/ros2_iron/install/examples_rclpy_minimal_client/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_executors:/home/pi/ros2_iron/install/examples_rclpy_executors/lib/python3.11/site-packages:/home/pi/ros2_iron/build/demo_nodes_py:/home/pi/ros2_iron/install/demo_nodes_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/actionlib_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/std_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt:/home/pi/ros2_iron/install/rqt/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosbag2_test_common/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2component:/home/pi/ros2_iron/install/ros2component/lib/python3.11/site-packages:/home/pi/ros2_iron/install/message_filters/lib/python3.11/site-packages:/home/pi/ros2_iron/install/statistics_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/sros2:/home/pi/ros2_iron/install/sros2/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_topic/src:/home/pi/ros2_iron/install/rqt_topic/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_srv/src:/home/pi/ros2_iron/install/rqt_srv/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_shell/src:/home/pi/ros2_iron/install/rqt_shell/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_service_caller/src:/home/pi/ros2_iron/install/rqt_service_caller/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_reconfigure/src:/home/pi/ros2_iron/install/rqt_reconfigure/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_py_console/src:/home/pi/ros2_iron/install/rqt_py_console/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_publisher/src:/home/pi/ros2_iron/install/rqt_publisher/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_action/src:/home/pi/ros2_iron/install/rqt_action/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_msg/src:/home/pi/ros2_iron/install/rqt_msg/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_console/src:/home/pi/ros2_iron/install/rqt_console/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rqt_py_common/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_graph/src:/home/pi/ros2_iron/install/rqt_graph/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_gui_py/src:/home/pi/ros2_iron/install/rqt_gui_py/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rqt_gui/src:/home/pi/ros2_iron/install/rqt_gui/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2trace:/home/pi/ros2_iron/install/ros2trace/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2topic:/home/pi/ros2_iron/install/ros2topic/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2test:/home/pi/ros2_iron/install/ros2test/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2param:/home/pi/ros2_iron/install/ros2param/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2lifecycle:/home/pi/ros2_iron/install/ros2lifecycle/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2service:/home/pi/ros2_iron/install/ros2service/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2run:/home/pi/ros2_iron/install/ros2run/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2launch:/home/pi/ros2_iron/install/ros2launch/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2pkg:/home/pi/ros2_iron/install/ros2pkg/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2node:/home/pi/ros2_iron/install/ros2node/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2multicast:/home/pi/ros2_iron/install/ros2multicast/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2interface:/home/pi/ros2_iron/install/ros2interface/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2action:/home/pi/ros2_iron/install/ros2action/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ros2cli:/home/pi/ros2_iron/install/ros2cli/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_testing_ros:/home/pi/ros2_iron/install/launch_testing_ros/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_ros:/home/pi/ros2_iron/install/launch_ros/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_minimal_action_server:/home/pi/ros2_iron/install/examples_rclpy_minimal_action_server/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_minimal_action_client:/home/pi/ros2_iron/install/examples_rclpy_minimal_action_client/lib/python3.11/site-packages:/home/pi/ros2_iron/build/examples_rclpy_guard_conditions:/home/pi/ros2_iron/install/examples_rclpy_guard_conditions/lib/python3.11/site-packages:/home/pi/ros2_iron/build/action_tutorials_py:/home/pi/ros2_iron/install/action_tutorials_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rclpy/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosgraph_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosbag2_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/ros2cli_test_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rmw_dds_common/lib/python3.11/site-packages:/home/pi/ros2_iron/install/composition_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rcl_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/pendulum_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/lifecycle_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/example_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/action_tutorials_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/action_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/unique_identifier_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_uncrustify:/home/pi/ros2_iron/install/ament_uncrustify/lib/python3.11/site-packages:/home/pi/ros2_iron/install/type_description_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/build/tracetools_trace:/home/pi/ros2_iron/install/tracetools_trace/lib/python3.11/site-packages:/home/pi/ros2_iron/build/tracetools_read:/home/pi/ros2_iron/install/tracetools_read/lib/python3.11/site-packages:/home/pi/ros2_iron/install/qt_gui_cpp/lib/python3.11/site-packages:/home/pi/ros2_iron/build/test_tracetools_launch:/home/pi/ros2_iron/install/test_tracetools_launch/lib/python3.11/site-packages:/home/pi/ros2_iron/build/test_ros2trace:/home/pi/ros2_iron/install/test_ros2trace/lib/python3.11/site-packages:/home/pi/ros2_iron/build/test_launch_ros:/home/pi/ros2_iron/install/test_launch_ros/lib/python3.11/site-packages:/home/pi/ros2_iron/install/qt_gui/lib/python3.11/site-packages:/home/pi/ros2_iron/install/service_msgs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/builtin_interfaces/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_generator_py/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rpyutils:/home/pi/ros2_iron/install/rpyutils/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_typesupport_cpp/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_cpp/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_typesupport_c/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_c/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_c/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_cpp/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_generator_cpp/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_generator_c/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rosidl_runtime_py:/home/pi/ros2_iron/install/rosidl_runtime_py/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_generator_dds_idl/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_cmake/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rosidl_pycommon:/home/pi/ros2_iron/install/rosidl_pycommon/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_generator_type_description/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_parser/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages:/home/pi/ros2_iron/build/rosidl_cli:/home/pi/ros2_iron/install/rosidl_cli/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rosbag2_test_msgdefs/lib/python3.11/site-packages:/home/pi/ros2_iron/install/resource_retriever/lib/python3.11/site-packages:/home/pi/ros2_iron/install/rcutils/lib/python3.11/site-packages:/home/pi/ros2_iron/install/qt_gui_py_common/lib/python3.11/site-packages:/home/pi/ros2_iron/install/qt_dotgraph/lib/python3.11/site-packages:/home/pi/ros2_iron/install/python_qt_binding/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_pytest:/home/pi/ros2_iron/install/launch_pytest/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_testing:/home/pi/ros2_iron/install/launch_testing/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_yaml:/home/pi/ros2_iron/install/launch_yaml/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch_xml:/home/pi/ros2_iron/install/launch_xml/lib/python3.11/site-packages:/home/pi/ros2_iron/build/launch:/home/pi/ros2_iron/install/launch/lib/python3.11/site-packages:/home/pi/ros2_iron/build/osrf_pycommon:/home/pi/ros2_iron/install/osrf_pycommon/lib/python3.11/site-packages:/home/pi/ros2_iron/install/ament_cmake_google_benchmark/lib/python3.11/site-packages:/home/pi/ros2_iron/build/domain_coordinator:/home/pi/ros2_iron/install/domain_coordinator/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_xmllint:/home/pi/ros2_iron/install/ament_xmllint/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_pyflakes:/home/pi/ros2_iron/install/ament_pyflakes/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_pycodestyle:/home/pi/ros2_iron/install/ament_pycodestyle/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_pep257:/home/pi/ros2_iron/install/ament_pep257/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_pclint:/home/pi/ros2_iron/install/ament_pclint/lib/python3.11/site-packages:/home/pi/ros2_iron/install/ament_cmake_test/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_package:/home/pi/ros2_iron/install/ament_package/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_mypy:/home/pi/ros2_iron/install/ament_mypy/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_lint_cmake:/home/pi/ros2_iron/install/ament_lint_cmake/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_flake8:/home/pi/ros2_iron/install/ament_flake8/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_copyright:/home/pi/ros2_iron/install/ament_copyright/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_lint:/home/pi/ros2_iron/install/ament_lint/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_index_python:/home/pi/ros2_iron/install/ament_index_python/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_cpplint:/home/pi/ros2_iron/install/ament_cpplint/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_cppcheck:/home/pi/ros2_iron/install/ament_cppcheck/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_clang_tidy:/home/pi/ros2_iron/install/ament_clang_tidy/lib/python3.11/site-packages:/home/pi/ros2_iron/build/ament_clang_format:/home/pi/ros2_iron/install/ament_clang_format/lib/python3.11/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/test_ws/install/ublox_msgs:/home/pi/test_ws/install/ublox_serialization:/home/pi/test_ws/install/nmea_msgs:/home/pi/wow_ws/install/spacenav:/home/pi/wow_ws/install/diagnostics:/home/pi/wow_ws/install/self_test:/home/pi/wow_ws/install/joy:/home/pi/wow_ws/install/sdl2_vendor:/home/pi/wow_ws/install/imu_tools:/home/pi/wow_ws/install/rviz_imu_plugin:/home/pi/wow_ws/install/ntrip_client_node:/home/pi/wow_ws/install/rtcm_msgs:/home/pi/wow_ws/install/robot_localization:/home/pi/wow_ws/install/nmea_msgs:/home/pi/wow_ws/install/joy_linux:/home/pi/wow_ws/install/imu_filter_madgwick:/home/pi/wow_ws/install/imu_complementary_filter:/home/pi/wow_ws/install/gps_umd:/home/pi/wow_ws/install/gpsd_client:/home/pi/wow_ws/install/gps_tools:/home/pi/wow_ws/install/gps_msgs:/home/pi/wow_ws/install/geographic_info:/home/pi/wow_ws/install/geodesy:/home/pi/wow_ws/install/geographic_msgs:/home/pi/wow_ws/install/foxglove_bridge:/home/pi/wow_ws/install/diagnostic_common_diagnostics:/home/pi/wow_ws/install/diagnostic_updater:/home/pi/wow_ws/install/diagnostic_aggregator:/home/pi/test_ws/install/ublox:/home/pi/test_ws/install/ublox_gps:/home/pi/ros2_iron/install/rosbag2:/home/pi/ros2_iron/install/rosbag2_storage_default_plugins:/home/pi/ros2_iron/install/rosbag2_storage_mcap:/home/pi/ros2_iron/install/rosbag2_compression_zstd:/home/pi/ros2_iron/install/mcap_vendor:/home/pi/ros2_iron/install/zstd_vendor:/home/pi/ros2_iron/install/rviz_visual_testing_framework:/home/pi/ros2_iron/install/rviz2:/home/pi/ros2_iron/install/rviz_default_plugins:/home/pi/ros2_iron/install/rviz_common:/home/pi/ros2_iron/install/rosbag2_py:/home/pi/ros2_iron/install/rosbag2_transport:/home/pi/ros2_iron/install/rosbag2_storage_sqlite3:/home/pi/ros2_iron/install/rosbag2_examples_cpp:/home/pi/ros2_iron/install/rosbag2_compression:/home/pi/ros2_iron/install/rosbag2_cpp:/home/pi/ros2_iron/install/rosbag2_storage:/home/pi/ros2_iron/install/image_common:/home/pi/ros2_iron/install/camera_info_manager:/home/pi/ros2_iron/install/camera_calibration_parsers:/home/pi/ros2_iron/install/yaml_cpp_vendor:/home/pi/ros2_iron/install/interactive_markers:/home/pi/ros2_iron/install/common_interfaces:/home/pi/ros2_iron/install/visualization_msgs:/home/pi/ros2_iron/install/dummy_robot_bringup:/home/pi/ros2_iron/install/robot_state_publisher:/home/pi/ros2_iron/install/kdl_parser:/home/pi/ros2_iron/install/urdf:/home/pi/ros2_iron/install/urdfdom:/home/pi/ros2_iron/install/urdf_parser_plugin:/home/pi/ros2_iron/install/urdfdom_headers:/home/pi/ros2_iron/install/turtlesim:/home/pi/ros2_iron/install/trajectory_msgs:/home/pi/ros2_iron/install/topic_statistics_demo:/home/pi/ros2_iron/install/pendulum_control:/home/pi/ros2_iron/install/tlsf_cpp:/home/pi/ros2_iron/install/geometry2:/home/pi/ros2_iron/install/tf2_sensor_msgs:/home/pi/ros2_iron/install/test_tf2:/home/pi/ros2_iron/install/tf2_kdl:/home/pi/ros2_iron/install/tf2_geometry_msgs:/home/pi/ros2_iron/install/tf2_eigen:/home/pi/ros2_iron/install/tf2_bullet:/home/pi/ros2_iron/install/tf2_ros:/home/pi/ros2_iron/install/tf2_py:/home/pi/ros2_iron/install/tf2_msgs:/home/pi/ros2_iron/install/tf2_eigen_kdl:/home/pi/ros2_iron/install/laser_geometry:/home/pi/ros2_iron/install/tf2:/home/pi/ros2_iron/install/test_tracetools:/home/pi/ros2_iron/install/test_msgs:/home/pi/ros2_iron/install/test_communication:/home/pi/ros2_iron/install/stereo_msgs:/home/pi/ros2_iron/install/std_srvs:/home/pi/ros2_iron/install/shape_msgs:/home/pi/ros2_iron/install/quality_of_service_demo_cpp:/home/pi/ros2_iron/install/map_msgs:/home/pi/ros2_iron/install/intra_process_demo:/home/pi/ros2_iron/install/image_transport:/home/pi/ros2_iron/install/image_tools:/home/pi/ros2_iron/install/dummy_sensors:/home/pi/ros2_iron/install/sensor_msgs:/home/pi/ros2_iron/install/ros2cli_common_extensions:/home/pi/ros2_iron/install/dummy_map_server:/home/pi/ros2_iron/install/nav_msgs:/home/pi/ros2_iron/install/logging_demo:/home/pi/ros2_iron/install/lifecycle:/home/pi/ros2_iron/install/diagnostic_msgs:/home/pi/ros2_iron/install/geometry_msgs:/home/pi/ros2_iron/install/examples_rclcpp_wait_set:/home/pi/ros2_iron/install/examples_rclcpp_multithreaded_executor:/home/pi/ros2_iron/install/examples_rclcpp_minimal_subscriber:/home/pi/ros2_iron/install/examples_rclcpp_minimal_publisher:/home/pi/ros2_iron/install/examples_rclcpp_minimal_composition:/home/pi/ros2_iron/install/examples_rclcpp_cbg_executor:/home/pi/ros2_iron/install/demo_nodes_cpp_native:/home/pi/ros2_iron/install/demo_nodes_cpp:/home/pi/ros2_iron/install/composition:/home/pi/ros2_iron/install/actionlib_msgs:/home/pi/ros2_iron/install/std_msgs:/home/pi/ros2_iron/install/rqt_gui_cpp:/home/pi/ros2_iron/install/rosbag2_test_common:/home/pi/ros2_iron/install/ros2lifecycle_test_fixtures:/home/pi/ros2_iron/install/rclcpp_lifecycle:/home/pi/ros2_iron/install/action_tutorials_cpp:/home/pi/ros2_iron/install/rclcpp_components:/home/pi/ros2_iron/install/examples_rclcpp_minimal_action_server:/home/pi/ros2_iron/install/examples_rclcpp_minimal_action_client:/home/pi/ros2_iron/install/rclcpp_action:/home/pi/ros2_iron/install/message_filters:/home/pi/ros2_iron/install/examples_rclcpp_minimal_timer:/home/pi/ros2_iron/install/examples_rclcpp_minimal_service:/home/pi/ros2_iron/install/examples_rclcpp_minimal_client:/home/pi/ros2_iron/install/examples_rclcpp_async_client:/home/pi/ros2_iron/install/rclcpp:/home/pi/ros2_iron/install/libstatistics_collector:/home/pi/ros2_iron/install/statistics_msgs:/home/pi/ros2_iron/install/sros2_cmake:/home/pi/ros2_iron/install/rqt_py_common:/home/pi/ros2_iron/install/ros_testing:/home/pi/ros2_iron/install/rclpy:/home/pi/ros2_iron/install/rosgraph_msgs:/home/pi/ros2_iron/install/rosbag2_interfaces:/home/pi/ros2_iron/install/ros2cli_test_interfaces:/home/pi/ros2_iron/install/rcl_lifecycle:/home/pi/ros2_iron/install/rcl_action:/home/pi/ros2_iron/install/rcl:/home/pi/ros2_iron/install/rmw_implementation:/home/pi/ros2_iron/install/rmw_fastrtps_dynamic_cpp:/home/pi/ros2_iron/install/rmw_fastrtps_cpp:/home/pi/ros2_iron/install/rmw_fastrtps_shared_cpp:/home/pi/ros2_iron/install/rmw_cyclonedds_cpp:/home/pi/ros2_iron/install/rmw_connextddsmicro:/home/pi/ros2_iron/install/rmw_connextdds:/home/pi/ros2_iron/install/rmw_connextdds_common:/home/pi/ros2_iron/install/rmw_dds_common:/home/pi/ros2_iron/install/composition_interfaces:/home/pi/ros2_iron/install/rcl_interfaces:/home/pi/ros2_iron/install/pendulum_msgs:/home/pi/ros2_iron/install/lifecycle_msgs:/home/pi/ros2_iron/install/example_interfaces:/home/pi/ros2_iron/install/action_tutorials_interfaces:/home/pi/ros2_iron/install/rosidl_default_runtime:/home/pi/ros2_iron/install/rosidl_default_generators:/home/pi/ros2_iron/install/action_msgs:/home/pi/ros2_iron/install/unique_identifier_msgs:/home/pi/ros2_iron/install/ament_lint_common:/home/pi/ros2_iron/install/ament_cmake_uncrustify:/home/pi/ros2_iron/install/uncrustify_vendor:/home/pi/ros2_iron/install/type_description_interfaces:/home/pi/ros2_iron/install/tracetools:/home/pi/ros2_iron/install/tlsf:/home/pi/ros2_iron/install/tinyxml_vendor:/home/pi/ros2_iron/install/qt_gui_core:/home/pi/ros2_iron/install/qt_gui_cpp:/home/pi/ros2_iron/install/pluginlib:/home/pi/ros2_iron/install/tinyxml2_vendor:/home/pi/ros2_iron/install/test_security:/home/pi/ros2_iron/install/test_rmw_implementation:/home/pi/ros2_iron/install/test_rclcpp:/home/pi/ros2_iron/install/test_quality_of_service:/home/pi/ros2_iron/install/test_launch_testing:/home/pi/ros2_iron/install/test_interface_files:/home/pi/ros2_iron/install/test_cli_remapping:/home/pi/ros2_iron/install/test_cli:/home/pi/ros2_iron/install/qt_gui_app:/home/pi/ros2_iron/install/qt_gui:/home/pi/ros2_iron/install/tango_icons_vendor:/home/pi/ros2_iron/install/sqlite3_vendor:/home/pi/ros2_iron/install/rcl_logging_spdlog:/home/pi/ros2_iron/install/spdlog_vendor:/home/pi/ros2_iron/install/shared_queues_vendor:/home/pi/ros2_iron/install/service_msgs:/home/pi/ros2_iron/install/rviz_rendering_tests:/home/pi/ros2_iron/install/rviz_rendering:/home/pi/ros2_iron/install/rviz_ogre_vendor:/home/pi/ros2_iron/install/rviz_assimp_vendor:/home/pi/ros2_iron/install/rttest:/home/pi/ros2_iron/install/rti_connext_dds_cmake_module:/home/pi/ros2_iron/install/builtin_interfaces:/home/pi/ros2_iron/install/rosidl_core_runtime:/home/pi/ros2_iron/install/rosidl_core_generators:/home/pi/ros2_iron/install/rosidl_generator_py:/home/pi/ros2_iron/install/rosidl_typesupport_tests:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_tests:/home/pi/ros2_iron/install/rosidl_typesupport_cpp:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_cpp:/home/pi/ros2_iron/install/rosidl_typesupport_c:/home/pi/ros2_iron/install/rosidl_typesupport_introspection_c:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_c:/home/pi/ros2_iron/install/rosidl_typesupport_fastrtps_cpp:/home/pi/ros2_iron/install/rosidl_generator_cpp:/home/pi/ros2_iron/install/rosidl_runtime_cpp:/home/pi/ros2_iron/install/rosidl_dynamic_typesupport_fastrtps:/home/pi/ros2_iron/install/rcl_yaml_param_parser:/home/pi/ros2_iron/install/rmw:/home/pi/ros2_iron/install/rosidl_dynamic_typesupport:/home/pi/ros2_iron/install/rosidl_runtime_c:/home/pi/ros2_iron/install/rosidl_generator_c:/home/pi/ros2_iron/install/rosidl_typesupport_interface:/home/pi/ros2_iron/install/rosidl_generator_dds_idl:/home/pi/ros2_iron/install/rosidl_cmake:/home/pi/ros2_iron/install/rosidl_generator_type_description:/home/pi/ros2_iron/install/rosidl_parser:/home/pi/ros2_iron/install/rosidl_generator_tests:/home/pi/ros2_iron/install/rosidl_adapter:/home/pi/ros2_iron/install/rosbag2_tests:/home/pi/ros2_iron/install/rosbag2_test_msgdefs:/home/pi/ros2_iron/install/ros_environment:/home/pi/ros2_iron/install/rmw_implementation_cmake:/home/pi/ros2_iron/install/resource_retriever:/home/pi/ros2_iron/install/class_loader:/home/pi/ros2_iron/install/rcpputils:/home/pi/ros2_iron/install/rcl_logging_noop:/home/pi/ros2_iron/install/rcl_logging_interface:/home/pi/ros2_iron/install/rcutils:/home/pi/ros2_iron/install/qt_gui_py_common:/home/pi/ros2_iron/install/qt_dotgraph:/home/pi/ros2_iron/install/python_qt_binding:/home/pi/ros2_iron/install/python_orocos_kdl_vendor:/home/pi/ros2_iron/install/launch_testing_ament_cmake:/home/pi/ros2_iron/install/python_cmake_module:/home/pi/ros2_iron/install/pybind11_vendor:/home/pi/ros2_iron/install/performance_test_fixture:/home/pi/ros2_iron/install/osrf_testing_tools_cpp:/home/pi/ros2_iron/install/orocos_kdl_vendor:/home/pi/ros2_iron/install/mimick_vendor:/home/pi/ros2_iron/install/libyaml_vendor:/home/pi/ros2_iron/install/libcurl_vendor:/home/pi/ros2_iron/install/keyboard_handler:/home/pi/ros2_iron/install/iceoryx_introspection:/home/pi/ros2_iron/install/cyclonedds:/home/pi/ros2_iron/install/iceoryx_posh:/home/pi/ros2_iron/install/iceoryx_hoofs:/home/pi/ros2_iron/install/iceoryx_binding_c:/home/pi/ros2_iron/install/ament_cmake_ros:/home/pi/ros2_iron/install/ament_cmake_gmock:/home/pi/ros2_iron/install/gmock_vendor:/home/pi/ros2_iron/install/ament_cmake_auto:/home/pi/ros2_iron/install/ament_cmake_gtest:/home/pi/ros2_iron/install/gtest_vendor:/home/pi/ros2_iron/install/ament_cmake_google_benchmark:/home/pi/ros2_iron/install/google_benchmark_vendor:/home/pi/ros2_iron/install/fastrtps:/home/pi/ros2_iron/install/foonathan_memory_vendor:/home/pi/ros2_iron/install/fastrtps_cmake_module:/home/pi/ros2_iron/install/fastcdr:/home/pi/ros2_iron/install/eigen3_cmake_module:/home/pi/ros2_iron/install/console_bridge_vendor:/home/pi/ros2_iron/install/ament_cmake_xmllint:/home/pi/ros2_iron/install/ament_cmake_pyflakes:/home/pi/ros2_iron/install/ament_cmake_pycodestyle:/home/pi/ros2_iron/install/ament_cmake_pep257:/home/pi/ros2_iron/install/ament_cmake_pclint:/home/pi/ros2_iron/install/ament_lint_auto:/home/pi/ros2_iron/install/ament_cmake:/home/pi/ros2_iron/install/ament_cmake_version:/home/pi/ros2_iron/install/ament_cmake_vendor_package:/home/pi/ros2_iron/install/ament_cmake_pytest:/home/pi/ros2_iron/install/ament_cmake_mypy:/home/pi/ros2_iron/install/ament_cmake_lint_cmake:/home/pi/ros2_iron/install/ament_cmake_flake8:/home/pi/ros2_iron/install/ament_cmake_cpplint:/home/pi/ros2_iron/install/ament_cmake_cppcheck:/home/pi/ros2_iron/install/ament_cmake_copyright:/home/pi/ros2_iron/install/ament_cmake_clang_tidy:/home/pi/ros2_iron/install/ament_cmake_clang_format:/home/pi/ros2_iron/install/ament_cmake_test:/home/pi/ros2_iron/install/ament_cmake_target_dependencies:/home/pi/ros2_iron/install/ament_cmake_python:/home/pi/ros2_iron/install/ament_cmake_export_dependencies:/home/pi/ros2_iron/install/ament_cmake_libraries:/home/pi/ros2_iron/install/ament_cmake_include_directories:/home/pi/ros2_iron/install/ament_cmake_gen_version_h:/home/pi/ros2_iron/install/ament_cmake_export_targets:/home/pi/ros2_iron/install/ament_cmake_export_link_flags:/home/pi/ros2_iron/install/ament_cmake_export_interfaces:/home/pi/ros2_iron/install/ament_cmake_export_libraries:/home/pi/ros2_iron/install/ament_cmake_export_include_directories:/home/pi/ros2_iron/install/ament_cmake_export_definitions:/home/pi/ros2_iron/install/ament_cmake_core:/home/pi/ros2_iron/install/ament_index_cpp:/home/pi/wow_ws/install/wow_ros2:/home/pi/wow_ws/install/ntrip_client:/home/pi/wow_ws/install/bno055:/home/pi/wow_ws/install/ICM20948:/home/pi/test_ws/install/urdf_wow_monk:/home/pi/test_ws/install/nmea_navsat_driver:/home/pi/test_ws/install/tf_transformations:/home/pi/test_ws/install/ntrip_client:/home/pi/test_ws/install/gps_publisher:/home/pi/ros2_iron/install/rqt_bag_plugins:/home/pi/ros2_iron/install/rqt_bag:/home/pi/ros2_iron/install/rosbag2_examples_py:/home/pi/ros2_iron/install/launch_testing_examples:/home/pi/ros2_iron/install/ros2bag:/home/pi/ros2_iron/install/tracetools_test:/home/pi/ros2_iron/install/tracetools_launch:/home/pi/ros2_iron/install/topic_monitor:/home/pi/ros2_iron/install/tf2_tools:/home/pi/ros2_iron/install/examples_tf2_py:/home/pi/ros2_iron/install/tf2_ros_py:/home/pi/ros2_iron/install/examples_rclpy_pointcloud_publisher:/home/pi/ros2_iron/install/sensor_msgs_py:/home/pi/ros2_iron/install/quality_of_service_demo_py:/home/pi/ros2_iron/install/rqt_plot:/home/pi/ros2_iron/install/ros2doctor:/home/pi/ros2_iron/install/lifecycle_py:/home/pi/ros2_iron/install/examples_rclpy_minimal_subscriber:/home/pi/ros2_iron/install/examples_rclpy_minimal_service:/home/pi/ros2_iron/install/examples_rclpy_minimal_publisher:/home/pi/ros2_iron/install/examples_rclpy_minimal_client:/home/pi/ros2_iron/install/examples_rclpy_executors:/home/pi/ros2_iron/install/demo_nodes_py:/home/pi/ros2_iron/install/rqt:/home/pi/ros2_iron/install/ros2component:/home/pi/ros2_iron/install/sros2:/home/pi/ros2_iron/install/rqt_topic:/home/pi/ros2_iron/install/rqt_srv:/home/pi/ros2_iron/install/rqt_shell:/home/pi/ros2_iron/install/rqt_service_caller:/home/pi/ros2_iron/install/rqt_reconfigure:/home/pi/ros2_iron/install/rqt_py_console:/home/pi/ros2_iron/install/rqt_publisher:/home/pi/ros2_iron/install/rqt_action:/home/pi/ros2_iron/install/rqt_msg:/home/pi/ros2_iron/install/rqt_console:/home/pi/ros2_iron/install/rqt_graph:/home/pi/ros2_iron/install/rqt_gui_py:/home/pi/ros2_iron/install/rqt_gui:/home/pi/ros2_iron/install/ros2trace:/home/pi/ros2_iron/install/ros2topic:/home/pi/ros2_iron/install/ros2test:/home/pi/ros2_iron/install/ros2param:/home/pi/ros2_iron/install/ros2lifecycle:/home/pi/ros2_iron/install/ros2service:/home/pi/ros2_iron/install/ros2run:/home/pi/ros2_iron/install/ros2launch:/home/pi/ros2_iron/install/ros2pkg:/home/pi/ros2_iron/install/ros2node:/home/pi/ros2_iron/install/ros2multicast:/home/pi/ros2_iron/install/ros2interface:/home/pi/ros2_iron/install/ros2action:/home/pi/ros2_iron/install/ros2cli:/home/pi/ros2_iron/install/launch_testing_ros:/home/pi/ros2_iron/install/launch_ros:/home/pi/ros2_iron/install/examples_rclpy_minimal_action_server:/home/pi/ros2_iron/install/examples_rclpy_minimal_action_client:/home/pi/ros2_iron/install/examples_rclpy_guard_conditions:/home/pi/ros2_iron/install/action_tutorials_py:/home/pi/ros2_iron/install/ament_uncrustify:/home/pi/ros2_iron/install/tracetools_trace:/home/pi/ros2_iron/install/tracetools_read:/home/pi/ros2_iron/install/test_tracetools_launch:/home/pi/ros2_iron/install/test_ros2trace:/home/pi/ros2_iron/install/test_launch_ros:/home/pi/ros2_iron/install/rpyutils:/home/pi/ros2_iron/install/rosidl_runtime_py:/home/pi/ros2_iron/install/rosidl_pycommon:/home/pi/ros2_iron/install/rosidl_cli:/home/pi/ros2_iron/install/launch_pytest:/home/pi/ros2_iron/install/launch_testing:/home/pi/ros2_iron/install/launch_yaml:/home/pi/ros2_iron/install/launch_xml:/home/pi/ros2_iron/install/launch:/home/pi/ros2_iron/install/osrf_pycommon:/home/pi/ros2_iron/install/domain_coordinator:/home/pi/ros2_iron/install/ament_xmllint:/home/pi/ros2_iron/install/ament_pyflakes:/home/pi/ros2_iron/install/ament_pycodestyle:/home/pi/ros2_iron/install/ament_pep257:/home/pi/ros2_iron/install/ament_pclint:/home/pi/ros2_iron/install/ament_package:/home/pi/ros2_iron/install/ament_mypy:/home/pi/ros2_iron/install/ament_lint_cmake:/home/pi/ros2_iron/install/ament_flake8:/home/pi/ros2_iron/install/ament_copyright:/home/pi/ros2_iron/install/ament_lint:/home/pi/ros2_iron/install/ament_index_python:/home/pi/ros2_iron/install/ament_cpplint:/home/pi/ros2_iron/install/ament_cppcheck:/home/pi/ros2_iron/install/ament_clang_tidy:/home/pi/ros2_iron/install/ament_clang_format')]), 'shell': False}
+[106.094333] (-) TimerEvent: {}
+[106.097474] (ublox_gps) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[106.098735] (ublox_gps) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[106.098829] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/lib/ublox_gps/ublox_gps_node\n'}
+[106.098883] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/lib/ublox_gps/ublox_logger\n'}
+[106.100475] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/adr_udr_product.hpp\n'}
+[106.100783] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/async_worker.hpp\n'}
+[106.101098] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/callback.hpp\n'}
+[106.101403] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/component_interface.hpp\n'}
+[106.101695] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/fix_diagnostic.hpp\n'}
+[106.101991] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/fts_product.hpp\n'}
+[106.102280] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/gnss.hpp\n'}
+[106.102570] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/gps.hpp\n'}
+[106.102859] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/hp_pos_rec_product.hpp\n'}
+[106.103148] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/hpg_ref_product.hpp\n'}
+[106.103439] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/hpg_rov_product.hpp\n'}
+[106.103729] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/mkgmtime.h\n'}
+[106.104013] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/node.hpp\n'}
+[106.104298] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/raw_data_pa.hpp\n'}
+[106.104586] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/raw_data_product.hpp\n'}
+[106.104874] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/rtcm.hpp\n'}
+[106.105158] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/tim_product.hpp\n'}
+[106.105444] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware.hpp\n'}
+[106.106780] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware6.hpp\n'}
+[106.107097] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware7.hpp\n'}
+[106.107398] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware7plus.hpp\n'}
+[106.107703] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware8.hpp\n'}
+[106.108008] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware9.hpp\n'}
+[106.108314] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_topic_diagnostic.hpp\n'}
+[106.108619] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/utils.hpp\n'}
+[106.108922] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/include/ublox_gps/ublox_gps/worker.hpp\n'}
+[106.109292] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/launch/ublox_gps_node-composed-launch.py\n'}
+[106.109403] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/launch/ublox_gps_node-launch.py\n'}
+[106.109704] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/config/c94_m8p_base.yaml\n'}
+[106.109813] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/config/c94_m8p_rover.yaml\n'}
+[106.109917] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/config/c94_m8t_base.yaml\n'}
+[106.110020] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/config/c94_m8t_rover.yaml\n'}
+[106.110123] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/config/neo_m8u_rover.yaml\n'}
+[106.110226] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/config/nmea.yaml\n'}
+[106.110329] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/config/zed_f9p.yaml\n'}
+[106.110886] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ament_index/resource_index/package_run_dependencies/ublox_gps\n'}
+[106.111466] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ament_index/resource_index/parent_prefix_path/ublox_gps\n'}
+[106.111680] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/environment/ament_prefix_path.sh\n'}
+[106.111843] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/environment/ament_prefix_path.dsv\n'}
+[106.112035] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/environment/path.sh\n'}
+[106.112194] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/environment/path.dsv\n'}
+[106.112352] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/local_setup.bash\n'}
+[106.112506] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/local_setup.sh\n'}
+[106.112661] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/local_setup.zsh\n'}
+[106.112814] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/local_setup.dsv\n'}
+[106.112937] (ublox_gps) StdoutLine: {'line': b'-- Symlinking: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/package.dsv\n'}
+[106.137172] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ament_index/resource_index/packages/ublox_gps\n'}
+[106.137847] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ament_index/resource_index/rclcpp_components/ublox_gps\n'}
+[106.138039] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[106.138207] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[106.138375] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/cmake/ublox_gpsConfig.cmake\n'}
+[106.138487] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/cmake/ublox_gpsConfig-version.cmake\n'}
+[106.138646] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/package.xml\n'}
+[106.138872] (ublox_gps) StdoutLine: {'line': b'-- Installing: /home/pi/test_ws/install/ublox_gps/lib/libublox_gps.so\n'}
+[106.162791] (ublox_gps) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/test_ws/install/ublox_gps/lib/libublox_gps.so" to ""\n'}
+[106.163704] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/cmake/export_ublox_gpsExport.cmake\n'}
+[106.163806] (ublox_gps) StdoutLine: {'line': b'-- Up-to-date: /home/pi/test_ws/install/ublox_gps/share/ublox_gps/cmake/export_ublox_gpsExport-noconfig.cmake\n'}
+[106.165467] (ublox_gps) CommandEnded: {'returncode': 0}
+[106.194403] (-) TimerEvent: {}
+[106.294663] (-) TimerEvent: {}
+[106.397283] (-) TimerEvent: {}
+[106.431759] (ublox_gps) JobEnded: {'identifier': 'ublox_gps', 'rc': 0}
+[106.432751] (-) EventReactorShutdown: {}

@@ -1,0 +1,25 @@
+[4.393s] Invoking command in '/home/pi/test_ws/build/nmea_navsat_driver': AMENT_PREFIX_PATH=/home/pi/test_ws/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/test_ws/install/nmea_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/pi/test_ws/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/test_ws/build/nmea_navsat_driver/prefix_override:/home/pi/test_ws/install/nmea_navsat_driver/lib/python3.11/site-packages:/home/pi/test_ws/install/nmea_msgs/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/nmea_navsat_driver/build --no-deps install_data
+[5.603s] running develop
+[5.604s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.604s]   warnings.warn(
+[5.691s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[5.691s]   warnings.warn(
+[6.059s] running egg_info
+[6.103s] writing src/nmea_navsat_driver.egg-info/PKG-INFO
+[6.104s] writing dependency_links to src/nmea_navsat_driver.egg-info/dependency_links.txt
+[6.106s] writing entry points to src/nmea_navsat_driver.egg-info/entry_points.txt
+[6.107s] writing requirements to src/nmea_navsat_driver.egg-info/requires.txt
+[6.108s] writing top-level names to src/nmea_navsat_driver.egg-info/top_level.txt
+[6.202s] reading manifest file 'src/nmea_navsat_driver.egg-info/SOURCES.txt'
+[6.203s] writing manifest file 'src/nmea_navsat_driver.egg-info/SOURCES.txt'
+[6.251s] running build_ext
+[6.251s] Creating /home/pi/test_ws/install/nmea_navsat_driver/lib/python3.11/site-packages/nmea-navsat-driver.egg-link (link to src)
+[6.252s] Installing nmea_serial_driver script to /home/pi/test_ws/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[6.252s] Installing nmea_socket_driver script to /home/pi/test_ws/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[6.252s] Installing nmea_tcpclient_driver script to /home/pi/test_ws/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[6.252s] Installing nmea_topic_driver script to /home/pi/test_ws/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[6.253s] Installing nmea_topic_serial_reader script to /home/pi/test_ws/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[6.253s] 
+[6.253s] Installed /home/pi/test_ws/build/nmea_navsat_driver/src
+[6.253s] running install_data
+[6.436s] Invoked command in '/home/pi/test_ws/build/nmea_navsat_driver' returned '0': AMENT_PREFIX_PATH=/home/pi/test_ws/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/test_ws/install/nmea_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/pi/test_ws/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/test_ws/build/nmea_navsat_driver/prefix_override:/home/pi/test_ws/install/nmea_navsat_driver/lib/python3.11/site-packages:/home/pi/test_ws/install/nmea_msgs/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/nmea_navsat_driver/build --no-deps install_data

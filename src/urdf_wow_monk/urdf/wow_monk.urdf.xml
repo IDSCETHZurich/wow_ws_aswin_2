@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<robot name="lifebuoy">
+
+  <!-- Base Plate Link -->
+  <link name="base_plate">
+    <visual>
+      <geometry>
+        <cylinder radius="0.6" length="0.05"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Middle Box Link -->
+  <link name="middle_box">
+    <visual>
+      <geometry>
+        <box size="0.4 0.4 0.2"/>
+      </geometry>
+      <material name="red">
+        <color rgba="1.0 0.0 0.0 .1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Joint between base plate and middle box -->
+  <joint name="plate_to_box" type="fixed">
+    <parent link="base_plate"/>
+    <child link="middle_box"/>
+    <origin xyz="0 0 0.125" rpy="0 0 0"/>
+  </joint>
+
+  <!-- IMU Link (IMU 2) -->
+  <link name="bno055_1">
+    <visual>
+      <geometry>
+        <sphere radius="0.002"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0.0 1.0 0.0 0.1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Joint between middle box and bno055_1 -->
+  <joint name="box_to_bno055_1" type="fixed">
+    <parent link="middle_box"/>
+    <child link="bno055_1"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+  </joint>
+
+  <!-- IMU 1 Link (bno055) -->
+  <link name="bno055">
+    <visual>
+      <geometry>
+        <sphere radius="0.002"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0.0 0.0 1.0 0.1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Joint between bno055_1 and bno055 -->
+  <joint name="box_to_bno055" type="fixed">
+    <parent link="middle_box"/>
+    <child link="bno055"/>
+    <origin xyz="0 0 0.11" rpy="0 0 0"/>
+  </joint>
+
+  <!-- GPS Link -->
+  <link name="gps">
+    <visual>
+      <geometry>
+        <sphere radius="0.03"/>
+      </geometry>
+      <material name="yellow">
+        <color rgba="1.0 1.0 0.0 0.1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Joint between middle box and gps -->
+  <joint name="box_to_gps" type="fixed">
+    <parent link="middle_box"/>
+    <child link="gps"/>
+    <origin xyz="0.2 0 0.1" rpy="0 0 0"/>
+  </joint>
+
+</robot>

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: gps-publisher
+Version: 0.0.0
+Summary: Receives data from GPSD socket using official gpsd-clients and publishes ros2 navsatfix message with position covariance. Handles reconnection of gpsd client.
+Maintainer: pi
+Maintainer-email: aswinkarthik.rv@gmail.com
+License: TODO: License declaration

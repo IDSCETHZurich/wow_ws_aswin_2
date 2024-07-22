@@ -1,0 +1,15 @@
+/home/pi/test_ws/install/ublox/share/ament_index/resource_index/package_run_dependencies/ublox
+/home/pi/test_ws/install/ublox/share/ament_index/resource_index/parent_prefix_path/ublox
+/home/pi/test_ws/install/ublox/share/ublox/environment/ament_prefix_path.sh
+/home/pi/test_ws/install/ublox/share/ublox/environment/ament_prefix_path.dsv
+/home/pi/test_ws/install/ublox/share/ublox/environment/path.sh
+/home/pi/test_ws/install/ublox/share/ublox/environment/path.dsv
+/home/pi/test_ws/install/ublox/share/ublox/local_setup.bash
+/home/pi/test_ws/install/ublox/share/ublox/local_setup.sh
+/home/pi/test_ws/install/ublox/share/ublox/local_setup.zsh
+/home/pi/test_ws/install/ublox/share/ublox/local_setup.dsv
+/home/pi/test_ws/install/ublox/share/ublox/package.dsv
+/home/pi/test_ws/install/ublox/share/ament_index/resource_index/packages/ublox
+/home/pi/test_ws/install/ublox/share/ublox/cmake/ubloxConfig.cmake
+/home/pi/test_ws/install/ublox/share/ublox/cmake/ubloxConfig-version.cmake
+/home/pi/test_ws/install/ublox/share/ublox/package.xml

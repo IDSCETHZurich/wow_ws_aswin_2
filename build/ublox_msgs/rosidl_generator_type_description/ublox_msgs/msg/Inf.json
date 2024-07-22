@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ublox_msgs/msg/Inf",
+      "fields": [
+        {
+          "name": "str",
+          "type": {
+            "type_id": 147,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ublox_msgs/msg/Inf",
+      "hash_string": "RIHS01_b15b75597b4d99a6e7b79e14d20bda3041f351a3af150797aa28087e581f83a0"
+    }
+  ]
+}

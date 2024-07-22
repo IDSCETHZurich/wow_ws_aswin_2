@@ -1,0 +1,22 @@
+[3.070s] Invoking command in '/home/pi/test_ws/build/urdf_wow_monk': PYTHONPATH=/home/pi/test_ws/build/urdf_wow_monk/prefix_override:/home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/urdf_wow_monk/build --no-deps install_data
+[4.156s] running develop
+[4.158s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.158s]   warnings.warn(
+[4.248s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.248s]   warnings.warn(
+[4.706s] running egg_info
+[4.752s] writing urdf_wow_monk.egg-info/PKG-INFO
+[4.752s] writing dependency_links to urdf_wow_monk.egg-info/dependency_links.txt
+[4.753s] writing entry points to urdf_wow_monk.egg-info/entry_points.txt
+[4.754s] writing requirements to urdf_wow_monk.egg-info/requires.txt
+[4.756s] writing top-level names to urdf_wow_monk.egg-info/top_level.txt
+[4.846s] reading manifest file 'urdf_wow_monk.egg-info/SOURCES.txt'
+[4.847s] writing manifest file 'urdf_wow_monk.egg-info/SOURCES.txt'
+[4.900s] running build_ext
+[4.900s] Creating /home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages/urdf-wow-monk.egg-link (link to .)
+[4.901s] Installing state_publisher script to /home/pi/test_ws/install/urdf_wow_monk/lib/urdf_wow_monk
+[4.901s] 
+[4.901s] Installed /home/pi/test_ws/build/urdf_wow_monk
+[4.901s] running install_data
+[4.902s] copying urdf/wow_monk.urdf.xml -> /home/pi/test_ws/install/urdf_wow_monk/share/urdf_wow_monk
+[5.087s] Invoked command in '/home/pi/test_ws/build/urdf_wow_monk' returned '0': PYTHONPATH=/home/pi/test_ws/build/urdf_wow_monk/prefix_override:/home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/urdf_wow_monk/build --no-deps install_data

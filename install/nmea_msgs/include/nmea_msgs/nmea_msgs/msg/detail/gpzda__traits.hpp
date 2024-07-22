@@ -1,0 +1,1 @@
+/home/pi/test_ws/build/nmea_msgs/rosidl_generator_cpp/nmea_msgs/msg/detail/gpzda__traits.hpp

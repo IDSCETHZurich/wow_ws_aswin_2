@@ -1,0 +1,21 @@
+[2.790s] Invoking command in '/home/pi/test_ws/build/gps_publisher': PYTHONPATH=/home/pi/test_ws/build/gps_publisher/prefix_override:/home/pi/test_ws/install/gps_publisher/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/gps_publisher/build --no-deps install_data
+[3.751s] running develop
+[3.751s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.751s]   warnings.warn(
+[3.828s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.828s]   warnings.warn(
+[4.231s] running egg_info
+[4.270s] writing gps_publisher.egg-info/PKG-INFO
+[4.270s] writing dependency_links to gps_publisher.egg-info/dependency_links.txt
+[4.271s] writing entry points to gps_publisher.egg-info/entry_points.txt
+[4.271s] writing requirements to gps_publisher.egg-info/requires.txt
+[4.272s] writing top-level names to gps_publisher.egg-info/top_level.txt
+[4.349s] reading manifest file 'gps_publisher.egg-info/SOURCES.txt'
+[4.349s] writing manifest file 'gps_publisher.egg-info/SOURCES.txt'
+[4.396s] running build_ext
+[4.396s] Creating /home/pi/test_ws/install/gps_publisher/lib/python3.11/site-packages/gps-publisher.egg-link (link to .)
+[4.397s] Installing gps_node script to /home/pi/test_ws/install/gps_publisher/lib/gps_publisher
+[4.397s] 
+[4.397s] Installed /home/pi/test_ws/build/gps_publisher
+[4.398s] running install_data
+[4.575s] Invoked command in '/home/pi/test_ws/build/gps_publisher' returned '0': PYTHONPATH=/home/pi/test_ws/build/gps_publisher/prefix_override:/home/pi/test_ws/install/gps_publisher/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/gps_publisher/build --no-deps install_data

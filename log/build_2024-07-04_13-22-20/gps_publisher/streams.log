@@ -1,0 +1,22 @@
+[2.999s] Invoking command in '/home/pi/test_ws/build/gps_publisher': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] PYTHONPATH=/home/pi/test_ws/build/gps_publisher/prefix_override:/home/pi/test_ws/install/gps_publisher/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/gps_publisher/build --no-deps install_data
+[3.962s] running develop
+[3.964s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.964s]   warnings.warn(
+[4.044s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.044s]   warnings.warn(
+[4.481s] running egg_info
+[4.521s] writing gps_publisher.egg-info/PKG-INFO
+[4.521s] writing dependency_links to gps_publisher.egg-info/dependency_links.txt
+[4.523s] writing entry points to gps_publisher.egg-info/entry_points.txt
+[4.524s] writing requirements to gps_publisher.egg-info/requires.txt
+[4.525s] writing top-level names to gps_publisher.egg-info/top_level.txt
+[4.607s] reading manifest file 'gps_publisher.egg-info/SOURCES.txt'
+[4.609s] writing manifest file 'gps_publisher.egg-info/SOURCES.txt'
+[4.655s] running build_ext
+[4.655s] Creating /home/pi/test_ws/install/gps_publisher/lib/python3.11/site-packages/gps-publisher.egg-link (link to .)
+[4.656s] Installing gps_node script to /home/pi/test_ws/install/gps_publisher/lib/gps_publisher
+[4.657s] 
+[4.657s] Installed /home/pi/test_ws/build/gps_publisher
+[4.657s] running install_data
+[4.657s] copying launch/gps_publisher.launch.py -> /home/pi/test_ws/install/gps_publisher/share/gps_publisher/launch
+[4.835s] Invoked command in '/home/pi/test_ws/build/gps_publisher' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] PYTHONPATH=/home/pi/test_ws/build/gps_publisher/prefix_override:/home/pi/test_ws/install/gps_publisher/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/gps_publisher/build --no-deps install_data

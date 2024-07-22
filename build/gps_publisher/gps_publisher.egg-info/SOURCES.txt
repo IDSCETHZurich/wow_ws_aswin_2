@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+gps_publisher/__init__.py
+gps_publisher/gps_node.py
+gps_publisher.egg-info/PKG-INFO
+gps_publisher.egg-info/SOURCES.txt
+gps_publisher.egg-info/dependency_links.txt
+gps_publisher.egg-info/entry_points.txt
+gps_publisher.egg-info/requires.txt
+gps_publisher.egg-info/top_level.txt
+gps_publisher.egg-info/zip-safe
+launch/gps_publisher.launch.py
+resource/gps_publisher

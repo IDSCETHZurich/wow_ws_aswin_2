@@ -1,0 +1,22 @@
+[3.364s] Invoking command in '/home/pi/test_ws/build/urdf_wow_monk': PYTHONPATH=/home/pi/test_ws/build/urdf_wow_monk/prefix_override:/home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/urdf_wow_monk/build --no-deps install_data
+[4.479s] running develop
+[4.480s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.480s]   warnings.warn(
+[4.579s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.579s]   warnings.warn(
+[5.068s] running egg_info
+[5.113s] writing urdf_wow_monk.egg-info/PKG-INFO
+[5.113s] writing dependency_links to urdf_wow_monk.egg-info/dependency_links.txt
+[5.113s] writing entry points to urdf_wow_monk.egg-info/entry_points.txt
+[5.114s] writing requirements to urdf_wow_monk.egg-info/requires.txt
+[5.114s] writing top-level names to urdf_wow_monk.egg-info/top_level.txt
+[5.207s] reading manifest file 'urdf_wow_monk.egg-info/SOURCES.txt'
+[5.208s] writing manifest file 'urdf_wow_monk.egg-info/SOURCES.txt'
+[5.262s] running build_ext
+[5.263s] Creating /home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages/urdf-wow-monk.egg-link (link to .)
+[5.264s] Installing state_publisher script to /home/pi/test_ws/install/urdf_wow_monk/lib/urdf_wow_monk
+[5.264s] 
+[5.264s] Installed /home/pi/test_ws/build/urdf_wow_monk
+[5.264s] running install_data
+[5.269s] copying launch/demo_launch.py -> /home/pi/test_ws/install/urdf_wow_monk/share/urdf_wow_monk/launch
+[5.679s] Invoked command in '/home/pi/test_ws/build/urdf_wow_monk' returned '0': PYTHONPATH=/home/pi/test_ws/build/urdf_wow_monk/prefix_override:/home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/urdf_wow_monk/build --no-deps install_data

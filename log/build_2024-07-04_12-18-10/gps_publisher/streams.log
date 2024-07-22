@@ -1,0 +1,22 @@
+[2.777s] Invoking command in '/home/pi/test_ws/build/gps_publisher': PYTHONPATH=/home/pi/test_ws/build/gps_publisher/prefix_override:/home/pi/test_ws/install/gps_publisher/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/gps_publisher/build --no-deps install_data
+[3.752s] running develop
+[3.752s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.752s]   warnings.warn(
+[3.831s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.831s]   warnings.warn(
+[4.237s] running egg_info
+[4.275s] writing gps_publisher.egg-info/PKG-INFO
+[4.275s] writing dependency_links to gps_publisher.egg-info/dependency_links.txt
+[4.277s] writing entry points to gps_publisher.egg-info/entry_points.txt
+[4.279s] writing requirements to gps_publisher.egg-info/requires.txt
+[4.280s] writing top-level names to gps_publisher.egg-info/top_level.txt
+[4.361s] reading manifest file 'gps_publisher.egg-info/SOURCES.txt'
+[4.362s] writing manifest file 'gps_publisher.egg-info/SOURCES.txt'
+[4.409s] running build_ext
+[4.409s] Creating /home/pi/test_ws/install/gps_publisher/lib/python3.11/site-packages/gps-publisher.egg-link (link to .)
+[4.410s] Installing gps_node script to /home/pi/test_ws/install/gps_publisher/lib/gps_publisher
+[4.410s] 
+[4.410s] Installed /home/pi/test_ws/build/gps_publisher
+[4.410s] running install_data
+[4.411s] copying launch/gps_publisher.launch.py -> /home/pi/test_ws/install/gps_publisher/share/gps_publisher/launch
+[4.580s] Invoked command in '/home/pi/test_ws/build/gps_publisher' returned '0': PYTHONPATH=/home/pi/test_ws/build/gps_publisher/prefix_override:/home/pi/test_ws/install/gps_publisher/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/gps_publisher/build --no-deps install_data

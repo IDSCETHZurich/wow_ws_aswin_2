@@ -1,0 +1,119 @@
+[0.670s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-select', 'urdf_wow_monk']
+[0.671s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['urdf_wow_monk'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ffedfaf64d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ffedef16090>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ffedef16090>>)
+[0.793s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.793s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.793s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.793s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.793s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.793s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.793s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pi/test_ws'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.827s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.827s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.827s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.827s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_wow_monk) by extensions ['ignore', 'ignore_ament_install']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_wow_monk) by extension 'ignore'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_wow_monk) by extension 'ignore_ament_install'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_wow_monk) by extensions ['colcon_pkg']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_wow_monk) by extension 'colcon_pkg'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_wow_monk) by extensions ['colcon_meta']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_wow_monk) by extension 'colcon_meta'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_wow_monk) by extensions ['ros']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_wow_monk) by extension 'ros'
+[0.833s] DEBUG:colcon.colcon_core.package_identification:Package 'src/urdf_wow_monk' with type 'ros.ament_python' and name 'urdf_wow_monk'
+[0.833s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.833s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.833s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.833s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.833s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.900s] Level 5:colcon.colcon_core.verb:set package 'urdf_wow_monk' build argument 'cmake_args' from command line to 'None'
+[0.900s] Level 5:colcon.colcon_core.verb:set package 'urdf_wow_monk' build argument 'cmake_target' from command line to 'None'
+[0.901s] Level 5:colcon.colcon_core.verb:set package 'urdf_wow_monk' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.901s] Level 5:colcon.colcon_core.verb:set package 'urdf_wow_monk' build argument 'cmake_clean_cache' from command line to 'False'
+[0.901s] Level 5:colcon.colcon_core.verb:set package 'urdf_wow_monk' build argument 'cmake_clean_first' from command line to 'False'
+[0.901s] Level 5:colcon.colcon_core.verb:set package 'urdf_wow_monk' build argument 'cmake_force_configure' from command line to 'False'
+[0.901s] Level 5:colcon.colcon_core.verb:set package 'urdf_wow_monk' build argument 'ament_cmake_args' from command line to 'None'
+[0.901s] Level 5:colcon.colcon_core.verb:set package 'urdf_wow_monk' build argument 'catkin_cmake_args' from command line to 'None'
+[0.901s] Level 5:colcon.colcon_core.verb:set package 'urdf_wow_monk' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.901s] DEBUG:colcon.colcon_core.verb:Building package 'urdf_wow_monk' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/test_ws/build/urdf_wow_monk', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/test_ws/install/urdf_wow_monk', 'merge_install': False, 'path': '/home/pi/test_ws/src/urdf_wow_monk', 'symlink_install': True, 'test_result_base': None}
+[0.902s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.905s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.905s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/pi/test_ws/src/urdf_wow_monk' with build type 'ament_python'
+[0.905s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdf_wow_monk', 'ament_prefix_path')
+[0.916s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.922s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/test_ws/install/urdf_wow_monk/share/urdf_wow_monk/hook/ament_prefix_path.dsv'
+[0.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/test_ws/install/urdf_wow_monk/share/urdf_wow_monk/hook/ament_prefix_path.sh'
+[0.928s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.059s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/pi/test_ws/src/urdf_wow_monk'
+[2.060s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.978s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/test_ws/build/urdf_wow_monk': PYTHONPATH=/home/pi/test_ws/build/urdf_wow_monk/prefix_override:/home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/urdf_wow_monk/build --no-deps install_data
+[5.992s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdf_wow_monk', 'pythonpath_develop')
+[5.994s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/test_ws/build/urdf_wow_monk/share/urdf_wow_monk/hook/pythonpath_develop.dsv'
+[5.994s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/test_ws/build/urdf_wow_monk' returned '0': PYTHONPATH=/home/pi/test_ws/build/urdf_wow_monk/prefix_override:/home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/urdf_wow_monk/build --no-deps install_data
+[5.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/test_ws/build/urdf_wow_monk/share/urdf_wow_monk/hook/pythonpath_develop.sh'
+[6.008s] Level 1:colcon.colcon_core.environment:checking '/home/pi/test_ws/install/urdf_wow_monk' for CMake module files
+[6.008s] Level 1:colcon.colcon_core.environment:checking '/home/pi/test_ws/install/urdf_wow_monk' for CMake config files
+[6.009s] Level 1:colcon.colcon_core.environment:checking '/home/pi/test_ws/install/urdf_wow_monk/lib'
+[6.009s] Level 1:colcon.colcon_core.environment:checking '/home/pi/test_ws/install/urdf_wow_monk/bin'
+[6.009s] Level 1:colcon.colcon_core.environment:checking '/home/pi/test_ws/install/urdf_wow_monk/lib/pkgconfig/urdf_wow_monk.pc'
+[6.010s] Level 1:colcon.colcon_core.environment:checking '/home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages'
+[6.010s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdf_wow_monk', 'pythonpath')
+[6.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/test_ws/install/urdf_wow_monk/share/urdf_wow_monk/hook/pythonpath.dsv'
+[6.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/test_ws/install/urdf_wow_monk/share/urdf_wow_monk/hook/pythonpath.sh'
+[6.013s] Level 1:colcon.colcon_core.environment:checking '/home/pi/test_ws/install/urdf_wow_monk/bin'
+[6.013s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urdf_wow_monk)
+[6.014s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/test_ws/install/urdf_wow_monk/share/urdf_wow_monk/package.dsv'
+[6.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/test_ws/install/urdf_wow_monk/share/urdf_wow_monk/package.sh'
+[6.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/test_ws/install/urdf_wow_monk/share/urdf_wow_monk/package.bash'
+[6.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/test_ws/install/urdf_wow_monk/share/urdf_wow_monk/package.zsh'
+[6.022s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/test_ws/install/urdf_wow_monk/share/colcon-core/packages/urdf_wow_monk)
+[6.023s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.023s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.023s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.023s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.044s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[6.044s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.044s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.044s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.045s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[6.045s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.046s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/test_ws/install/local_setup.sh'
+[6.047s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/test_ws/install/_local_setup_util_sh.py'
+[6.049s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/test_ws/install/setup.sh'
+[6.066s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/test_ws/install/local_setup.bash'
+[6.067s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/test_ws/install/setup.bash'
+[6.081s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/test_ws/install/local_setup.zsh'
+[6.083s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/test_ws/install/setup.zsh'

@@ -1,0 +1,1 @@
+/home/pi/test_ws/src/ublox/ublox_msgs/msg/CfgNAVX5.msg

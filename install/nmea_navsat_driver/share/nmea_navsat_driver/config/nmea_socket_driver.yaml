@@ -1,0 +1,7 @@
+nmea_navsat_driver:
+  ros__parameters:
+    ip: "0.0.0.0"
+    port: 2947
+    buffer_size: 4096
+    timeout_sec: 2
+    rate: 5

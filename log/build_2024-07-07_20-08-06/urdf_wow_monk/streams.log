@@ -1,0 +1,21 @@
+[5.263s] Invoking command in '/home/pi/test_ws/build/urdf_wow_monk': PYTHONPATH=/home/pi/test_ws/build/urdf_wow_monk/prefix_override:/home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/urdf_wow_monk/build --no-deps install_data
+[6.631s] running develop
+[6.632s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[6.632s]   warnings.warn(
+[6.751s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.751s]   warnings.warn(
+[7.327s] running egg_info
+[7.380s] writing urdf_wow_monk.egg-info/PKG-INFO
+[7.380s] writing dependency_links to urdf_wow_monk.egg-info/dependency_links.txt
+[7.388s] writing entry points to urdf_wow_monk.egg-info/entry_points.txt
+[7.392s] writing requirements to urdf_wow_monk.egg-info/requires.txt
+[7.393s] writing top-level names to urdf_wow_monk.egg-info/top_level.txt
+[7.490s] reading manifest file 'urdf_wow_monk.egg-info/SOURCES.txt'
+[7.491s] writing manifest file 'urdf_wow_monk.egg-info/SOURCES.txt'
+[7.557s] running build_ext
+[7.557s] Creating /home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages/urdf-wow-monk.egg-link (link to .)
+[7.557s] Installing state_publisher script to /home/pi/test_ws/install/urdf_wow_monk/lib/urdf_wow_monk
+[7.557s] 
+[7.557s] Installed /home/pi/test_ws/build/urdf_wow_monk
+[7.557s] running install_data
+[7.821s] Invoked command in '/home/pi/test_ws/build/urdf_wow_monk' returned '0': PYTHONPATH=/home/pi/test_ws/build/urdf_wow_monk/prefix_override:/home/pi/test_ws/install/urdf_wow_monk/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/urdf_wow_monk/build --no-deps install_data

@@ -1,0 +1,66 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ublox_msgs/msg/MonVER",
+      "fields": [
+        {
+          "name": "sw_version",
+          "type": {
+            "type_id": 51,
+            "capacity": 30,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "hw_version",
+          "type": {
+            "type_id": 51,
+            "capacity": 10,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "extension",
+          "type": {
+            "type_id": 145,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ublox_msgs/msg/MonVERExtension"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "ublox_msgs/msg/MonVERExtension",
+        "fields": [
+          {
+            "name": "field",
+            "type": {
+              "type_id": 51,
+              "capacity": 30,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "ublox_msgs/msg/MonVER",
+      "hash_string": "RIHS01_d3e5cec79605072be9d301686e5c8d0be1c69e02d7502493ce4e91e88bea39fe"
+    },
+    {
+      "type_name": "ublox_msgs/msg/MonVERExtension",
+      "hash_string": "RIHS01_6c5aa9a9985cb0081bf3aec7d72d5e093ac3e2055dab439b151fb9b978710154"
+    }
+  ]
+}

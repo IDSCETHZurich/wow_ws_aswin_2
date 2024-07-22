@@ -1,0 +1,66 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ublox_msgs/msg/CfgINF",
+      "fields": [
+        {
+          "name": "blocks",
+          "type": {
+            "type_id": 145,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "ublox_msgs/msg/CfgINFBlock"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "ublox_msgs/msg/CfgINFBlock",
+        "fields": [
+          {
+            "name": "protocol_id",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "reserved1",
+            "type": {
+              "type_id": 51,
+              "capacity": 3,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "inf_msg_mask",
+            "type": {
+              "type_id": 51,
+              "capacity": 6,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "ublox_msgs/msg/CfgINF",
+      "hash_string": "RIHS01_a220519268e3884c99ea9b0caf3296bfe1a76a03933fce021e2cc0e3bae7cc41"
+    },
+    {
+      "type_name": "ublox_msgs/msg/CfgINFBlock",
+      "hash_string": "RIHS01_9a1c4fb11aba48301271a06f706e2f62c02f544e28924fbcf3d591376b6f7f1f"
+    }
+  ]
+}

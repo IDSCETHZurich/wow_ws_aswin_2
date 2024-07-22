@@ -1,0 +1,6 @@
+source;share/ntrip_client/hook/pythonpath.dsv
+source;share/ntrip_client/hook/pythonpath.sh
+source;share/ntrip_client/hook/ament_prefix_path.dsv
+source;share/ntrip_client/hook/ament_prefix_path.sh
+source;../../build/ntrip_client/src/share/ntrip_client/hook/pythonpath_develop.dsv
+source;../../build/ntrip_client/src/share/ntrip_client/hook/pythonpath_develop.sh

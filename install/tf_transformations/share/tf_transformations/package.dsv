@@ -1,0 +1,6 @@
+source;share/tf_transformations/hook/pythonpath.dsv
+source;share/tf_transformations/hook/pythonpath.sh
+source;share/tf_transformations/hook/ament_prefix_path.dsv
+source;share/tf_transformations/hook/ament_prefix_path.sh
+source;../../build/tf_transformations/share/tf_transformations/hook/pythonpath_develop.dsv
+source;../../build/tf_transformations/share/tf_transformations/hook/pythonpath_develop.sh

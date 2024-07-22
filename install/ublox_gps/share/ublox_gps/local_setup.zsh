@@ -1,0 +1,1 @@
+/home/pi/test_ws/build/ublox_gps/ament_cmake_environment_hooks/local_setup.zsh

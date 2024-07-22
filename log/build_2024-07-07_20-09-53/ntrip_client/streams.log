@@ -1,0 +1,20 @@
+[2.760s] Invoking command in '/home/pi/test_ws/build/ntrip_client': PYTHONPATH=/home/pi/test_ws/build/ntrip_client/prefix_override:/home/pi/test_ws/install/ntrip_client/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/ntrip_client/build --no-deps install_data
+[3.720s] running develop
+[3.720s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.720s]   warnings.warn(
+[3.800s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.800s]   warnings.warn(
+[4.206s] running egg_info
+[4.245s] writing src/ntrip_client.egg-info/PKG-INFO
+[4.245s] writing dependency_links to src/ntrip_client.egg-info/dependency_links.txt
+[4.247s] writing requirements to src/ntrip_client.egg-info/requires.txt
+[4.248s] writing top-level names to src/ntrip_client.egg-info/top_level.txt
+[4.364s] reading manifest file 'src/ntrip_client.egg-info/SOURCES.txt'
+[4.365s] writing manifest file 'src/ntrip_client.egg-info/SOURCES.txt'
+[4.411s] running build_ext
+[4.412s] Creating /home/pi/test_ws/install/ntrip_client/lib/python3.11/site-packages/ntrip-client.egg-link (link to src)
+[4.413s] Installing ntrip_ros.py script to /home/pi/test_ws/install/ntrip_client/lib/ntrip_client
+[4.414s] 
+[4.414s] Installed /home/pi/test_ws/build/ntrip_client/src
+[4.414s] running install_data
+[4.600s] Invoked command in '/home/pi/test_ws/build/ntrip_client' returned '0': PYTHONPATH=/home/pi/test_ws/build/ntrip_client/prefix_override:/home/pi/test_ws/install/ntrip_client/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/pi/test_ws/build/ntrip_client/build --no-deps install_data

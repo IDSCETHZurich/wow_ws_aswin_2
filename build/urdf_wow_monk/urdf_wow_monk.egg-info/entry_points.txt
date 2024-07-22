@@ -1,0 +1,2 @@
+[console_scripts]
+state_publisher = urdf_wow_monk.state_publisher:main
